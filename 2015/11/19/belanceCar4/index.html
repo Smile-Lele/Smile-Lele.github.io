@@ -1,0 +1,658 @@
+<!doctype html>
+<html class="theme-next  ">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="//main.css?v="/>
+
+
+    <meta name="description" content="Stay Hungry. Stay foolish." />
+
+
+
+  <meta name="keywords" content="平衡车,平衡原理,采样定理," />
+
+
+
+
+
+
+<meta name="description" content="双轮自平衡平衡原理双轮自平衡机器人系统本身是一个不稳定的系统，类似于一级倒立摆系统。两轮平衡车由于他的优点特别明显，近几年研究他的人越来越多。特别是两轮自平衡车应用到餐饮、安保、工业、代步等方面。接下来用通俗易懂的语言简单介绍一下双轮自平衡车的原理。 1 直立行走任务分解关于直立车大家或多或少都接触过，不难想象当车体想某一个方向倾倒时，我们必须让车轮快速跟踪到他要摔倒的方向，这样才能保证它不会倒下">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WiFi双轮平衡车的设计(四)">
+<meta property="og:url" content="http://www.zenghongqing.com/2015/11/19/belanceCar4/index.html">
+<meta property="og:site_name" content="Smile&#96;s Blog">
+<meta property="og:description" content="双轮自平衡平衡原理双轮自平衡机器人系统本身是一个不稳定的系统，类似于一级倒立摆系统。两轮平衡车由于他的优点特别明显，近几年研究他的人越来越多。特别是两轮自平衡车应用到餐饮、安保、工业、代步等方面。接下来用通俗易懂的语言简单介绍一下双轮自平衡车的原理。 1 直立行走任务分解关于直立车大家或多或少都接触过，不难想象当车体想某一个方向倾倒时，我们必须让车轮快速跟踪到他要摔倒的方向，这样才能保证它不会倒下">
+<meta property="og:image" content="https://t1.picb.cc/uploads/2017/10/11/MieoK.png">
+<meta property="og:image" content="https://t1.picb.cc/uploads/2017/10/11/MiucN.png">
+<meta property="og:image" content="https://t1.picb.cc/uploads/2017/10/11/MiZig.png">
+<meta property="og:image" content="https://t1.picb.cc/uploads/2017/10/11/Mikz8.png">
+<meta property="og:image" content="https://t1.picb.cc/uploads/2017/10/11/MiwWX.png">
+<meta property="og:image" content="https://t1.picb.cc/uploads/2017/10/11/MifxG.png">
+<meta property="og:image" content="https://t1.picb.cc/uploads/2017/10/11/MiIty.png">
+<meta property="og:image" content="https://t1.picb.cc/uploads/2017/10/11/Miirj.png">
+<meta property="og:image" content="https://t1.picb.cc/uploads/2017/10/11/MinSc.png">
+<meta property="article:published_time" content="2015-11-19T13:16:01.000Z">
+<meta property="article:modified_time" content="2017-10-10T17:18:14.000Z">
+<meta property="article:author" content="Smile_ZHQ">
+<meta property="article:tag" content="平衡车">
+<meta property="article:tag" content="平衡原理">
+<meta property="article:tag" content="采样定理">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://t1.picb.cc/uploads/2017/10/11/MieoK.png">
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: '',
+    sidebar: ''
+  };
+</script>
+
+  <title> WiFi双轮平衡车的设计(四) | Smile`s Blog </title>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode" target="_blank" rel="noopener">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?5803963ce5fb65a89403c495b1c43cd3";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/" class="brand" rel="start">
+      <span class="logo">
+        <i class="icon-next-logo"></i>
+      </span>
+      <span class="site-title">Smile`s Blog</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content"> 
+
+  <div id="posts" class="posts-expand">
+    
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              WiFi双轮平衡车的设计(四)
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-11-19T13:16:01+00:00" content="2015-11-19">
+            2015-11-19
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/%E7%A7%91%E6%8A%80%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index">
+                  <span itemprop="name">科技项目</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2015/11/19/belanceCar4/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/19/belanceCar4/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><h2 id="双轮自平衡平衡原理"><a href="#双轮自平衡平衡原理" class="headerlink" title="双轮自平衡平衡原理"></a>双轮自平衡平衡原理</h2><p>双轮自平衡机器人系统本身是一个不稳定的系统，类似于一级倒立摆系统。两轮平衡车由于他的优点特别明显，近几年研究他的人越来越多。特别是两轮自平衡车应用到餐饮、安保、工业、代步等方面。接下来用通俗易懂的语言简单介绍一下双轮自平衡车的原理。</p>
+<h3 id="1-直立行走任务分解"><a href="#1-直立行走任务分解" class="headerlink" title="1 直立行走任务分解"></a>1 直立行走任务分解</h3><p>关于直立车大家或多或少都接触过，不难想象当车体想某一个方向倾倒时，我们必须让车轮快速跟踪到他要摔倒的方向，这样才能保证它不会倒下。然而，整个车体对象仅有两个电机提供动力。电机不仅要提供保持平衡的动力，同时还要提供转弯的动力。从自动控制的角度来看，平衡车的输入应该为两电机的PWM输入。<br>在这里我们将车体的运动分解成三个部分：</p>
+<ul>
+<li>第一．    控制车体角度：始终保持车体倒立，而不是从某一方向倾倒。</li>
+<li>第二．    控制车体速度：可以保证平衡车运动速度是可调的。</li>
+<li>第三．    控制车体方向：简单的说就是给两轮电机不同的输入信号，是两轮速度形成差速，从而保证车体能改变方向。</li>
+</ul>
+<p>其中控制方向在实现车体平衡后，非常容易实现。所以下面主要叙述一下平衡控制的思路。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MieoK.png" alt="三层控制之间的相互配合"></p>
+<p>我们知道从控制的角度来说，大多用到的都是负反馈机制，当然控制直立车也不例外。可以看到两轮车只有两个轮子着地，也就是说他完成所有动作都与控制车轮有密切的关系。我们做出如下几种假设，分别说明车体在不同状态下如何保证车体平衡.</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MiucN.png" alt="通过车模运动保持车模平衡"></p>
+<p>根据上图直观理解车模保持平衡的原理，实际上两轮自平衡机器人是一个在空间状态下的一级直线倒立摆,我们首先通过分析直线一阶倒立摆模型，进而，深入理解车模平衡控制。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MiZig.png" alt="直线倒立摆模型及受力分析"></p>
+<p>由上图对其受力分析，根据牛顿第二定律可得，可得出小车回复力。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/Mikz8.png" alt="车模平衡控制图示"></p>
+<p>通过以上简单分析，通过类比倒立摆得到了车模直立的控制方案，在之后章节有关于模型仿真还会细说。</p>
+<h3 id="2-车模角度和角速度测量"><a href="#2-车模角度和角速度测量" class="headerlink" title="2 车模角度和角速度测量"></a>2 车模角度和角速度测量</h3><p>作为一控制系统。对被测量的检测至关重要，具体到本项目主要需要检测角度和角速度。值得庆幸的是我们可以用一个集成模块MPU-6050，来代替两种传感器的组合。<br>MPU- 6050是整合性6轴运动处理组件，相较于同时用陀螺仪和加速度器，免除了他们组合时出现的轴间差的问题，同时大大减少了芯片的包装空间。使用非常方便，只需要我们运用适当的滤波方法即可实现角度和角速度的测量</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MiwWX.png" alt="MPU6050模块图示"></p>
+<p>由于本文并非主要论证卡尔曼滤波原理及其滤波方法，因此关于角度的测量原理就不再赘述，如果想深入理解卡尔曼滤波原理，请自行查阅其他资料。</p>
+<p>根据前面介绍的小车角度控制，陀螺仪测出角速度，对其分别做比例控制和积分控制，而加速度计测出角度，作为角度的设定值，通过乘上比例系数与之前陀螺仪得到的角速度叠加，共同做积分运算得到后续的角度，则可得出如下图所示控制方案。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MifxG.png" alt="车模角度控制框图"></p>
+<h3 id="3-车模速度测量"><a href="#3-车模速度测量" class="headerlink" title="3 车模速度测量"></a>3 车模速度测量</h3><p>转速对于本项目来说是非常重要的一个物理量，也是一个非常重要的控制变量。目前国内外有多种测速方法，但都大同小异，无非是将可被检测的原件与电机转轴相对固定，通过可感器件将其感应并计数。当得到计数值之后，只需要通过单片机等处理器定时采集便可得到电机转速。</p>
+<p>光电编码器是一种体积小、使用简单、性能好和可靠性好的转速和位置检测装置，他在检测等领域应用十分广泛，编码器是码盘随位置的变化输出两路脉冲信号，然后我们根据这两路脉冲信号，判断出码盘旋转的方向并通过计数器对脉冲信号进行加减计数，一次达到位置检测的目的，通过采样固定时间的脉冲数，经过转换就可以得到速度如图。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MiIty.png" alt="光电码盘测速原理"></p>
+<p>测角方法是将码盘一周平均分成n个栅格，每个栅格对应的角度为360°/n ，根据AB两项脉冲信号可以判断码盘正反转。其原理如图:</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/Miirj.png" alt="增量式光电码盘工作原理"></p>
+<p>如上图所示A相B相为码盘的输出，这两个信号相位相差为90°。其中当B相为低电平时，A相判断为上升沿，此时规定为正转，A相判断为下降沿此时就为反转，正反转分别计数，得到脉冲数后就可以通过软件处理得到电机转速。</p>
+<h3 id="4-采样定理"><a href="#4-采样定理" class="headerlink" title="4 采样定理"></a>4 采样定理</h3><p>采样定理，又称香农采样定律，是信息以及检测领域中非常重要的基本结论。它主要讲述了一个关于信号正确采样的基本原理。如果采集一个连续信号，采集设备的采样频率一定要大于等于被采集信号最高频率的二倍，这样原来的连续信号才可以完整的被还原。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MinSc.png" alt="香农采样定理"></p>
+<blockquote>
+<p>本章主要介绍机器人平衡原理、角度传感器检测原理、电机转速测量原理以及香农采样定理，其中用形象化的通俗的语言尽可能的替代晦涩的专业术语，使得车模平衡原理非常容易理解。同时，简要介绍了关于平衡车的控制方法，为后续的物理建模奠定了理论基础。</p>
+</blockquote>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E5%B9%B3%E8%A1%A1%E8%BD%A6/" rel="tag">#平衡车</a>
+          
+            <a href="/tags/%E5%B9%B3%E8%A1%A1%E5%8E%9F%E7%90%86/" rel="tag">#平衡原理</a>
+          
+            <a href="/tags/%E9%87%87%E6%A0%B7%E5%AE%9A%E7%90%86/" rel="tag">#采样定理</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/11/20/belanceCar5/" rel="prev">WiFi双轮平衡车的设计(五)</a>
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/11/18/blanceCar3/" rel="next">WiFi双轮平衡车的设计(三)</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+ </div>
+
+        
+
+        
+          <div class="comments" id="comments">
+            
+              <div class="ds-thread" data-thread-key="2015/11/19/belanceCar4/"
+                   data-title="WiFi双轮平衡车的设计(四)" data-url="http://www.zenghongqing.com/2015/11/19/belanceCar4/">
+              </div>
+            
+          </div>
+        
+      </div>
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/images/Me.jpg" alt="Smile_ZHQ" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">Smile_ZHQ</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">Stay Hungry. Stay foolish.</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/">
+              <span class="site-state-item-count">26</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">分类</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            
+              <span class="site-state-item-count">26</span>
+              <span class="site-state-item-name">标签</span>
+              
+          </div>
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/Smile_Lele" target="_blank">github</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com" target="_blank">weibo</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://douban.com" target="_blank">douban</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com" target="_blank">zhihu</a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name">Links</p>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.baidu.com/" target="_blank">Baidu</a>
+              </span>
+            
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#双轮自平衡平衡原理"><span class="nav-text">双轮自平衡平衡原理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-直立行走任务分解"><span class="nav-text">1 直立行走任务分解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-车模角度和角速度测量"><span class="nav-text">2 车模角度和角速度测量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-车模速度测量"><span class="nav-text">3 车模速度测量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-采样定理"><span class="nav-text">4 采样定理</span></a></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner"> <div class="copyright" >
+  
+  &copy; &nbsp;  2013 - 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="icon-next-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Smile_ZHQ</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io" target="_blank" rel="noopener">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">
+    NexT
+  </a>
+</div>
+
+
+ </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="//jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+    
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"zenghongqing"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+    
+  
+  
+
+  <script type="text/javascript" src="//helpers.js?v="></script>
+  
+
+  <script type="text/javascript" src="//motion_fallback.js?v=" id="motion.fallback"></script>
+
+
+
+
+  <script type="text/javascript" src="//nav-toggle.js?v="></script>
+  <script type="text/javascript" src="//fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+<script type="text/javascript" src="//bootstrap.scrollspy.js?v=" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 0.4 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    var $tocContent = $('.post-toc-content');
+    if (isDesktop() && CONFIG.sidebar === 'post') {
+      if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+        displaySidebar();
+      }
+    }
+  });
+</script>
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+      if (isMobile()) {
+        FastClick.attach(document.body);
+      }
+    });
+  </script>
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="//lazyload.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("#posts").find('img').lazyload({
+        placeholder: "//loading.gif",
+        effect: "fadeIn"
+      });
+    });
+  </script>
+</body>
+</html>
