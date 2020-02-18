@@ -85,6 +85,9 @@
 
 
 
+  <meta property="fb:admins" content="Steven Zeng" />
+  <meta property="fb:app_id" content="zenghongqing123@163.com" />
+
 
 
 <meta name="description" content="Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy.有时候你的微笑源自于你的快乐，有的时候微笑能使你快乐。">
@@ -142,6 +145,24 @@
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 'zenghongqing123@163.com',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/zh_Hans/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
 
 
 

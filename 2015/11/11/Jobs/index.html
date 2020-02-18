@@ -85,6 +85,9 @@
 
 
 
+  <meta property="fb:admins" content="Steven Zeng" />
+  <meta property="fb:app_id" content="zenghongqing123@163.com" />
+
 
 
 <meta name="description" content="Those who are crazy enough to think they can change the world,then he can really change the world. 那些疯狂到以为自己能改变世界的人，才能真正的改变世界。（Steven Jobs）">
@@ -140,6 +143,24 @@
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 'zenghongqing123@163.com',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/zh_Hans/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
 
 
 
@@ -325,6 +346,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2015/11/11/Jobs/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://www.zenghongqing.com/2015/11/11/Jobs/" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
+            
           
 
           
@@ -411,6 +442,16 @@
 
       
         
+          <div class="social-like">
+            
+
+            
+              <div class="fb_like">
+                <div class="fb-like" data-layout="button_count" data-share="true"></div>
+              </div>
+            
+          </div>
+        
       
 
       
@@ -454,6 +495,13 @@
 
           
   <div class="comments" id="comments">
+    
+      <div class="fb-comments"
+           data-href="http://www.zenghongqing.com/2015/11/11/Jobs/"
+           data-numposts="10"
+           data-width="100%"
+           data-colorscheme="light">
+      </div>
     
   </div>
 
