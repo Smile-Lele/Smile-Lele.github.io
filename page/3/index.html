@@ -1,11 +1,23 @@
-<!doctype html>
-<html class="theme-next use-motion theme-next-mist">
-<head>
+<!DOCTYPE html>
+
+
+
   
 
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
@@ -18,25 +30,53 @@
 
 
 
-  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
-
-
-
-
-<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1"/>
-
-
-    <meta name="description" content="Stay Hungry. Stay foolish." />
-
-
-
-  <meta name="keywords" content="Hexo,next" />
 
 
 
 
 
-  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
 
 
 <meta name="description" content="Stay Hungry. Stay foolish.">
@@ -49,88 +89,115 @@
 <meta name="twitter:card" content="summary">
 
 
-<script type="text/javascript" id="hexo.configuration">
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
-    sidebar: 'hide'
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
   };
 </script>
 
-  <title> Hexo,next - Steven`s Blog - Stay Hungry. Stay foolish. </title>
-<meta name="generator" content="Hexo 4.2.0"></head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode" target="_blank" rel="noopener">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
+  <link rel="canonical" href="http://www.zenghongqing.com/page/3/"/>
+
+
+
+
+
+  <title>Steven`s Blog</title>
   
 
 
 
-  <div class="container one-column 
-   page-home 
-">
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><h1 class="site-meta">
-  <span class="logo-line-before"><i></i></span>
-  <a href="/" class="brand" rel="start">
-      <span class="logo">
-        <i class="icon-next-logo"></i>
-      </span>
-      <span class="site-title">Steven`s Blog</span>
-  </a>
-  <span class="logo-line-after"><i></i></span>
-</h1>
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Steven`s Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">一个热爱生活的程序员</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
 <nav class="site-nav">
   
 
   
-    <ul id="menu" class="menu ">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            <i class="menu-item-icon icon-next-home"></i> <br />
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
             首页
           </a>
         </li>
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            <i class="menu-item-icon icon-next-archives"></i> <br />
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
             归档
           </a>
         </li>
       
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            <i class="menu-item-icon icon-next-tags"></i> <br />
-            标签
-          </a>
-        </li>
-      
 
-      
       
     </ul>
   
@@ -138,91 +205,213 @@
   
 </nav>
 
+
+
  </div>
     </header>
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content"> 
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
   <section id="posts" class="posts-expand">
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/11/18/blanceCar3/" itemprop="url">
-                WiFi双轮平衡车的设计(三)
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-11-18T13:16:01+08:00" content="2015-11-18">
-            2015-11-18
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2015/11/18/blanceCar3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Steven">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Me.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Steven`s Blog">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/11/18/blanceCar3/" itemprop="url">WiFi双轮平衡车的设计(三)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/%E7%A7%91%E6%8A%80%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index">
-                  <span itemprop="name">科技项目</span>
-                </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
               </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-11-18T13:16:01+08:00">
+                2015-11-18
+              </time>
+            
 
-              
-              
+            
 
             
           </span>
-        
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E6%8A%80%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index">
+                    <span itemprop="name">科技项目</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
           
-        
-      </div>
-    </header>
+            <h2 id="Wi-Fi通信网络的搭建"><a href="#Wi-Fi通信网络的搭建" class="headerlink" title="Wi-Fi通信网络的搭建"></a>Wi-Fi通信网络的搭建</h2><h3 id="1-Openwrt简介"><a href="#1-Openwrt简介" class="headerlink" title="1 Openwrt简介"></a>1 Openwrt简介</h3><p>Tp-link Wr703n是目前最小，最便宜的能够运行Linux的无线路由器。</p>
+<h5 id="主要配置："><a href="#主要配置：" class="headerlink" title="主要配置："></a>主要配置：</h5><p>Atheros 400MHz MIPS CPU</p>
+<p>32MB RAM</p>
+<p>4MB flash</p>
+<p>10/100Mbps Ethernet interface</p>
+<p>802.11b/g/n wireless interface with one internal antenna</p>
+<p>USB 2.0 port</p>
+<p>Micro-USB power socket, approximately 1W power draw</p>
+<h3 id="2-安装OpenWRT系统"><a href="#2-安装OpenWRT系统" class="headerlink" title="2 安装OpenWRT系统"></a>2 安装OpenWRT系统</h3><p>在OpenWRT官网上下载系统固件：<br><a href="http://downloads.openwrt.org/attitude_adjustment/12.09/ar71xx/generic" target="_blank" rel="noopener">http://downloads.openwrt.org/attitude_adjustment/12.09/ar71xx/generic</a></p>
+<p>进入路由器管理界面，出厂配置为<code>http://192.168.1.1</code>，用户名和密码均为admin。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MiMyr.jpg" alt="登录界面"></p>
+<p>选择系统工具中，软件升级</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MiqD1.png" alt="升级界面"></p>
+<p>等待一段大约3min，然后重启路由，至此路由器已经装有OpenWRT系统。</p>
+<h3 id="3-初始配置OpenWRT"><a href="#3-初始配置OpenWRT" class="headerlink" title="3 初始配置OpenWRT"></a>3 初始配置OpenWRT</h3><p>在配置OpenWRT之前，需要用一个软件PuTTY</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/Mi3Tu.png" alt="PuTTY"></p>
+<p>用一根网线将703N的Lan口和你电脑相连，电脑上设置为DHCP模式，然后运行PuTTY，在Host Name中输入路由器的IP地址，Connection选择Telent，点击Open，成功后出现OpenWrt的欢迎界面。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/Mivqa.png" alt="Telnet"></p>
+<p>更改用户root密码，输入passwd ，更改root密码，输入exit退出telent，之后就可以通过ssh管理OpenWrt。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/Mihid.png" alt="PuTTY登录"></p>
+<p>首先修改/etc/config/wireless文件，输入vi /etc/config/wireless回车。进入此界面，键盘输入i进入修改模式，具体配置如图3-7所示，完成后按键盘esc，然后输入“:wq”保存并退出。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MiQtD.png" alt="SSH登陆界面"></p>
+<p>同理，修改/etc/config/network文件，输入vi /etc/config/network回车。进入此界面，键盘输入i进入修改模式，具体配置如图3-8所示，完成后保存并退出。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/Mia5v.png" alt="wireless配置界面"></p>
+<p>至此，一个安装好OpenWRT系统的路由器，只需要你将网线插到Lan/Wan口上，就可以像官方原装路由器一样通过Wi-Fi上网了。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MiSaw.png" alt="network配置界面"></p>
+<h3 id="4-网口转串口Ser2net"><a href="#4-网口转串口Ser2net" class="headerlink" title="4 网口转串口Ser2net"></a>4 网口转串口Ser2net</h3><p>电脑连接Wi-Fi，打开火狐浏览器，输入192.168.1.1进入</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MipyL.png" alt="OpemWRT登陆界面"></p>
+<p>选择System-&gt;Software</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MibXi.png" alt="软件安装"></p>
+<p>对于网口转串口，需要安装的软件有如下几个。</p>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">kmod-usb-core  </span><br><span class="line">kmod-usb-ohci  </span><br><span class="line">kmod-usb-<span class="type">serial</span>  </span><br><span class="line">kmod-usb-<span class="type">serial</span>-ftdi</span><br><span class="line">kmod-usb2  </span><br><span class="line">kmod-usb-acm  </span><br><span class="line">ser2net</span><br></pre></td></tr></table></figure>
+<p>现在还需要一个软件WinSCP，编辑IP地址以及端口号Port，登陆路由器。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/Mi0mW.png" alt="ser2net配置"></p>
+<p>在<code>etc /ser2net</code> 找到<code>2001：raw:600</code>开头的一段程序码，配置如下：</p>
+<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2001</span>:raw:<span class="number">600</span>:/dev/ttyACM0:<span class="number">9600</span> NONE <span class="number">1</span>STOPBIT <span class="number">8</span>DATABITS XONXOFF </span><br><span class="line">#<span class="number">2002</span>:raw:<span class="number">600</span>:/dev/ttyS1:<span class="number">9600</span> NONE <span class="number">1</span>STOPBIT <span class="number">8</span>DATABITS XONXOFF </span><br><span class="line">#<span class="number">2003</span>:raw:<span class="number">5</span>:/dev/ttyS2:<span class="number">9600</span></span><br><span class="line">#<span class="number">2004</span>:raw:<span class="number">5</span>:/dev/ttyS3:<span class="number">115200</span></span><br><span class="line">#<span class="number">3005</span>:telnet:<span class="number">0</span>:/dev/ttyS4:<span class="number">9600</span></span><br><span class="line">#<span class="number">3006</span>:telnet:<span class="number">0</span>:/dev/ttyS5:<span class="number">9600</span></span><br><span class="line">#<span class="number">3007</span>:telnet:<span class="number">0</span>:/dev/ttyS6:<span class="number">9600</span></span><br><span class="line">#<span class="number">5001</span>:rawlp:<span class="number">10</span>:/dev/lp0</span><br></pre></td></tr></table></figure>
 
-    <div class="post-body">
+<p>其中第一行中<code>ttyACM0</code>是实际单片机或者串行设备的型号，需要自行确定。接着设置 ser2net 自动启动的软件包，这样就避免在每次登陆时都要人工开启 ser2net我们新建文本在里面输入如下程序段，将其放在 <code>etc /init.d /</code>，设置使用权限为 <code>0777</code>。</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/bin/sh /etc/rc.common</span></span><br><span class="line"><span class="comment">#/init.d/my-ser2net</span></span><br><span class="line"><span class="attribute">START</span>=99 <span class="attribute">STOP</span>=15 start()&#123; ser2net &#125;</span><br><span class="line">stop() &#123; killall ser2net &#125;</span><br></pre></td></tr></table></figure>
 
-      
-      
+<p>同理，新建一个文本起名为<code>w2s</code>，内容如下，将其放入<code>www/cgi-bin</code>/中，权限<code>0755</code>。</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/lua</span><br><span class="line">wserial=<span class="built_in">io</span>.<span class="built_in">open</span>(<span class="string">"/dev/ttyACM0"</span>,<span class="string">"w"</span>)</span><br><span class="line">wserial:<span class="built_in">write</span>(<span class="built_in">os</span>.<span class="built_in">getenv</span>(<span class="string">"QUERY_STRING"</span>))</span><br><span class="line">wserial:<span class="built_in">flush</span>()</span><br></pre></td></tr></table></figure>
 
-      
-        
-          <span itemprop="articleBody">
-            
-            Wi-Fi通信网络的搭建1 Openwrt简介Tp-link Wr703n是目前最小，最便宜的能够运行Linux的无线路由器。
-主要配置：Atheros 400MHz MIPS CPU
-32MB RAM
-4MB flash
-10/100Mbps Ethernet interface
-802.11b/
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/11/18/blanceCar3/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+<blockquote>
+<p>到此Ser2net已经配置完成，即将网口转换成串口信号，实现电脑与单片机间通讯。</p>
+</blockquote>
+<h3 id="5-网口转串口Socat"><a href="#5-网口转串口Socat" class="headerlink" title="5 网口转串口Socat"></a>5 网口转串口Socat</h3><p>ser2net使用非常不稳定，连接10多秒就自动断开连接了，改用socat后很稳定，可保持长时间连接不掉线<br>安装如下软件:·<code>socat</code></p>
+<p>配置如下，在/etc/rc.local文件中添加两行（注：命令末尾要加上’&amp;’放到后台运行，如果不加重启路由后LED会闪烁不止，因为脚本在这一行挂起了，后续脚本无法执行）：</p>
+<figure class="highlight vhdl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#<span class="keyword">open</span> a tcp <span class="number">9600</span> <span class="keyword">port</span> &amp; set <span class="keyword">to</span> baud rate <span class="number">9600</span>. The usb serial <span class="keyword">port</span> <span class="keyword">is</span> /dev/ttyUSB0</span><br><span class="line">socat tcp-listen:<span class="number">9600</span>,reuseaddr,fork <span class="keyword">file</span>:/dev/ttyUSB0,nonblock,raw,echo=<span class="number">0</span>,waitlock=/var/run/tty1,b9600&amp;</span><br><span class="line"></span><br><span class="line">#<span class="keyword">open</span> a tcp <span class="number">115200</span> <span class="keyword">port</span> &amp; set <span class="keyword">to</span> baud rate <span class="number">115200</span>. The usb serial <span class="keyword">port</span> <span class="keyword">is</span> /dev/ttyUSB0</span><br><span class="line">socat tcp-listen:<span class="number">115200</span>,reuseaddr,fork <span class="keyword">file</span>:/dev/ttyUSB0,nonblock,raw,echo=<span class="number">0</span>,waitlock=/var/run/tty2,b115200&amp;</span><br></pre></td></tr></table></figure>
+<p>每次通过TCP连接时都会重置一下（打开/dev/ttyUSB0设备时重置），为避免重置，可以在rc.local开头处加上： </p>
+<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /dev/ttyUSB0<span class="meta">&amp;</span></span><br></pre></td></tr></table></figure>
+
+<p>具体现在的配置如下：</p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Put your custom commands here that should be executed once</span></span><br><span class="line"><span class="comment"># the system init finished. By default this file does nothing.</span></span><br><span class="line">cat <span class="string">/dev/ttyACM0</span>&amp;</span><br><span class="line"><span class="comment">#open a tcp 9600 port &amp; set to baud rate 9600. The usb serial port is /dev/ttyACM0</span></span><br><span class="line">socat tcp-listen<span class="function">:9600</span>,reuseaddr,fork file:<span class="string">/dev/ttyACM0</span>,nonblock,raw,<span class="keyword">echo</span>=0,waitlock=<span class="string">/var/run/tty1</span>,b9600&amp;</span><br><span class="line"><span class="comment">#open a tcp 115200 port &amp; set to baud rate 115200. The usb serial port is /dev/ttyACM0</span></span><br><span class="line">socat tcp-listen<span class="function">:1234</span>,reuseaddr,fork file:<span class="string">/dev/ttyACM0</span>,nonblock,raw,<span class="keyword">echo</span>=0,waitlock=<span class="string">/var/run/tty2</span>,b115200&amp;</span><br><span class="line">exit 0</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Openwrt具体参考<a href="http://see.sl088.com/wiki/Socat/Openwrt%E7%89%88%E6%9C%AC" target="_blank" rel="noopener">森亮号</a></p>
+</blockquote>
+<h3 id="6-摄像头挂载"><a href="#6-摄像头挂载" class="headerlink" title="6 摄像头挂载"></a>6 摄像头挂载</h3><p>有了上一节的介绍，本节的讲述将会变得非常简单，安装如下支撑软件。</p>
+<figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">usbutils  </span><br><span class="line">kmod-<span class="keyword">i2</span><span class="keyword">c</span>-core  </span><br><span class="line">mjpg-streamer  </span><br><span class="line">kmod-video-pwc  </span><br><span class="line">kmod-video-uvc，</span><br></pre></td></tr></table></figure>
+
+<p>配置位于<code>/etc/config/mjpg-streamer</code>的文件。</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">option enabled         <span class="string">"1"</span></span><br><span class="line">option device          <span class="string">"/dev/video0"</span></span><br><span class="line">option resolution       <span class="string">"640x480"</span></span><br><span class="line">option www           <span class="string">"/www"</span></span><br><span class="line">option fps             <span class="string">"15"</span></span><br><span class="line">option<span class="built_in"> port </span>           <span class="string">"8080"</span></span><br></pre></td></tr></table></figure>
+
+<p>设置开机自动启动服务<code>/etc/init.d/mjpg-streamer enable</code></p>
+<p>立即启动服务<code>/etc/init.d/mjpg-streamer start</code></p>
+<p>如同Ser2net一样，mjpg-streamer同样支持热插拔。</p>
+<p>此时登陆火狐浏览器，访问<code>http://192.168.1.90:8080/?action=stream</code>，就可以看到摄像头中采集的画面了。</p>
+<blockquote>
+<p>本章主要介绍了OpenWRT系统的安装，以及项目所需软件的详细配置，当然OpenWRT远不止这些功能，他的强大不能用一两句话将其概括，再次深表歉意。为了弥补这一缺憾，推荐一个学习openwrt非常有用的网站<br><a href="http://see.sl088.com/wiki/%E5%88%86%E7%B1%BB:Openwrt" target="_blank" rel="noopener">http://see.sl088.com/wiki/%E5%88%86%E7%B1%BB:Openwrt</a></p>
+</blockquote>
+
+          
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -232,85 +421,285 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/11/17/belanceCar2/" itemprop="url">
-                WiFi双轮平衡车的设计(二)
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-11-17T13:16:01+08:00" content="2015-11-17">
-            2015-11-17
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2015/11/17/belanceCar2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Steven">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Me.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Steven`s Blog">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/11/17/belanceCar2/" itemprop="url">WiFi双轮平衡车的设计(二)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/%E7%A7%91%E6%8A%80%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index">
-                  <span itemprop="name">科技项目</span>
-                </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
               </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-11-17T13:16:01+08:00">
+                2015-11-17
+              </time>
+            
 
-              
-              
+            
 
             
           </span>
-        
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E6%8A%80%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index">
+                    <span itemprop="name">科技项目</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
           
-        
-      </div>
-    </header>
+            <h2 id="硬件的选型及组装"><a href="#硬件的选型及组装" class="headerlink" title="硬件的选型及组装"></a>硬件的选型及组装</h2><blockquote>
+<p>我们知道平衡车的机械设计，对于车模稳定工作是非常重要的。同理，恰当的硬件、单片机与传感器选型也是维持车模稳定运行的必要条件。本章概括性的叙述平衡车所用到的各个硬件单元及安装注意事项。</p>
+</blockquote>
+<h3 id="1-Arduino-MEGA-2560-R3"><a href="#1-Arduino-MEGA-2560-R3" class="headerlink" title="1 Arduino MEGA 2560 R3"></a>1 Arduino MEGA 2560 R3</h3><p>Arduino Mega 2560 是基于Atmel公司生产的Atmega2560的一块最小系统板。他简单、易开发以及开源的特点，使得他在几年内风靡全球。例如，它的供电方式，不仅可以通过USB供电，也可以通过AC-DA电源适配器供电。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MI8uR.png" alt="Arduino MEGA 2560 r3"></p>
+<table>
+<thead>
+<tr>
+<th align="left">Microcontroller</th>
+<th align="left">ATmega2560</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Operating</td>
+<td align="left">Voltage     5V</td>
+</tr>
+<tr>
+<td align="left">Input Voltage (recommended)</td>
+<td align="left">7-12V</td>
+</tr>
+<tr>
+<td align="left">Input Voltage (limit)</td>
+<td align="left">6-20V</td>
+</tr>
+<tr>
+<td align="left">Digital I/O Pins</td>
+<td align="left">54 (of which 15 provide PWM output)</td>
+</tr>
+<tr>
+<td align="left">Analog Input Pins</td>
+<td align="left">16</td>
+</tr>
+<tr>
+<td align="left">DC Current per I/O Pin</td>
+<td align="left">20 mA</td>
+</tr>
+<tr>
+<td align="left">DC Current for 3.3V Pin</td>
+<td align="left">50 mA</td>
+</tr>
+<tr>
+<td align="left">Flash Memory</td>
+<td align="left">256 KB of which 8 KB used by bootloader</td>
+</tr>
+<tr>
+<td align="left">SRAM</td>
+<td align="left">8 KB</td>
+</tr>
+<tr>
+<td align="left">EEPROM</td>
+<td align="left">4 KB</td>
+</tr>
+<tr>
+<td align="left">Clock Speed</td>
+<td align="left">16 MHz</td>
+</tr>
+<tr>
+<td align="left">Length</td>
+<td align="left">101.52 mm</td>
+</tr>
+<tr>
+<td align="left">Width</td>
+<td align="left">53.3 mm</td>
+</tr>
+<tr>
+<td align="left">Weight</td>
+<td align="left">37 g</td>
+</tr>
+</tbody></table>
+<h3 id="2-MPU6050"><a href="#2-MPU6050" class="headerlink" title="2 MPU6050"></a>2 MPU6050</h3><p>MPU-6050是整合性6轴运动处理组件，相较于同时用陀螺仪和加速度器，免除了他们组合时出现的轴间差的问题，同时大大减少了芯片的包装空间。MPU-6050整合了3轴陀螺仪、3轴加速器，并含有一个数位运动处理硬件加速引擎DMP，然后由I2C通信协议将数据发送到单片机。<br><img src="https://t1.picb.cc/uploads/2017/10/11/MiwWX.png" alt="MPU6050"></p>
+<h4 id="关于MPU6050我所接触的方法有两种："><a href="#关于MPU6050我所接触的方法有两种：" class="headerlink" title="关于MPU6050我所接触的方法有两种："></a>关于MPU6050我所接触的方法有两种：</h4><ol>
+<li>通过I2C通信采集原始数据，然后通过Kalman滤波融合得到角度。</li>
+<li>通过它自带的数位运动处理芯片DMP直接得到角度。</li>
+</ol>
+<blockquote>
+<p>目前市场上流行一个串口MPU6050实际上是卖家在出售之前通过一个微型芯片已经做了相关滤波，并将其以串口的形式转发出来。实质上，和用户自己在单片机里面用卡尔曼滤波没有什么两样。</p>
+</blockquote>
+<h3 id="3-电机驱动L298N"><a href="#3-电机驱动L298N" class="headerlink" title="3 电机驱动L298N"></a>3 电机驱动L298N</h3><p>L298N对于做智能车的人大多不陌生，他可以驱动两路直流电机，输出最大电流为2A，最高工作电压为46V，当然对于正常我们作比赛来说，大多说是7.4V或者是11.1V都属于安全电压。所以我们在设计过程中，要考虑到驱动的电流限制，以免出现烧毁驱动的情况。如果驱动需要更大电流的电机，那么L298不在适合，此时就需要自己设计驱动电路，这里就不在赘述。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/Mi1i7.jpg" alt="L298n"></p>
+<h3 id="4-直流减速电机"><a href="#4-直流减速电机" class="headerlink" title="4 直流减速电机"></a>4 直流减速电机</h3><p>电机的选型是项目的核心问题，最大转矩、转速是其重要的指标。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MirtM.png" alt="Motor"></p>
+<table>
+<thead>
+<tr>
+<th align="left">Motor</th>
+<th align="left">Parameter</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">电压范围</td>
+<td align="left">6-24 V</td>
+</tr>
+<tr>
+<td align="left">额定电压</td>
+<td align="left">12 V</td>
+</tr>
+<tr>
+<td align="left">空载转速</td>
+<td align="left">201 rpm</td>
+</tr>
+<tr>
+<td align="left">空载电流</td>
+<td align="left">46 mA</td>
+</tr>
+<tr>
+<td align="left">负载转速</td>
+<td align="left">168 rpm</td>
+</tr>
+<tr>
+<td align="left">负载电流</td>
+<td align="left">250 mA</td>
+</tr>
+<tr>
+<td align="left">负载转矩</td>
+<td align="left">0.53 kg.cm</td>
+</tr>
+<tr>
+<td align="left">负载功率</td>
+<td align="left">1.25 W</td>
+</tr>
+<tr>
+<td align="left">堵转扭矩</td>
+<td align="left">2.65 Kg.cm</td>
+</tr>
+<tr>
+<td align="left">堵转电流</td>
+<td align="left">1 A</td>
+</tr>
+<tr>
+<td align="left">减速比</td>
+<td align="left">21.3</td>
+</tr>
+<tr>
+<td align="left">重量</td>
+<td align="left">74 g</td>
+</tr>
+</tbody></table>
+<h3 id="5-光电码盘及编码器"><a href="#5-光电码盘及编码器" class="headerlink" title="5 光电码盘及编码器"></a>5 光电码盘及编码器</h3><p>光电编码器是一种体积小、使用简单、性能好和可靠性好的转速和位置检测装置，他在检测等领域应用十分广泛，编码器是码盘随位置的变化输出两路脉冲信号，然后我们根据这两路脉冲信号，判断出码盘旋转的方向并通过计数器对脉冲信号进行加减计数，通过固定时间得到的脉冲数，就可以得到电机转速.</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/Mi4q6.png" alt="光电码盘"></p>
+<blockquote>
+<p>光电码盘一个很重要的指标就是码盘的栅格个数。显而易见，栅格数越多精度越高，但在低速状态下会引入高频干扰，此时就需要通过软件进行低通滤波将其消除。</p>
+</blockquote>
+<h3 id="6-硬件组装及调试"><a href="#6-硬件组装及调试" class="headerlink" title="6 硬件组装及调试"></a>6 硬件组装及调试</h3><p>通过精心设计将以上所述硬件组装，最终完成如下作品。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/Mi55t.png" alt="Car"></p>
+<blockquote>
+<p>虽然最终完成了想要的功能，但美中不足的地方就是外观，如果能加一个外包装就更加完美。</p>
+</blockquote>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-            硬件的选型及组装
-我们知道平衡车的机械设计，对于车模稳定工作是非常重要的。同理，恰当的硬件、单片机与传感器选型也是维持车模稳定运行的必要条件。本章概括性的叙述平衡车所用到的各个硬件单元及安装注意事项。
-
-1 Arduino MEGA 2560 R3Arduino Mega 2560 是基于Atmel
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/11/17/belanceCar2/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -320,82 +709,229 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/11/16/belanceCar/" itemprop="url">
-                WiFi双轮平衡车的设计(一)
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-11-16T21:08:12+08:00" content="2015-11-16">
-            2015-11-16
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2015/11/16/belanceCar/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Steven">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Me.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Steven`s Blog">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/11/16/belanceCar/" itemprop="url">WiFi双轮平衡车的设计(一)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/%E7%A7%91%E6%8A%80%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index">
-                  <span itemprop="name">科技项目</span>
-                </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
               </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-11-16T21:08:12+08:00">
+                2015-11-16
+              </time>
+            
 
-              
-              
+            
 
             
           </span>
-        
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E6%8A%80%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index">
+                    <span itemprop="name">科技项目</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
           
-        
-      </div>
-    </header>
+            <p>在开始写之前，总有一些话要说，在此写给我自己。时间过得真快，转眼间我已经毕业四个多月了，但我时常还能想起在学校、在宿舍、在实验室和伙伴们一起为了一个共同的项目通宵达旦的场景。想到这些过往并不是想说目前的工作不如意，而是有些东西，一旦经历了必然永远无法忘却，虽不能说是刻骨铭心，但毕竟为实现自己心中的梦想而奋斗过。<br>一句话总结，有一些人，有一些事，一旦开始，就注定勇往直前，坚持到底。</p>
+<blockquote>
+<p>以上是送给自己的一些话，不说心里堵得慌，不喜勿看。</p>
+</blockquote>
+<h2 id="制作之前的准备工作及相关软件"><a href="#制作之前的准备工作及相关软件" class="headerlink" title="制作之前的准备工作及相关软件"></a>制作之前的准备工作及相关软件</h2><h3 id="准备软件"><a href="#准备软件" class="headerlink" title="准备软件"></a>准备软件</h3><ul>
+<li>Arduino IDE<br>我十分推荐写下位机程序的同学们能用Arduino作为主控板，他不仅秉承了开源的伟大思想更是突出简单实用的优点，对于强调互动和创新的项目开发的你们，没有必要非得用<br>MSP430、STM32或者瑞萨等一系列需要进行寄存器配置的MCU。除非你有特殊需求，否则没有必要把时间和有限的经历浪费到繁琐的寄存器配置上。</li>
+</ul>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MI8uR.png" alt="Arduino"></p>
+<ul>
+<li>Eagle<br>这是一款电路板制作软件，我之前用过Protel 99se、Altium Designer两款软件<br>后者虽然功能强大，但简单设计又略显繁琐，所以后来改用Eagle制作电路板。</li>
+</ul>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MIj3s.png" alt="Eagle"></p>
+<blockquote>
+<p>当你爱上Arduino的那一刻起，Eagle也随之来到你的生命中。</p>
+</blockquote>
+<ul>
+<li>Processing<br>同样是留着满身开源血液的史诗级的开发软件，可所谓一见钟情。它功能强大到只有你想不到没有你做不到的地步。概括起来就是无形胜有形。虽然我也用Virtual Studio开发过<br>上位机软件，但毕竟精力有限（主要是脑容量不足），后来我一直选择最爱的Processing</li>
+</ul>
+<p>![Processing]<img src="https://t1.picb.cc/uploads/2017/10/11/MIToJ.png" alt="MIToJ.png"></p>
+<ul>
+<li>MATLAB 2014b<br>关于它，我不想多说，工科的同志们，几乎没有不知道他的。该项目用来设计控制器以及仿真时用到。他功能之强大，我想没有人不知道吧！</li>
+</ul>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MIRHF.png" alt="MATLAB 2014b"></p>
+<ul>
+<li>WinSCP<br>这个小软件在配置Openwrt时用到，这里先简单一提。</li>
+</ul>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MIDIa.png" alt="WinSCP"></p>
+<ul>
+<li>Putty<br>同上，也是在配置Openwrt是用到，不做过多解释，用到时自然明白。</li>
+</ul>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MIKRD.png" alt="Putty"></p>
+<ul>
+<li>Sublime<br>亲情推荐的一款编程软件，至于好到什么程度，请自行百度。我相信对于有无限的探索和求知欲望的人才能走的更远。</li>
+</ul>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MIssd.png" alt="Sublime"></p>
+<h3 id="准备材料"><a href="#准备材料" class="headerlink" title="准备材料"></a>准备材料</h3><ol>
+<li>1.串口MPU6050模块。</li>
+</ol>
+<blockquote>
+<p>特别注意，是串口MPU6050模块，不是普通的6050，串口6050只是不需要你自己滤波了,如果你想尝试一下，也未必不可，但我不推荐新手尝试Kalman</p>
+</blockquote>
+<ol start="2">
+<li>2.Tp-link-wr703n</li>
+</ol>
+<blockquote>
+<p>官方标配，刷进去Openwrt系统，同时可以无线更新程序，挂载摄像头等等</p>
+</blockquote>
+<ol start="3">
+<li>3.Arduino MEGA 2560 r3 </li>
+</ol>
+<blockquote>
+<p>这个单片机做平衡车足矣，当时怀疑他不能胜任</p>
+</blockquote>
+<ol start="4">
+<li>4.L298n</li>
+</ol>
+<blockquote>
+<p>最好是用带光耦的驱动，不带光耦也行，我的就没带光耦，害怕信号干扰就带上光耦</p>
+</blockquote>
+<ol start="5">
+<li>5.电机是直流减速电机带码盘</li>
+</ol>
+<blockquote>
+<p>扭矩最好是能大一点，我推荐德国空心杯电机，当然我用的不是空心杯。</p>
+</blockquote>
+<ol start="6">
+<li>6.OLED12864 LED屏幕</li>
+</ol>
+<blockquote>
+<p>我就不多说了，等到车很平稳了，你爱怎么扩展都行</p>
+</blockquote>
+<ol start="7">
+<li>7.小车轮子</li>
+</ol>
+<blockquote>
+<p>最好是大一点，轮子要用硬橡胶的，我现在这个轮胎是软的，摩擦力太大.</p>
+</blockquote>
+<ol start="8">
+<li>8.电池3节18650</li>
+</ol>
+<blockquote>
+<p>带上电池盒OK</p>
+</blockquote>
+<ol start="9">
+<li>9.稳压模块</li>
+</ol>
+<blockquote>
+<p>我个人认为不能把所有的需要5v供电的传感器都从单片机供电，单片机提供电流是有限的，可能会造成单片机死机的情况，因此我就外接一个稳压模块给这一群传感器供电，一定要注意稳压模块的输出的负极要和单片机共地。</p>
+</blockquote>
+<h4 id="注释："><a href="#注释：" class="headerlink" title="注释："></a>注释：</h4><p>元件就这么多了，其实也没有什么，重要的是控制思路和控制算法，如果对硬件还有疑问就提出来，准备工作就到这里。</p>
+<h3 id="准备心态"><a href="#准备心态" class="headerlink" title="准备心态"></a>准备心态</h3><p>我想说，做每一件事，都不是很容易，如果没有坚持到底的决心，几乎是半途而废。过程很枯燥，很烦恼，但只要坚持到最后，总会有不一样的收获。</p>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-            在开始写之前，总有一些话要说，在此写给我自己。时间过得真快，转眼间我已经毕业四个多月了，但我时常还能想起在学校、在宿舍、在实验室和伙伴们一起为了一个共同的项目通宵达旦的场景。想到这些过往并不是想说目前的工作不如意，而是有些东西，一旦经历了必然永远无法忘却，虽不能说是刻骨铭心，但毕竟为实现自己心中的梦
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/11/16/belanceCar/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -405,84 +941,140 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/11/11/Jobs/" itemprop="url">
-                Jobs
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-11-11T20:40:54+08:00" content="2015-11-11">
-            2015-11-11
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2015/11/11/Jobs/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Steven">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Me.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Steven`s Blog">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/11/11/Jobs/" itemprop="url">Jobs</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/" itemprop="url" rel="index">
-                  <span itemprop="name">生活感悟</span>
-                </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
               </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-11-11T20:40:54+08:00">
+                2015-11-11
+              </time>
+            
 
-              
-              
+            
 
             
           </span>
-        
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/" itemprop="url" rel="index">
+                    <span itemprop="name">生活感悟</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
           
-        
-      </div>
-    </header>
+            <p><img src="https://t1.picb.cc/uploads/2017/10/11/Mio96.jpg" alt="Steven Jobs"><br>Those who are crazy enough to think they can change the world,then he can really change the world.</p>
+<p>那些疯狂到以为自己能改变世界的人，才能真正的改变世界。（Steven Jobs）</p>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-            Those who are crazy enough to think they can change the world,then he can really change the world.
-那些疯狂到以为自己能改变世界的人，才能真正的改变世界。（Steven Jobs）
-
-            
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/11/11/Jobs/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -492,83 +1084,143 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/11/07/Testing/" itemprop="url">
-                Win7游戏分辨率解决办法
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-11-07T17:01:12+08:00" content="2015-11-07">
-            2015-11-07
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2015/11/07/Testing/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Steven">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Me.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Steven`s Blog">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/11/07/Testing/" itemprop="url">Win7游戏分辨率解决办法</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/%E7%94%B5%E8%84%91%E6%97%A5%E8%AE%B0/" itemprop="url" rel="index">
-                  <span itemprop="name">电脑日记</span>
-                </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
               </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-11-07T17:01:12+08:00">
+                2015-11-07
+              </time>
+            
 
-              
-              
+            
 
             
           </span>
-        
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%94%B5%E8%84%91%E6%97%A5%E8%AE%B0/" itemprop="url" rel="index">
+                    <span itemprop="name">电脑日记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
           
-        
-      </div>
-    </header>
+            <p>Win7系统在玩游戏时，经常出现分辨率不正常的情况。比如，跑跑卡丁车、极品飞车、CS等游戏不能全屏显示，可以借鉴如下解决方法。</p>
+<h3 id="方法一、调整分辨率"><a href="#方法一、调整分辨率" class="headerlink" title="方法一、调整分辨率"></a>方法一、调整分辨率</h3><p>1、调整桌面分辨率为1024X768，必须的，别的不行哦！<br>2、这时候我们发现仍旧没有全屏，windows把分辨率是改了，但是还站在中间的一小块。没关系，最关键的一步， 打开ATI设置中心，(或N卡的设置中心）你会惊喜的发现，全屏幕，居中，保持纵横比的选项能点了。OK，确定之后你会发现桌面已经全屏了。<br>3、现在，再把分辨率改回以前的就好了。</p>
+<h3 id="方法二、修改注册表"><a href="#方法二、修改注册表" class="headerlink" title="方法二、修改注册表"></a>方法二、修改注册表</h3><p>该方法和分辨率关系不大，只要修改一下注册表就行了，所有游戏一概全屏，情享受吧！<br>Win + R 出现运行命令框，输入注册表命令 regedit，依次选择如下：</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">HKEY_LOCAL_MACHINE</span><br><span class="line">SYSTEM</span><br><span class="line">ControlSet001</span><br><span class="line">Control</span><br><span class="line">GraphicsDrivers</span><br><span class="line">Configuration</span><br></pre></td></tr></table></figure>
+<p>右键Configuration，选择查找，输入Scaling，在右框找到scaling，右键scaling修改<br>将数值改为3即可，原值是4。</p>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-            Win7系统在玩游戏时，经常出现分辨率不正常的情况。比如，跑跑卡丁车、极品飞车、CS等游戏不能全屏显示，可以借鉴如下解决方法。
-方法一、调整分辨率1、调整桌面分辨率为1024X768，必须的，别的不行哦！2、这时候我们发现仍旧没有全屏，windows把分辨率是改了，但是还站在中间的一小块。没关系，最
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/11/07/Testing/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -578,83 +1230,139 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/11/05/Everyday/" itemprop="url">
-                Everyday
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-11-05T17:38:10+08:00" content="2015-11-05">
-            2015-11-05
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2015/11/05/Everyday/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Steven">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Me.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Steven`s Blog">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/11/05/Everyday/" itemprop="url">Everyday</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/" itemprop="url" rel="index">
-                  <span itemprop="name">生活感悟</span>
-                </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
               </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-11-05T17:38:10+08:00">
+                2015-11-05
+              </time>
+            
 
-              
-              
+            
 
             
           </span>
-        
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/" itemprop="url" rel="index">
+                    <span itemprop="name">生活感悟</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
           
-        
-      </div>
-    </header>
+            <p><img src="https://t1.picb.cc/uploads/2017/10/11/Mid77.jpg" alt="Happy"></p>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-            
-
-            
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/11/05/Everyday/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -664,6 +1372,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -672,17 +1384,20 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/">&amp;laquo;</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+    <a class="extend prev" rel="prev" href="/page/2/">&lt;i class&#x3D;&quot;fa fa-angle-left&quot;&gt;&lt;&#x2F;i&gt;</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
   </nav>
 
- </div>
 
+
+          </div>
+          
+
+
+          
+
+        </div>
         
-
-        
-      </div>
-
-      
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -693,79 +1408,120 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
       
 
-      <section class="site-overview">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="/images/Me.jpg" alt="Steven" itemprop="image"/>
-          <p class="site-author-name" itemprop="name">Steven</p>
-        </div>
-        <p class="site-description motion-element" itemprop="description">Stay Hungry. Stay foolish.</p>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">26</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/Me.jpg"
+                alt="Steven" />
+            
+              <p class="site-author-name" itemprop="name">Steven</p>
+              <p class="site-description motion-element" itemprop="description">Stay Hungry. Stay foolish.</p>
           </div>
 
-          <div class="site-state-item site-state-categories">
+          <nav class="site-state motion-element">
+
             
-              <span class="site-state-item-count">5</span>
-              <span class="site-state-item-name">分类</span>
+              <div class="site-state-item site-state-posts">
               
-          </div>
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">26</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">26</span>
-              <span class="site-state-item-name">标签</span>
-              </a>
-          </div>
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
-        </nav>
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">26</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
 
-        
+          </nav>
 
-        <div class="links-of-author motion-element">
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/Smile_Lele" target="_blank">github</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com" target="_blank">weibo</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://douban.com" target="_blank">douban</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://www.zhihu.com" target="_blank">zhihu</a>
-              </span>
-            
+
           
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Smile_Lele" target="_blank" title="github">
+                      
+                        <i class="fa fa-fw fa-globe"></i>github</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com" target="_blank" title="weibo">
+                      
+                        <i class="fa fa-fw fa-globe"></i>weibo</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://douban.com" target="_blank" title="douban">
+                      
+                        <i class="fa fa-fw fa-globe"></i>douban</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://www.zhihu.com" target="_blank" title="zhihu">
+                      
+                        <i class="fa fa-fw fa-globe"></i>zhihu</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.baidu.com/" title="Baidu" target="_blank">Baidu</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
         </div>
-
-        
-        
-
-        <div class="links-of-author motion-element">
-          
-            <p class="site-author-name">Links</p>
-            
-              <span class="links-of-author-item">
-              <a href="http://www.baidu.com/" target="_blank">Baidu</a>
-              </span>
-            
-          
-        </div>
-
       </section>
+
+      
 
       
 
@@ -773,95 +1529,192 @@
   </aside>
 
 
+        
+      </div>
     </main>
 
     <footer id="footer" class="footer">
-      <div class="footer-inner"> <div class="copyright" >
-  
-  &copy; &nbsp;  2013 - 
-  <span itemprop="copyrightYear">2020</span>
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
-    <i class="icon-next-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Steven</span>
-</div>
 
-<div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io" target="_blank" rel="noopener">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">
-    NexT.Mist
-  </a>
+  
 </div>
 
 
- </div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
   </div>
 
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
-
-  
-  
-  
-    
-    
-
   
 
-
-  
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.1"></script>
-
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.1"></script>
-  
-
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-  <script type="text/javascript" src="/js/motion_global.js?v=0.4.5.1" id="motion.global"></script>
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
 
 
 
 
-  <script type="text/javascript" src="/js/nav-toggle.js?v=0.4.5.1"></script>
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+
+
+
 
   
 
-  <script type="text/javascript">
-    $(document).ready(function () {
-      if (CONFIG.sidebar === 'always') {
-        displaySidebar();
-      }
-      if (isMobile()) {
-        FastClick.attach(document.body);
-      }
-    });
-  </script>
 
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
   
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
   
-  <script type="text/javascript" src="/js/lazyload.js"></script>
-  <script type="text/javascript">
-    $(function () {
-      $("#posts").find('img').lazyload({
-        placeholder: "/images/loading.gif",
-        effect: "fadeIn"
-      });
-    });
-  </script>
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>

@@ -1,11 +1,23 @@
-<!doctype html>
-<html class="theme-next use-motion theme-next-mist">
-<head>
+<!DOCTYPE html>
+
+
+
   
 
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
@@ -18,25 +30,53 @@
 
 
 
-  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
-
-
-
-
-<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1"/>
-
-
-    <meta name="description" content="Stay Hungry. Stay foolish." />
-
-
-
-  <meta name="keywords" content="Hexo,next" />
 
 
 
 
 
-  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
 
 
 <meta name="description" content="Stay Hungry. Stay foolish.">
@@ -49,88 +89,115 @@
 <meta name="twitter:card" content="summary">
 
 
-<script type="text/javascript" id="hexo.configuration">
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
-    sidebar: 'hide'
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
   };
 </script>
 
-  <title> Hexo,next - Steven`s Blog - Stay Hungry. Stay foolish. </title>
-<meta name="generator" content="Hexo 4.2.0"></head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode" target="_blank" rel="noopener">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
+  <link rel="canonical" href="http://www.zenghongqing.com/page/2/"/>
+
+
+
+
+
+  <title>Steven`s Blog</title>
   
 
 
 
-  <div class="container one-column 
-   page-home 
-">
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><h1 class="site-meta">
-  <span class="logo-line-before"><i></i></span>
-  <a href="/" class="brand" rel="start">
-      <span class="logo">
-        <i class="icon-next-logo"></i>
-      </span>
-      <span class="site-title">Steven`s Blog</span>
-  </a>
-  <span class="logo-line-after"><i></i></span>
-</h1>
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Steven`s Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">一个热爱生活的程序员</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
 <nav class="site-nav">
   
 
   
-    <ul id="menu" class="menu ">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            <i class="menu-item-icon icon-next-home"></i> <br />
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
             首页
           </a>
         </li>
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            <i class="menu-item-icon icon-next-archives"></i> <br />
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
             归档
           </a>
         </li>
       
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            <i class="menu-item-icon icon-next-tags"></i> <br />
-            标签
-          </a>
-        </li>
-      
 
-      
       
     </ul>
   
@@ -138,89 +205,145 @@
   
 </nav>
 
+
+
  </div>
     </header>
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content"> 
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
   <section id="posts" class="posts-expand">
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/12/12/action/" itemprop="url">
-                行动
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-12-12T10:33:11+08:00" content="2015-12-12">
-            2015-12-12
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2015/12/12/action/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Steven">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Me.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Steven`s Blog">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/12/12/action/" itemprop="url">行动</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/" itemprop="url" rel="index">
-                  <span itemprop="name">生活感悟</span>
-                </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
               </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-12-12T10:33:11+08:00">
+                2015-12-12
+              </time>
+            
 
-              
-              
+            
 
             
           </span>
-        
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/" itemprop="url" rel="index">
+                    <span itemprop="name">生活感悟</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
           
-        
-      </div>
-    </header>
+            <p><img src="https://t1.picb.cc/uploads/2017/10/11/MnI7d.jpg" alt="action"></p>
+<p>Life is too short to waste.Dreams are fulfilled only through action, not through endless planning to take action.</p>
+<p>人生短暂，怎能虚度！梦想要靠行动来实现，绝非无终止的计划。</p>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-            
-Life is too short to waste.Dreams are fulfilled only through action, not through endless planning to take action.
-人生短暂，怎能虚度！梦想要靠行动来实现，绝非无终止的计划。
-
-            
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/12/action/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -230,85 +353,141 @@ Life is too short to waste.Dreams are fulfilled only through action, not through
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/12/11/road/" itemprop="url">
-                道路
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-12-11T10:28:12+08:00" content="2015-12-11">
-            2015-12-11
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2015/12/11/road/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Steven">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Me.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Steven`s Blog">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/12/11/road/" itemprop="url">道路</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/" itemprop="url" rel="index">
-                  <span itemprop="name">生活感悟</span>
-                </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
               </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-12-11T10:28:12+08:00">
+                2015-12-11
+              </time>
+            
 
-              
-              
+            
 
             
           </span>
-        
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/" itemprop="url" rel="index">
+                    <span itemprop="name">生活感悟</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
           
-        
-      </div>
-    </header>
+            <p><img src="https://t1.picb.cc/uploads/2017/10/11/Mi98y.jpg" alt="road"></p>
+<p>It is a rough road that leads to the heights of greatness.</p>
+<p>崎岖不平的道路将通往伟大崇高之地。</p>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-            
-It is a rough road that leads to the heights of greatness.
-崎岖不平的道路将通往伟大崇高之地。
-
-            
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/11/road/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -318,85 +497,142 @@ It is a rough road that leads to the heights of greatness.
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/12/10/courage/" itemprop="url">
-                勇气
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-12-10T10:21:06+08:00" content="2015-12-10">
-            2015-12-10
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2015/12/10/courage/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Steven">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Me.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Steven`s Blog">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/12/10/courage/" itemprop="url">勇气</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/" itemprop="url" rel="index">
-                  <span itemprop="name">生活感悟</span>
-                </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
               </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-12-10T10:21:06+08:00">
+                2015-12-10
+              </time>
+            
 
-              
-              
+            
 
             
           </span>
-        
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/" itemprop="url" rel="index">
+                    <span itemprop="name">生活感悟</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
           
-        
-      </div>
-    </header>
+            <p><img src="https://t1.picb.cc/uploads/2017/10/11/Mi98y.jpg" alt="Courage"></p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MiLXj.jpg" alt="G7高速"><br>Courage is what it takes to stand and speak.Courage is also what it takes to sit down and listen.</p>
+<p>人不仅需要勇气站起来说话，也需要勇气坐下来倾听。</p>
+<p>在问题出现的那一瞬间，一定要控制好自己的情绪，不说过激的话，懂得忍耐。忍耐不是为了让你不去处理这件事情，而是为了避免在情绪失控的情况下，做出什么让自己丢脸的事情。以后你就会知道，生活中真的没有几件事情是值得我们搭上礼貌，教养，人品和格局。</p>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-            
-Courage is what it takes to stand and speak.Courage is also what it takes to sit down and listen.
-人不仅需要勇气站起来说话，也需要勇气坐下来倾听。
-在问题出现的那一瞬间，一定要控制好自己的情绪，不说过
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/10/courage/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -406,85 +642,141 @@ Courage is what it takes to stand and speak.Courage is also what it takes to sit
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/12/09/presist/" itemprop="url">
-                Presist
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-12-09T11:46:21+08:00" content="2015-12-09">
-            2015-12-09
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2015/12/09/presist/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Steven">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Me.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Steven`s Blog">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/12/09/presist/" itemprop="url">Presist</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/" itemprop="url" rel="index">
-                  <span itemprop="name">生活感悟</span>
-                </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
               </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-12-09T11:46:21+08:00">
+                2015-12-09
+              </time>
+            
 
-              
-              
+            
 
             
           </span>
-        
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/" itemprop="url" rel="index">
+                    <span itemprop="name">生活感悟</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
           
-        
-      </div>
-    </header>
+            <p><img src="https://t1.picb.cc/uploads/2017/10/11/Mnk2F.jpg" alt="Presist"></p>
+<p>Never reject an idea,dream or goal because it will be hard work.Success rarely comes without it.</p>
+<p>绝不要因为怕辛苦而拒绝一个想法、梦想或是目标，成功的路上难免伴随辛苦。</p>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-            
-Never reject an idea,dream or goal because it will be hard work.Success rarely comes without it.
-绝不要因为怕辛苦而拒绝一个想法、梦想或是目标，成功的路上难免伴随辛苦。
-
-            
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/09/presist/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -494,84 +786,140 @@ Never reject an idea,dream or goal because it will be hard work.Success rarely c
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/12/03/dreams-1/" itemprop="url">
-                Dreams
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-12-03T21:48:42+08:00" content="2015-12-03">
-            2015-12-03
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2015/12/03/dreams-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Steven">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Me.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Steven`s Blog">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/12/03/dreams-1/" itemprop="url">Dreams</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/" itemprop="url" rel="index">
-                  <span itemprop="name">生活感悟</span>
-                </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
               </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-12-03T21:48:42+08:00">
+                2015-12-03
+              </time>
+            
 
-              
-              
+            
 
             
           </span>
-        
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/" itemprop="url" rel="index">
+                    <span itemprop="name">生活感悟</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
           
-        
-      </div>
-    </header>
+            <p><img src="https://t1.picb.cc/uploads/2017/10/11/Mis2c.jpg" alt="Dreams"></p>
+<p>有人问如果看不到确定的未来，还要不要付出。我只能说，并不是每一种付出都是在追寻结果。有时在付出的路上能够收获感恩，这比结果更重要！我们常常是清楚地看到了自己想要的或者不想要的，这又何尝不是一种宝贵的结果。相信命运会厚待那些真心付出的人。</p>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-            
-有人问如果看不到确定的未来，还要不要付出。我只能说，并不是每一种付出都是在追寻结果。有时在付出的路上能够收获感恩，这比结果更重要！我们常常是清楚地看到了自己想要的或者不想要的，这又何尝不是一种宝贵的结果。相信命运会厚待那些真心付出的人。
-
-            
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/03/dreams-1/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -581,83 +929,147 @@ Never reject an idea,dream or goal because it will be hard work.Success rarely c
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/11/28/dreams/" itemprop="url">
-                写给即将面对未来的自己
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-11-28T22:20:58+08:00" content="2015-11-28">
-            2015-11-28
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2015/11/28/dreams/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Steven">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Me.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Steven`s Blog">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/11/28/dreams/" itemprop="url">写给即将面对未来的自己</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/" itemprop="url" rel="index">
-                  <span itemprop="name">生活感悟</span>
-                </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
               </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-11-28T22:20:58+08:00">
+                2015-11-28
+              </time>
+            
 
-              
-              
+            
 
             
           </span>
-        
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/" itemprop="url" rel="index">
+                    <span itemprop="name">生活感悟</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
           
-        
-      </div>
-    </header>
+            <p><img src="https://t1.picb.cc/uploads/2017/10/11/MiYns.jpg" alt="Dream"></p>
+<p>孩子，我希望你自始至终都是一个理想主义者。<br>你可以是农民，可以是工程师，可以是演员，可以是流浪汉，但你必须是个理想主义者。<br>童年，我们讲英雄故事给你听，并不是一定要你成为英雄，而是希望你具有纯正的品格。<br>少年，我们让你接触诗歌、绘画、音乐，是为了让你的心灵填满高尚的情趣。<br>这些高尚的情趣会支撑你的一生，使你在最严酷的冬天也不会忘记玫瑰的芳香。<br>理想会使人出众。</p>
+<p>孩子，不要为自己的外形担忧。<br>理想纯洁你的气质，而最美貌的女人也会因为庸俗而令人生厌。<br>通向理想的途径往往不尽如人意，而你亦会为此受尽磨难。<br>但是，孩子，你尽管去争取，理想主义者的结局悲壮而绝不可怜。<br>在貌似坎坷的人生里，你会结识许多智者和君子，你会见到许多旁人无法遇到的风景和奇迹。</p>
+<p>选择平庸虽然稳妥，但绝无色彩。<br>不要为蝇头小利放弃自己的理想，不要为某种潮流而改换自己的信念。<br>物质世界的外表太过复杂，你要懂得如何去拒绝虚荣的诱惑。<br>理想不是实惠的东西，它往往不能带给你尘世的享受。<br>因此你必须习惯无人欣赏，学会精神享受，学会与他人不同。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MiDaN.jpg" alt="Beauty"></p>
+<p>其次，孩子，我希望你是个踏实的人。<br>人生太过短促，而虚的东西又太多，你很容易眼花缭乱，最终一事无成。<br>如果你是个美貌的女孩，年轻的时候会有许多男性宠你，你得到的东西太过容易，这会使你流于浅薄和虚浮；<br>如果你是个极聪明的男孩，又会以为自己能够成就许多大事而流于轻佻。<br>记住，每个人的能力有限，我们活在世上能做好一件事足矣。<br>写好一本书，做好一个主妇。<br>不要轻视平凡的人，不要投机取巧，不要攻击自己做不到的事。<br>你长大后会知道，做好一件事太难，但绝不要放弃。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MiEEe.jpg" alt="Love"><br>你要懂得和珍惜感情。<br>不管男人女人，不管墙内墙外，相交一场实在不易。<br>交友的过程会有误会和摩擦，但想一想，诺大世界，有缘结伴而行的能有几人？<br>你要明白朋友终会离去，生活中能有人伴在身边，听你倾谈，倾谈给你听，就应该感激。<br>要爱自己和爱他人，要懂自己和懂他人。<br>你的心要如溪水般柔软，你的眼波要像春天般明媚。<br>你要会流泪，会孤身一人坐在黑暗中听伤感的音乐。<br>你要懂得欣赏悲剧，悲剧能丰富你的心灵。<br>希望你不要媚俗。<br>你是个独立的人，无人能抹杀你的独立性，除非你向世俗妥协。<br>要学会欣赏真，要在重重面具下看到真。<br>世上圆滑标准的人很多，但出类拔萃的人极少。而往往出类拔萃又隐藏在卑琐狂荡之下。<br>在形式上我们无法与既定的世俗争斗，而在内心我们都是自己的国王。<br>如果你的脸上出现谄媚的笑容，我将会羞愧地掩面而去。<br>世俗的许多东西虽耀眼却无价值，不要把自己置于大众的天平上，不然你会因此无所适从，人云亦云。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MizmK.jpg" alt="Thanks"><br>在具体的做人上，我希望你不要打断别人的谈话，不要娇气十足。<br>你每天至少要拿出两小时来读书，要回信写信给你的朋友。<br>不要老是想着别人应该为你做些什么，而要想着怎么去帮助他人。<br>借他人的东西要还，不要随便接受别人的恩惠。<br>要记住，别人的东西，再好也是别人的；自己的东西，再差也是自己的。<br>孩子，还有一件事，虽然做起来很难，但相当重要，这就是要有勇气正视自己的缺点。<br>你会一年年地长大，会渐渐遇到比你强、比你优秀的人，会发现自己身上有许多你所厌恶的缺点。<br>这会使你沮丧和自卑。<br>但你一定要正视它，不要躲避，要一点点地加以改正。<br>战胜自己比征服他人还要艰巨和有意义。<br>不管世界潮流如何变化，但人的优秀品质却是永恒的：正直、勇敢、独立。<br>我希望你是一个优秀的人。</p>
+<p>（via:部分内容来源于互联网）</p>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-            
-孩子，我希望你自始至终都是一个理想主义者。你可以是农民，可以是工程师，可以是演员，可以是流浪汉，但你必须是个理想主义者。童年，我们讲英雄故事给你听，并不是一定要你成为英雄，而是希望你具有纯正的品格。少年，我们让你接触诗歌、绘画、音乐，是为了让你的心灵填满高尚的情趣。这些高尚的情趣会支撑你的一生，使
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/11/28/dreams/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -667,85 +1079,153 @@ Never reject an idea,dream or goal because it will be hard work.Success rarely c
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/11/22/belanceCar7/" itemprop="url">
-                WiFi双轮平衡车的设计(七)
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-11-22T13:16:01+08:00" content="2015-11-22">
-            2015-11-22
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2015/11/22/belanceCar7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Steven">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Me.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Steven`s Blog">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/11/22/belanceCar7/" itemprop="url">WiFi双轮平衡车的设计(七)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/%E7%A7%91%E6%8A%80%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index">
-                  <span itemprop="name">科技项目</span>
-                </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
               </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-11-22T13:16:01+08:00">
+                2015-11-22
+              </time>
+            
 
-              
-              
+            
 
             
           </span>
-        
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E6%8A%80%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index">
+                    <span itemprop="name">科技项目</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
           
-        
-      </div>
-    </header>
+            <h2 id="平衡车控制界面-Processing"><a href="#平衡车控制界面-Processing" class="headerlink" title="平衡车控制界面-Processing"></a>平衡车控制界面-Processing</h2><blockquote>
+<p>之前一直用Csharp编上位机软件，当我第一次发现Processing这个神奇的软件的时候，我就深深的迷恋上她，其强大有趣之处还希望大家深入挖掘。</p>
+</blockquote>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br><span class="line">337</span><br><span class="line">338</span><br><span class="line">339</span><br><span class="line">340</span><br><span class="line">341</span><br><span class="line">342</span><br><span class="line">343</span><br><span class="line">344</span><br><span class="line">345</span><br><span class="line">346</span><br><span class="line">347</span><br><span class="line">348</span><br><span class="line">349</span><br><span class="line">350</span><br><span class="line">351</span><br><span class="line">352</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">//This is main program</span></span><br><span class="line"></span><br><span class="line">import controlP5.*;</span><br><span class="line"></span><br><span class="line">ControlP5 cp5;</span><br><span class="line">Chart Chart1, Chart2;</span><br><span class="line"></span><br><span class="line">PFont font = createFont(<span class="string">"Consolas"</span>, <span class="number">14</span>);</span><br><span class="line">PFont largeFont = createFont(<span class="string">"MicrosoftYaHei"</span>, <span class="number">30</span>);</span><br><span class="line"></span><br><span class="line">boolean Buttonpress = false;</span><br><span class="line"></span><br><span class="line">void setup() &#123;</span><br><span class="line"></span><br><span class="line">  <span class="comment">//setupScreen(0);</span></span><br><span class="line">  size(<span class="number">800</span>, <span class="number">540</span>);</span><br><span class="line">  textFont(font);</span><br><span class="line">  fill(color(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>));</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  cp5 = new ControlP5(this);</span><br><span class="line"></span><br><span class="line">  myClient = new Client(this, <span class="string">"192.168.1.1"</span>, <span class="number">1234</span>);</span><br><span class="line"></span><br><span class="line">  cp5.addBang(<span class="string">"Start"</span>)</span><br><span class="line">    .setPosition(<span class="number">30</span>, <span class="number">60</span>)</span><br><span class="line">      .setSize(<span class="number">80</span>, <span class="number">20</span>)</span><br><span class="line">        .setColorForeground(color(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>))</span><br><span class="line">          .setLabel(<span class="string">"Start"</span>)</span><br><span class="line">            .getCaptionLabel().align(ControlP5.CENTER, ControlP5.CENTER);</span><br><span class="line"></span><br><span class="line">  cp5.addBang(<span class="string">"Close"</span>)</span><br><span class="line">    .setPosition(<span class="number">130</span>, <span class="number">60</span>)</span><br><span class="line">      .setSize(<span class="number">80</span>, <span class="number">20</span>)</span><br><span class="line">        .setColorForeground(color(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>))</span><br><span class="line">          .setLabel(<span class="string">"Close"</span>)</span><br><span class="line">            .getCaptionLabel().align(ControlP5.CENTER, ControlP5.CENTER);</span><br><span class="line"></span><br><span class="line">  cp5.addSlider(<span class="string">"sliderToSetSV"</span>)</span><br><span class="line">    .setPosition(<span class="number">230</span>, <span class="number">60</span>)</span><br><span class="line">      .setSize(<span class="number">360</span>, <span class="number">20</span>)</span><br><span class="line">        .setRange(sliderMin, sliderMax)</span><br><span class="line">          .setColorBackground(color(<span class="number">80</span>))</span><br><span class="line">            .setColorForeground(color(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>))</span><br><span class="line">              .setColorActive(color(<span class="number">150</span>, <span class="number">250</span>, <span class="number">0</span>))</span><br><span class="line">                .setValue(<span class="number">0</span>)<span class="comment">//(sliderMin+sliderMax)/2</span></span><br><span class="line">                  .setLabelVisible(false);</span><br><span class="line"></span><br><span class="line">  cp5.addTextfield(<span class="string">"SV"</span>)</span><br><span class="line">    .setPosition(<span class="number">610</span>, <span class="number">60</span>)</span><br><span class="line">      .setSize(<span class="number">80</span>, <span class="number">20</span>)</span><br><span class="line">        .setLabel(<span class="string">" "</span>)</span><br><span class="line">          .setFont(largeFont)</span><br><span class="line">            .setColorBackground(color(<span class="number">30</span>))</span><br><span class="line">              .setColorForeground(color(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>))</span><br><span class="line">                .setColor(color(<span class="number">255</span>))</span><br><span class="line">                  .setFont(font)</span><br><span class="line">                    .setValue(<span class="number">0</span>);<span class="comment">//nfc((sliderMin+sliderMax)/2)</span></span><br><span class="line"></span><br><span class="line">  cp5.addBang(<span class="string">"setSV"</span>)</span><br><span class="line">    .setPosition(<span class="number">710</span>, <span class="number">60</span>)</span><br><span class="line">      .setSize(<span class="number">60</span>, <span class="number">20</span>)</span><br><span class="line">        .setLabel(<span class="string">"Set SV"</span>)</span><br><span class="line">          .setColorForeground(color(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>))</span><br><span class="line">            .getCaptionLabel()</span><br><span class="line">              .align(ControlP5.CENTER, ControlP5.CENTER);</span><br><span class="line"></span><br><span class="line">  cp5.addBang(<span class="string">"setPID"</span>)</span><br><span class="line">    .setPosition(<span class="number">130</span>, <span class="number">120</span>)</span><br><span class="line">      .setSize(<span class="number">80</span>, <span class="number">20</span>)</span><br><span class="line">        .setLabel(<span class="string">"Set PID"</span>)</span><br><span class="line">          .setColorForeground(color(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>))</span><br><span class="line">            .getCaptionLabel()</span><br><span class="line">              .align(ControlP5.CENTER, ControlP5.CENTER);</span><br><span class="line"></span><br><span class="line">  cp5.addBang(<span class="string">"Revise"</span>)</span><br><span class="line">    .setPosition(<span class="number">30</span>, <span class="number">120</span>)</span><br><span class="line">      .setLabel(<span class="string">"Revise"</span>)</span><br><span class="line">        .setSize(<span class="number">80</span>, <span class="number">20</span>)</span><br><span class="line">          .setColorForeground(color(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>))</span><br><span class="line">            .getCaptionLabel()</span><br><span class="line">              .align(ControlP5.CENTER, ControlP5.CENTER);</span><br><span class="line"></span><br><span class="line">  <span class="comment">//  cp5.addToggle("chooseMode")</span></span><br><span class="line">  <span class="comment">//    .setPosition(30, 120)</span></span><br><span class="line">  <span class="comment">//      .setLabel(" Man  &lt;------&gt;  Auto")</span></span><br><span class="line">  <span class="comment">//        .setSize(80, 20)</span></span><br><span class="line">  <span class="comment">//          .setColorBackground(color(80))</span></span><br><span class="line">  <span class="comment">//            .setValue(true)</span></span><br><span class="line">  <span class="comment">//              .setMode(ControlP5.SWITCH);                        </span></span><br><span class="line"></span><br><span class="line">  cp5.addTextfield(<span class="string">"KpTextfield"</span>)</span><br><span class="line">    .setPosition(<span class="number">130</span>, <span class="number">165</span>)</span><br><span class="line">      .setLabel(<span class="string">"Kp"</span>)</span><br><span class="line">        .setSize(<span class="number">80</span>, <span class="number">20</span>)</span><br><span class="line">          .setFont(largeFont)</span><br><span class="line">            .setColorBackground(color(<span class="number">30</span>))</span><br><span class="line">              .setColorForeground(color(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>))</span><br><span class="line">                .setColor(color(<span class="number">255</span>))</span><br><span class="line">                  .setFont(font)</span><br><span class="line">                    .setValue(<span class="string">"0"</span>);</span><br><span class="line"></span><br><span class="line">  cp5.addTextfield(<span class="string">"KiTextfield"</span>)</span><br><span class="line">    .setPosition(<span class="number">130</span>, <span class="number">225</span>)</span><br><span class="line">      .setLabel(<span class="string">"Ki"</span>)</span><br><span class="line">        .setSize(<span class="number">80</span>, <span class="number">20</span>)</span><br><span class="line">          .setFont(largeFont)</span><br><span class="line">            .setColorBackground(color(<span class="number">30</span>))</span><br><span class="line">              .setColorForeground(color(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>))</span><br><span class="line">                .setColor(color(<span class="number">255</span>))</span><br><span class="line">                  .setFont(font)</span><br><span class="line">                    .setValue(<span class="string">"0"</span>);</span><br><span class="line"></span><br><span class="line">  cp5.addTextfield(<span class="string">"KdTextfield"</span>)</span><br><span class="line">    .setPosition(<span class="number">130</span>, <span class="number">285</span>)</span><br><span class="line">      .setLabel(<span class="string">"Kd"</span>)</span><br><span class="line">        .setSize(<span class="number">80</span>, <span class="number">20</span>)</span><br><span class="line">          .setFont(largeFont)</span><br><span class="line">            .setColorBackground(color(<span class="number">30</span>))</span><br><span class="line">              .setColorForeground(color(<span class="number">150</span>, <span class="number">250</span>, <span class="number">0</span>))</span><br><span class="line">                .setColor(color(<span class="number">255</span>))</span><br><span class="line">                  .setFont(font)</span><br><span class="line">                    .setValue(<span class="string">"0"</span>);</span><br><span class="line"></span><br><span class="line">  cp5.addTextfield(<span class="string">"FilterTextfield"</span>)</span><br><span class="line">    .setPosition(<span class="number">130</span>, <span class="number">345</span>)</span><br><span class="line">      .setLabel(<span class="string">"Filter"</span>)</span><br><span class="line">        .setSize(<span class="number">80</span>, <span class="number">20</span>)</span><br><span class="line">          .setFont(largeFont)</span><br><span class="line">            .setColorBackground(color(<span class="number">30</span>))</span><br><span class="line">              .setColorForeground(color(<span class="number">150</span>, <span class="number">250</span>, <span class="number">0</span>))</span><br><span class="line">                .setColor(color(<span class="number">255</span>))</span><br><span class="line">                  .setFont(font)</span><br><span class="line">                    .setValue(<span class="string">"0"</span>);</span><br><span class="line"></span><br><span class="line">  cp5.addTextfield(<span class="string">"ITermMaxTextfield"</span>)</span><br><span class="line">    .setPosition(<span class="number">130</span>, <span class="number">405</span>)</span><br><span class="line">      .setLabel(<span class="string">"ITemMax"</span>)</span><br><span class="line">        .setSize(<span class="number">80</span>, <span class="number">20</span>)</span><br><span class="line">          .setFont(largeFont)</span><br><span class="line">            .setColorBackground(color(<span class="number">30</span>))</span><br><span class="line">              .setColorForeground(color(<span class="number">150</span>, <span class="number">250</span>, <span class="number">0</span>))</span><br><span class="line">                .setColor(color(<span class="number">255</span>))</span><br><span class="line">                  .setFont(font)</span><br><span class="line">                    .setValue(<span class="string">"0"</span>);</span><br><span class="line"></span><br><span class="line">  cp5.addTextfield(<span class="string">"ITermMinTextfield"</span>)</span><br><span class="line">    .setPosition(<span class="number">130</span>, <span class="number">465</span>)</span><br><span class="line">      .setLabel(<span class="string">"ITemMin"</span>)</span><br><span class="line">        .setSize(<span class="number">80</span>, <span class="number">20</span>)</span><br><span class="line">          .setFont(largeFont)</span><br><span class="line">            .setColorBackground(color(<span class="number">30</span>))</span><br><span class="line">              .setColorForeground(color(<span class="number">150</span>, <span class="number">250</span>, <span class="number">0</span>))</span><br><span class="line">                .setColor(color(<span class="number">255</span>))</span><br><span class="line">                  .setFont(font)</span><br><span class="line">                    .setValue(<span class="string">"0"</span>);</span><br><span class="line"></span><br><span class="line">  cp5.get(Textfield.class, <span class="string">"KpTextfield"</span>).getCaptionLabel().setVisible(false);</span><br><span class="line">  cp5.get(Textfield.class, <span class="string">"KiTextfield"</span>).getCaptionLabel().setVisible(false);</span><br><span class="line">  cp5.get(Textfield.class, <span class="string">"KdTextfield"</span>).getCaptionLabel().setVisible(false);</span><br><span class="line">  cp5.get(Textfield.class, <span class="string">"FilterTextfield"</span>).getCaptionLabel().setVisible(false);</span><br><span class="line">  cp5.get(Textfield.class, <span class="string">"ITermMaxTextfield"</span>).getCaptionLabel().setVisible(false);</span><br><span class="line">  cp5.get(Textfield.class, <span class="string">"ITermMinTextfield"</span>).getCaptionLabel().setVisible(false);  </span><br><span class="line"></span><br><span class="line">  Chart1  = cp5.addChart(<span class="string">"Chart1"</span>)</span><br><span class="line">    .setPosition(<span class="number">230</span>, <span class="number">120</span>)</span><br><span class="line">      .setSize(<span class="number">540</span>, <span class="number">180</span>)</span><br><span class="line">        .setRange(<span class="number">0</span>, <span class="number">300</span>)</span><br><span class="line">          .setView(Chart.LINE);</span><br><span class="line"></span><br><span class="line">  Chart1.getColor().setBackground(color(<span class="number">0</span>, <span class="number">10</span>));</span><br><span class="line">  Chart1.addDataSet(<span class="string">"PV1"</span>);</span><br><span class="line">  Chart1.setColors(<span class="string">"PV1"</span>, color(<span class="number">255</span>, <span class="number">100</span>, <span class="number">0</span>), color(<span class="number">255</span>, <span class="number">100</span>, <span class="number">0</span>));</span><br><span class="line">  Chart1.setData(<span class="string">"PV1"</span>, new <span class="type">float</span>[<span class="number">100</span>]);</span><br><span class="line">  Chart1.setStrokeWeight(<span class="number">1.5</span>);</span><br><span class="line"></span><br><span class="line">  Chart1.getColor().setBackground(color(<span class="number">0</span>, <span class="number">10</span>));</span><br><span class="line">  Chart1.addDataSet(<span class="string">"PV2"</span>);</span><br><span class="line">  Chart1.setColors(<span class="string">"PV2"</span>, color(<span class="number">240</span>, <span class="number">230</span>, <span class="number">140</span>), color(<span class="number">240</span>, <span class="number">230</span>, <span class="number">140</span>));</span><br><span class="line">  Chart1.setData(<span class="string">"PV2"</span>, new <span class="type">float</span>[<span class="number">100</span>]);</span><br><span class="line">  Chart1.setStrokeWeight(<span class="number">1.5</span>);</span><br><span class="line"></span><br><span class="line">  Chart2  = cp5.addChart(<span class="string">"Chart2"</span>)</span><br><span class="line">    .setPosition(<span class="number">230</span>, <span class="number">320</span>)</span><br><span class="line">      .setSize(<span class="number">540</span>, <span class="number">180</span>)</span><br><span class="line">        .setRange(<span class="number">-100</span>, <span class="number">100</span>)</span><br><span class="line">          .setView(Chart.LINE);</span><br><span class="line"></span><br><span class="line">  Chart2.getColor().setBackground(color(<span class="number">0</span>, <span class="number">10</span>));</span><br><span class="line">  Chart2.addDataSet(<span class="string">"PV3"</span>);</span><br><span class="line">  Chart2.setColors(<span class="string">"PV3"</span>, color(<span class="number">100</span>, <span class="number">250</span>, <span class="number">0</span>), color(<span class="number">100</span>, <span class="number">250</span>, <span class="number">0</span>));</span><br><span class="line">  Chart2.setData(<span class="string">"PV3"</span>, new <span class="type">float</span>[<span class="number">100</span>]);</span><br><span class="line">  Chart2.setStrokeWeight(<span class="number">1.5</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">final static int sliderMin = <span class="number">0</span>;</span><br><span class="line">final static int sliderMax = <span class="number">250</span>;</span><br><span class="line"></span><br><span class="line">long Timer1 = <span class="number">0</span>;</span><br><span class="line">int SV = <span class="number">0</span>;</span><br><span class="line"><span class="type">float</span> Kp = <span class="number">0</span>;</span><br><span class="line"><span class="type">float</span> Ki = <span class="number">0</span>;</span><br><span class="line"><span class="type">float</span> Kd = <span class="number">0</span>;</span><br><span class="line"><span class="type">float</span> Filter = <span class="number">0</span>;</span><br><span class="line"><span class="type">float</span> ITermMax = <span class="number">0</span>;</span><br><span class="line"><span class="type">float</span> ITermMin = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">boolean sliderChangedFlag = false;</span><br><span class="line">boolean setPIDFlag = false;</span><br><span class="line">boolean ReviseFlag = false;</span><br><span class="line"></span><br><span class="line">void draw() &#123;</span><br><span class="line"></span><br><span class="line">  background(<span class="number">30</span>, <span class="number">30</span>, <span class="number">30</span>);</span><br><span class="line"></span><br><span class="line">  fill(#FFFFFF);</span><br><span class="line">  textFont(largeFont);</span><br><span class="line">  textAlign(CENTER, CENTER);</span><br><span class="line">  text(<span class="string">"控制系统调试界面"</span>, width/<span class="number">2</span>, <span class="number">25</span>);</span><br><span class="line"></span><br><span class="line">  fill(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>);</span><br><span class="line">  textFont(font);</span><br><span class="line">  textAlign(BASELINE);</span><br><span class="line">  text(<span class="string">"Monitor1"</span>, <span class="number">670</span>, <span class="number">115</span>);</span><br><span class="line">  text(<span class="string">"Monitor2"</span>, <span class="number">670</span>, <span class="number">315</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  fill(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>);</span><br><span class="line">  text(<span class="string">"     Kp:"</span>, <span class="number">30</span>, <span class="number">180</span>);</span><br><span class="line">  text(<span class="string">"     Ki:"</span>, <span class="number">30</span>, <span class="number">240</span>);</span><br><span class="line">  text(<span class="string">"     Kd:"</span>, <span class="number">30</span>, <span class="number">300</span>);</span><br><span class="line">  text(<span class="string">" Filter:"</span>, <span class="number">30</span>, <span class="number">360</span>);</span><br><span class="line">  text(<span class="string">"ItemMax:"</span>, <span class="number">30</span>, <span class="number">420</span>);</span><br><span class="line">  text(<span class="string">"ItemMin:"</span>, <span class="number">30</span>, <span class="number">480</span>);</span><br><span class="line">  text(nfc(sliderMin), <span class="number">230</span>, <span class="number">96</span>);</span><br><span class="line">  text(nfc(sliderMax), <span class="number">570</span>, <span class="number">96</span>);</span><br><span class="line">  text(<span class="string">"PV1:"</span> + Value_A[<span class="number">0</span>], <span class="number">240</span>, <span class="number">115</span>);</span><br><span class="line">  text(<span class="string">"PV2:"</span> + Value_A[<span class="number">1</span>], <span class="number">400</span>, <span class="number">115</span>);</span><br><span class="line">  text(<span class="string">"PV3:"</span> + Value_A[<span class="number">2</span>], <span class="number">240</span>, <span class="number">315</span>); </span><br><span class="line">  text(<span class="string">"Copyright(c)-2015-UPC-Automation-Zeng Hongqing"</span>, <span class="number">205</span>, <span class="number">530</span>);</span><br><span class="line"></span><br><span class="line">  fill(<span class="number">255</span>);</span><br><span class="line">  <span class="comment">// draw the grid</span></span><br><span class="line">  stroke(<span class="number">100</span>);</span><br><span class="line">  strokeWeight(<span class="number">1</span>);</span><br><span class="line">  noFill();</span><br><span class="line">  rect(<span class="number">230</span>, <span class="number">120</span>, <span class="number">540</span>, <span class="number">180</span>);</span><br><span class="line">  line(<span class="number">230</span>, <span class="number">210</span>, <span class="number">770</span>, <span class="number">210</span>);</span><br><span class="line">  strokeWeight(<span class="number">0.2</span>);</span><br><span class="line">  for (int i=<span class="number">130</span>; i&lt;<span class="number">300</span>; i+=<span class="number">10</span>) &#123;</span><br><span class="line">    line(<span class="number">230</span>, i, <span class="number">770</span>, i);</span><br><span class="line">  &#125;</span><br><span class="line">  for (int i=<span class="number">250</span>; i&lt;<span class="number">770</span>; i+=<span class="number">20</span>) &#123;</span><br><span class="line">    line(i, <span class="number">120</span>, i, <span class="number">300</span>);</span><br><span class="line">  &#125;    </span><br><span class="line"></span><br><span class="line">  strokeWeight(<span class="number">1</span>);</span><br><span class="line">  rect(<span class="number">230</span>, <span class="number">320</span>, <span class="number">540</span>, <span class="number">180</span>);    </span><br><span class="line">  line(<span class="number">230</span>, <span class="number">410</span>, <span class="number">770</span>, <span class="number">410</span>);</span><br><span class="line">  strokeWeight(<span class="number">0.2</span>);</span><br><span class="line">  for (int i=<span class="number">330</span>; i&lt;<span class="number">500</span>; i+=<span class="number">10</span>) &#123;</span><br><span class="line">    line(<span class="number">230</span>, i, <span class="number">770</span>, i);</span><br><span class="line">  &#125;</span><br><span class="line">  for (int i=<span class="number">250</span>; i&lt;<span class="number">770</span>; i+=<span class="number">20</span>) &#123;</span><br><span class="line">    line(i, <span class="number">320</span>, i, <span class="number">500</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  if (setPIDFlag) &#123;</span><br><span class="line">    Kp = <span class="type">float</span>(cp5.get(Textfield.class, <span class="string">"KpTextfield"</span>).getText());</span><br><span class="line">    Ki = <span class="type">float</span>(cp5.get(Textfield.class, <span class="string">"KiTextfield"</span>).getText());</span><br><span class="line">    Kd = <span class="type">float</span>(cp5.get(Textfield.class, <span class="string">"KdTextfield"</span>).getText());</span><br><span class="line">    Filter = <span class="type">float</span>(cp5.get(Textfield.class, <span class="string">"FilterTextfield"</span>).getText());</span><br><span class="line">    ITermMax = <span class="type">float</span>(cp5.get(Textfield.class, <span class="string">"ITermMaxTextfield"</span>).getText());</span><br><span class="line">    ITermMin = <span class="type">float</span>(cp5.get(Textfield.class, <span class="string">"ITermMinTextfield"</span>).getText());</span><br><span class="line"></span><br><span class="line">    Send(<span class="string">"b"</span>, Kp);</span><br><span class="line">    Send(<span class="string">"c"</span>, Ki);</span><br><span class="line">    Send(<span class="string">"d"</span>, Kd);</span><br><span class="line">    Send(<span class="string">"e"</span>, Filter);</span><br><span class="line">    Send(<span class="string">"f"</span>, ITermMax);</span><br><span class="line">    Send(<span class="string">"g"</span>, ITermMin);</span><br><span class="line"></span><br><span class="line">    setPIDFlag = false;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  Kp = Value_B[<span class="number">0</span>];</span><br><span class="line">  Ki = Value_B[<span class="number">1</span>];</span><br><span class="line">  Kd = Value_B[<span class="number">2</span>];</span><br><span class="line">  Filter = Value_B[<span class="number">3</span>];</span><br><span class="line">  ITermMax = Value_B[<span class="number">4</span>];</span><br><span class="line">  ITermMin = Value_B[<span class="number">5</span>];</span><br><span class="line"></span><br><span class="line">  if (ReviseFlag == false) &#123;</span><br><span class="line">    cp5.get(Textfield.class, <span class="string">"KpTextfield"</span>).setText(nfc(Kp, <span class="number">3</span>));</span><br><span class="line">    cp5.get(Textfield.class, <span class="string">"KiTextfield"</span>).setText(nfc(Ki, <span class="number">3</span>));</span><br><span class="line">    cp5.get(Textfield.class, <span class="string">"KdTextfield"</span>).setText(nfc(Kd, <span class="number">3</span>));</span><br><span class="line">    cp5.get(Textfield.class, <span class="string">"FilterTextfield"</span>).setText(nfc(Filter, <span class="number">2</span>));</span><br><span class="line">    cp5.get(Textfield.class, <span class="string">"ITermMaxTextfield"</span>).setText(nfc(ITermMax, <span class="number">2</span>));</span><br><span class="line">    cp5.get(Textfield.class, <span class="string">"ITermMinTextfield"</span>).setText(nfc(ITermMin, <span class="number">2</span>));</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  if (sliderChangedFlag) &#123;</span><br><span class="line"></span><br><span class="line">    sliderChangedFlag = false;</span><br><span class="line">    SV = int(cp5.getController(<span class="string">"sliderToSetSV"</span>).getValue());</span><br><span class="line">    cp5.get(Textfield.class, <span class="string">"SV"</span>).setText(nfc(SV));</span><br><span class="line">    Send(<span class="string">"a"</span>, SV);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">//Chart</span></span><br><span class="line">  if (millis() - Timer1 &gt;= <span class="number">100</span> &amp; Buttonpress == true)</span><br><span class="line">  &#123;</span><br><span class="line">    Chart1.push(<span class="string">"PV1"</span>, Value_A[<span class="number">0</span>]);</span><br><span class="line">    Chart1.push(<span class="string">"PV2"</span>, Value_A[<span class="number">1</span>]);</span><br><span class="line">    Chart2.push(<span class="string">"PV3"</span>, Value_A[<span class="number">2</span>]);</span><br><span class="line">    Timer1 = millis();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public void sliderToSetSV(<span class="type">float</span> sv) &#123;</span><br><span class="line"></span><br><span class="line">  SV = int(sv);</span><br><span class="line">  sliderChangedFlag = true;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public void setSV() &#123;</span><br><span class="line"></span><br><span class="line">  SV = int(cp5.get(Textfield.class, <span class="string">"SV"</span>).getText());</span><br><span class="line">  cp5.getController(<span class="string">"sliderToSetSV"</span>).setValue(SV);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public void setPID() &#123;</span><br><span class="line"></span><br><span class="line">  setPIDFlag = true;</span><br><span class="line">  ReviseFlag = false;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public void Revise() &#123;</span><br><span class="line"></span><br><span class="line">  ReviseFlag = true;</span><br><span class="line">&#125;</span><br><span class="line">public void Start() &#123;</span><br><span class="line"></span><br><span class="line">  Buttonpress = true;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public void Close() &#123;</span><br><span class="line"></span><br><span class="line">  exit();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-    <div class="post-body">
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">// communication</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> processing.net.*; </span><br><span class="line"><span class="built_in">Client</span> myClient; </span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> DataLength = <span class="number">9</span>;</span><br><span class="line"><span class="keyword">String</span> message = null;</span><br><span class="line"><span class="keyword">float</span>[] Value_A = <span class="keyword">new</span> <span class="keyword">float</span>[<span class="number">3</span>];<span class="comment">//Create temp variabels</span></span><br><span class="line"><span class="keyword">float</span>[] Value_B = <span class="keyword">new</span> <span class="keyword">float</span>[<span class="number">6</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">clientEvent</span> <span class="params">(<span class="built_in">Client</span> myClient)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">String</span> message = myClient.<span class="built_in">readStringUntil</span>(<span class="string">'\n'</span>);</span><br><span class="line">  <span class="keyword">if</span> (message != null) &#123;</span><br><span class="line">    message = trim(message);</span><br><span class="line">    <span class="keyword">if</span> (split(message, <span class="string">","</span>).length &gt;= DataLength) &#123;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">float</span>[] temp = <span class="keyword">float</span>(split(message, <span class="string">","</span>));</span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> (temp.length &gt;= <span class="number">3</span>) &#123;</span><br><span class="line">        arrayCopy(temp, <span class="number">0</span>, Value_A, <span class="number">0</span>, <span class="number">3</span>);<span class="comment">//Getting the values from temp</span></span><br><span class="line">        <span class="comment">//println("Value_A:" + Value_A[0] + "," + Value_A[1] + "," + Value_A[2]);</span></span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> (temp.length &gt;= <span class="number">4</span>) &#123;</span><br><span class="line">        arrayCopy(temp, <span class="number">3</span>, Value_B, <span class="number">0</span>, <span class="number">6</span>);</span><br><span class="line">        <span class="comment">//println("Value_B:" + Value_B[5]);</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Send</span><span class="params">(<span class="keyword">String</span> ParamName, <span class="keyword">float</span> Value)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (myClient != null) &#123;</span><br><span class="line">    myClient.<span class="built_in">write</span>(ParamName);</span><br><span class="line">    myClient.<span class="built_in">write</span>(<span class="string">':'</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//Converts the float value to raw bytes</span></span><br><span class="line">    <span class="keyword">int</span> raw=Float.floatToRawIntBits(Value);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//Sends the float value as four bytes</span></span><br><span class="line">    myClient.<span class="built_in">write</span>((<span class="keyword">byte</span>)(raw&gt;&gt;&gt;<span class="number">24</span>));</span><br><span class="line">    myClient.<span class="built_in">write</span>((<span class="keyword">byte</span>)(raw&gt;&gt;<span class="number">16</span> &amp; <span class="number">0xff</span>));</span><br><span class="line">    myClient.<span class="built_in">write</span>((<span class="keyword">byte</span>)(raw&gt;&gt;<span class="number">8</span> &amp; <span class="number">0xff</span>));</span><br><span class="line">    myClient.<span class="built_in">write</span>((<span class="keyword">byte</span>)(raw &amp; <span class="number">0xff</span>));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//import processing.opengl.*;</span></span><br><span class="line"><span class="comment">///*</span></span><br><span class="line"><span class="comment">//  Sets the scrren size</span></span><br><span class="line"><span class="comment">//*/</span></span><br><span class="line"><span class="comment">//void setupScreen(int type)&#123;</span></span><br><span class="line"><span class="comment">//  switch(type)&#123;</span></span><br><span class="line"><span class="comment">//    case 0:</span></span><br><span class="line"><span class="comment">//      size(800, 540);</span></span><br><span class="line"><span class="comment">//      break;</span></span><br><span class="line"><span class="comment">//    case 1:</span></span><br><span class="line"><span class="comment">//      size(1024,580, OPENGL);</span></span><br><span class="line"><span class="comment">//      break;</span></span><br><span class="line"><span class="comment">//    default:</span></span><br><span class="line"><span class="comment">//      size(1024,580);</span></span><br><span class="line"><span class="comment">//  &#125;</span></span><br><span class="line"><span class="comment">//  // set inital background:</span></span><br><span class="line"><span class="comment">//  background(0);</span></span><br><span class="line"><span class="comment">//  // turn on antialiasing:</span></span><br><span class="line"><span class="comment">//  smooth();</span></span><br><span class="line"><span class="comment">//&#125;</span></span><br></pre></td></tr></table></figure>
 
-      
-      
+<p>界面如下图：<br><img src="https://t1.picb.cc/uploads/2017/10/11/MiOmJ.jpg" alt="Processing控制界面"></p>
+<h4 id="Processing视频采集"><a href="#Processing视频采集" class="headerlink" title="Processing视频采集"></a>Processing视频采集</h4><blockquote>
+<p>附加一个Processing采集视频的程序，正好和前面Openwrt所写的视频通讯呼应。</p>
+</blockquote>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> ipcapture.*;</span><br><span class="line"></span><br><span class="line">IPCapture cam;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="built_in">size</span>(<span class="number">640</span>,<span class="number">480</span>);</span><br><span class="line">  <span class="comment">//cam = new IPCapture(this, "http://192.168.1.90:8080/?action=stream", "", "");</span></span><br><span class="line">  <span class="comment">//cam.start();</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment">// this works as well:</span></span><br><span class="line">  </span><br><span class="line">   cam = <span class="keyword">new</span> IPCapture(<span class="keyword">this</span>,<span class="string">"http://192.168.1.1:8080/?action=stream"</span>, <span class="string">"openwrt"</span>, <span class="string">"openwrt"</span>);</span><br><span class="line">   cam.start();</span><br><span class="line">  </span><br><span class="line">  <span class="comment">// this works as well:</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment">// cam = new IPCapture(this);</span></span><br><span class="line">  <span class="comment">// cam.start("url", "username", "password");</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment">// It is possible to change the MJPEG stream by calling stop()</span></span><br><span class="line">  <span class="comment">// on a running camera, and then start() it with the new</span></span><br><span class="line">  <span class="comment">// url, username and password.</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">draw</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (cam.isAvailable()) &#123;</span><br><span class="line">    cam.<span class="built_in">read</span>();</span><br><span class="line">    <span class="built_in">image</span>(cam,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">    <span class="comment">//saveFrame("output/frames####.png");</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">keyPressed</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (key == <span class="string">' '</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (cam.isAlive()) cam.<span class="built_in">stop</span>();</span><br><span class="line">    <span class="keyword">else</span> cam.start();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-      
-        
-          <span itemprop="articleBody">
-            
-            平衡车控制界面-Processing
-之前一直用Csharp编上位机软件，当我第一次发现Processing这个神奇的软件的时候，我就深深的迷恋上她，其强大有趣之处还希望大家深入挖掘。
+<p>效果如图：</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/Mi8SF.jpg" alt="视频采集"></p>
 
-12345678910111213141516171819202122232425262728293031323
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/11/22/belanceCar7/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -755,85 +1235,153 @@ Never reject an idea,dream or goal because it will be hard work.Success rarely c
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/11/21/belanceCar6/" itemprop="url">
-                WiFi双轮平衡车的设计(六)
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-11-21T13:16:01+08:00" content="2015-11-21">
-            2015-11-21
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2015/11/21/belanceCar6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Steven">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Me.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Steven`s Blog">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/11/21/belanceCar6/" itemprop="url">WiFi双轮平衡车的设计(六)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/%E7%A7%91%E6%8A%80%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index">
-                  <span itemprop="name">科技项目</span>
-                </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
               </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-11-21T13:16:01+08:00">
+                2015-11-21
+              </time>
+            
 
-              
-              
+            
 
             
           </span>
-        
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E6%8A%80%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index">
+                    <span itemprop="name">科技项目</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
           
-        
-      </div>
-    </header>
+            <h2 id="平衡车控制代码-Arduino"><a href="#平衡车控制代码-Arduino" class="headerlink" title="平衡车控制代码-Arduino"></a>平衡车控制代码-Arduino</h2><blockquote>
+<p>一直说要把全部代码贴到<a href="http://www.geek-workshop.com/thread-8991-1-1.html" target="_blank" rel="noopener">极客工坊</a>论坛上，由于各种琐碎的事情耽搁，直到今天抽出时间将其拿出来全部分享。</p>
+</blockquote>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// =====================================================</span></span><br><span class="line"><span class="comment">// ====               MPU6050                       ====</span></span><br><span class="line"><span class="comment">// =====================================================</span></span><br><span class="line"><span class="keyword">unsigned</span> <span class="keyword">char</span> Re_buf[<span class="number">11</span>],counter=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">float</span> a[<span class="number">3</span>],w[<span class="number">3</span>],Angle[<span class="number">3</span>],T;</span><br><span class="line"><span class="comment">//======================================================</span></span><br><span class="line"><span class="comment">//==                  Motor programer                ===</span></span><br><span class="line"><span class="comment">//======================================================</span></span><br><span class="line"><span class="comment">//MOTOR(int (+/-)Left_PWM,int (+/-)Right_PWM)</span></span><br><span class="line"><span class="comment">//‘+’电机正转；‘—’电机反转</span></span><br><span class="line"><span class="comment">//PWM:范围0~255</span></span><br><span class="line"><span class="comment">//======================================================</span></span><br><span class="line"><span class="keyword">int</span> M_left1 =<span class="number">7</span>;</span><br><span class="line"><span class="keyword">int</span> M_left2 =<span class="number">6</span>;</span><br><span class="line"><span class="keyword">int</span> M_right1 =<span class="number">5</span>;</span><br><span class="line"><span class="keyword">int</span> M_right2 =<span class="number">4</span>;</span><br><span class="line"> <span class="comment">// =========================================================</span></span><br><span class="line"><span class="comment">// ===                    INTERRUPT                       ===</span></span><br><span class="line"><span class="comment">// ==========================================================</span></span><br><span class="line"><span class="comment">//External Interrupts: 2 (interrupt 0), 3 (interrupt 1)</span></span><br><span class="line"><span class="comment">//                     18 (interrupt 5),19 (interrupt 4)</span></span><br><span class="line"><span class="comment">//                     20 (interrupt 3), 21 (interrupt 2)</span></span><br><span class="line"><span class="comment">// ==========================================================</span></span><br><span class="line"><span class="comment">//增量式-M法码盘测速，原理如下：</span></span><br><span class="line"><span class="comment">//PinA:下降沿触发外部中断</span></span><br><span class="line"><span class="comment">//PinB:若A相下降沿触发,判断B相:若出现LOW电平,为正脉冲计数器加1</span></span><br><span class="line"><span class="comment">//                             若出现HIGH电平,为负脉冲计数器减1</span></span><br><span class="line"><span class="comment">//码盘统一成前进方向</span></span><br><span class="line"><span class="comment">// ==========================================================</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> PinA_left 18</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> PinB_left 22</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> PinA_right 19</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> PinB_right 23</span></span><br><span class="line"><span class="keyword">int</span> count_left;</span><br><span class="line"><span class="keyword">int</span> count_right;</span><br><span class="line"><span class="comment">//================================================</span></span><br><span class="line"><span class="comment">//===               Communication              ===</span></span><br><span class="line"><span class="comment">//================================================</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span>   LINE_END              10                             <span class="comment">// \n</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span>   SPLIT                 58                             <span class="comment">// :</span></span></span><br><span class="line"><span class="keyword">int</span> STD_LOOP_TIME  = <span class="number">10</span>;             </span><br><span class="line"><span class="keyword">int</span> lastLoopTime = STD_LOOP_TIME;</span><br><span class="line"><span class="keyword">int</span> lastLoopUsefulTime = STD_LOOP_TIME;</span><br><span class="line"><span class="keyword">unsigned</span> <span class="keyword">long</span> loopStartTime = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> updateRate = <span class="number">0</span>;            <span class="comment">//Nr of loop to skip sending and receving info from PC</span></span><br><span class="line"><span class="comment">//================================================</span></span><br><span class="line"><span class="comment">//===               Power_sample               ===</span></span><br><span class="line"><span class="comment">//================================================</span></span><br><span class="line"><span class="keyword">float</span> Value_filter;</span><br><span class="line"><span class="keyword">float</span> Voltage;</span><br><span class="line"><span class="keyword">char</span> OK = <span class="number">1</span>;</span><br><span class="line"><span class="comment">//=========================================================</span></span><br><span class="line"><span class="comment">//===                  PID_CONTROLLER                   ===</span></span><br><span class="line"><span class="comment">//=========================================================</span></span><br><span class="line"><span class="keyword">int</span> Pwm_out = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> Turn_Need = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> Speed_Need = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">float</span> PWM_revise = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> motorOffsetR , motorOffsetL;</span><br><span class="line"><span class="keyword">int</span> Item_limited = <span class="number">1200</span>;</span><br><span class="line"><span class="keyword">float</span> speeds , speeds_filter, positions;</span><br><span class="line"><span class="comment">//=========================================================</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> filter_p 0.3</span></span><br><span class="line"><span class="keyword">float</span> Kap = <span class="number">23.2</span>;</span><br><span class="line"><span class="keyword">float</span> Kad = <span class="number">9.58</span>;</span><br><span class="line"><span class="keyword">float</span> Ksp = <span class="number">2.25</span>;</span><br><span class="line"><span class="keyword">float</span> Ksi = <span class="number">0.102</span>;</span><br><span class="line"><span class="comment">//=================================================</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">PID_PWM</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="comment">//PWM_revise = 11.0 / Value_filter;</span></span><br><span class="line"></span><br><span class="line">  speeds=(count_left + count_right) * <span class="number">0.5</span>;</span><br><span class="line">  </span><br><span class="line">  count_left = <span class="number">0</span>;</span><br><span class="line">  count_right = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  speeds_filter *=(<span class="number">1</span> - filter_p);  <span class="comment">//速度互补滤波防止抖动</span></span><br><span class="line">  speeds_filter +=speeds*filter_p;</span><br><span class="line"></span><br><span class="line">  positions += speeds_filter;</span><br><span class="line">  positions += Speed_Need;</span><br><span class="line">  positions = <span class="built_in">constrain</span>(positions, -Item_limited, Item_limited);<span class="comment">//抗积分饱和</span></span><br><span class="line"></span><br><span class="line">  Pwm_out = Kap*Angle[<span class="number">0</span>] + Kad*w[<span class="number">0</span>] ;</span><br><span class="line">  Pwm_out += Ksp*speeds_filter + Ksi*positions ;  <span class="comment">//PID控制器</span></span><br><span class="line">  <span class="comment">//Pwm_out *= PWM_revise;  //Power revise</span></span><br><span class="line"></span><br><span class="line">  motorOffsetR = <span class="keyword">int</span>(Pwm_out + Turn_Need);</span><br><span class="line">  motorOffsetL = <span class="keyword">int</span>(Pwm_out - Turn_Need);</span><br><span class="line"></span><br><span class="line">  Motor(motorOffsetL , motorOffsetR);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//================================================</span></span><br><span class="line"><span class="comment">//===                  Setup                   ===</span></span><br><span class="line"><span class="comment">//================================================</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="built_in">analogReference</span>(<span class="literal">EXTERNAL</span>);   <span class="comment">//使用外部电压基准</span></span><br><span class="line">  <span class="built_in">Serial</span>.<span class="built_in">begin</span>(<span class="number">115200</span>);</span><br><span class="line">  Serial3.<span class="built_in">begin</span>(<span class="number">115200</span>);</span><br><span class="line">  <span class="built_in">pinMode</span>(M_left1, <span class="literal">OUTPUT</span>); <span class="comment">//L298P直流电机驱动板的控制端口设置为输出模式</span></span><br><span class="line">  <span class="built_in">pinMode</span>(M_left2, <span class="literal">OUTPUT</span>);</span><br><span class="line">  <span class="built_in">pinMode</span>(M_right1, <span class="literal">OUTPUT</span>);</span><br><span class="line">  <span class="built_in">pinMode</span>(M_right2, <span class="literal">OUTPUT</span>);</span><br><span class="line">  <span class="built_in">attachInterrupt</span>(<span class="number">5</span>, Code_left, FALLING);<span class="comment">//小车左车轮编码器下降沿触发(外中断)</span></span><br><span class="line">  <span class="built_in">attachInterrupt</span>(<span class="number">4</span>, Code_right, FALLING);</span><br><span class="line">  <span class="built_in">delay</span>(<span class="number">500</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//================================================</span></span><br><span class="line"><span class="comment">//===                  Loop                    ===</span></span><br><span class="line"><span class="comment">//================================================</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">// ********************* Sensor aquisition &amp; filtering *******************</span></span><br><span class="line">  <span class="built_in">serialEvent</span>();</span><br><span class="line">  Power_sample();</span><br><span class="line"><span class="comment">// *********************** PID and motor drive *****************</span></span><br><span class="line">  PID_PWM();</span><br><span class="line"><span class="comment">// ********************* print Debug info *************************************</span></span><br><span class="line">  serialIn_GUI();       <span class="comment">//Processing information from a pc</span></span><br><span class="line">  serialOut_GUI();	<span class="comment">//Sending information to pc for debug</span></span><br><span class="line"><span class="comment">// *********************** loop timing control **************************</span></span><br><span class="line">  lastLoopUsefulTime = <span class="built_in">millis</span>()-loopStartTime;</span><br><span class="line">  <span class="keyword">if</span>(lastLoopUsefulTime&lt;STD_LOOP_TIME)</span><br><span class="line">    <span class="built_in">delay</span>(STD_LOOP_TIME-lastLoopUsefulTime);</span><br><span class="line">  lastLoopTime = <span class="built_in">millis</span>() - loopStartTime;</span><br><span class="line">  loopStartTime = <span class="built_in">millis</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-    <div class="post-body">
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//================================================</span></span><br><span class="line"><span class="comment">//===        UART_communication                ===</span></span><br><span class="line"><span class="comment">//================================================</span></span><br><span class="line"><span class="comment">/*                  下行数据协议						</span></span><br><span class="line"><span class="comment">*/</span><span class="comment">//==============================================</span></span><br><span class="line"><span class="keyword">int</span> skipOut=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">serialOut_GUI</span><span class="params">()</span> </span>&#123;  </span><br><span class="line">  </span><br><span class="line">  <span class="keyword">if</span>(skipOut++&gt;=updateRate) &#123;                                                        </span><br><span class="line">    skipOut = <span class="number">0</span>;</span><br><span class="line">    <span class="comment">//Filtered and unfiltered speed</span></span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(speeds, DEC);  <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(speeds_filter, DEC);   <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//Raw sensor data</span></span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(Angle[<span class="number">0</span>], DEC);   <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(w[<span class="number">0</span>], DEC);   <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(a[<span class="number">0</span>], DEC);   <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">   </span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(positions, DEC);      <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(Item_limited, DEC);      <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(-Item_limited, DEC);      <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(Pwm_out, DEC);      <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(Value_filter, DEC);      <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(Item_limited, DEC);   <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//PID Parameters</span></span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(Kap, DEC);   <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(Kad, DEC);   <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(Ksp, DEC);   <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(Ksi, DEC);   <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//loop</span></span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(STD_LOOP_TIME, DEC);        <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(lastLoopUsefulTime, DEC);   <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(lastLoopTime, DEC);         <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(updateRate, DEC);           <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(motorOffsetL, DEC);         <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(motorOffsetR, DEC);         <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">"\n"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">union</span> u_tag &#123;</span><br><span class="line">  <span class="keyword">byte</span> b[<span class="number">4</span>];</span><br><span class="line">  <span class="keyword">float</span> fval;</span><br><span class="line">&#125; u;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> skipIn=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">serialIn_GUI</span><span class="params">()</span></span>&#123;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">if</span>(skipIn++&gt;=updateRate) &#123;                                                        </span><br><span class="line">    skipIn = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">byte</span> id;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">Serial</span>.<span class="built_in">available</span>() &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;               </span><br><span class="line">      <span class="keyword">char</span> param = <span class="built_in">Serial</span>.<span class="built_in">read</span>(); </span><br><span class="line">      <span class="built_in">delay</span>(<span class="number">10</span>);</span><br><span class="line">      <span class="keyword">byte</span> inByte[<span class="built_in">Serial</span>.<span class="built_in">available</span>()];</span><br><span class="line">      <span class="keyword">if</span>(<span class="built_in">Serial</span>.<span class="built_in">read</span>() == SPLIT)&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">Serial</span>.<span class="built_in">available</span>() &gt;= <span class="number">4</span>)&#123;</span><br><span class="line">          u.b[<span class="number">3</span>] = <span class="built_in">Serial</span>.<span class="built_in">read</span>(); </span><br><span class="line">          u.b[<span class="number">2</span>] = <span class="built_in">Serial</span>.<span class="built_in">read</span>(); </span><br><span class="line">          u.b[<span class="number">1</span>] = <span class="built_in">Serial</span>.<span class="built_in">read</span>(); </span><br><span class="line">          u.b[<span class="number">0</span>] = <span class="built_in">Serial</span>.<span class="built_in">read</span>(); </span><br><span class="line">          <span class="built_in">Serial</span>.<span class="built_in">flush</span>();</span><br><span class="line">          </span><br><span class="line">          <span class="keyword">switch</span> (param) &#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">'p'</span>:</span><br><span class="line">              Kap = <span class="keyword">int</span>(u.fval);</span><br><span class="line">              <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">'d'</span>:</span><br><span class="line">              Kad = <span class="keyword">int</span>(u.fval);</span><br><span class="line">              <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">'P'</span>:</span><br><span class="line">              Ksp = <span class="keyword">int</span>(u.fval);</span><br><span class="line">              <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">'I'</span>:</span><br><span class="line">              Ksi = u.fval;</span><br><span class="line">              <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">'s'</span>:</span><br><span class="line">              Item_limited = <span class="keyword">int</span>(u.fval);</span><br><span class="line">              <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">'u'</span>:</span><br><span class="line">              updateRate = <span class="keyword">int</span>(u.fval);</span><br><span class="line">              <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">'l'</span>:</span><br><span class="line">              motorOffsetL = u.fval;</span><br><span class="line">              <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">'r'</span>:</span><br><span class="line">              motorOffsetR = u.fval;</span><br><span class="line">              <span class="keyword">break</span>;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-      
-      
+<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">// =========================================================</span></span><br><span class="line"><span class="comment">// ===                    INTERRUPT                       ===</span></span><br><span class="line"><span class="comment">// ==========================================================</span></span><br><span class="line"><span class="comment">//External Interrupts: 2 (interrupt 0), 3 (interrupt 1)</span></span><br><span class="line"><span class="comment">//                     18 (interrupt 5),19 (interrupt 4)</span></span><br><span class="line"><span class="comment">//                     20 (interrupt 3), 21 (interrupt 2)</span></span><br><span class="line"><span class="comment">// ==========================================================</span></span><br><span class="line"><span class="comment">//增量式-M法码盘测速，原理如下：</span></span><br><span class="line"><span class="comment">//PinA:下降沿触发外部中断</span></span><br><span class="line"><span class="comment">//PinB:若A相下降沿触发,判断B相:若出现LOW电平,为正脉冲计数器加1</span></span><br><span class="line"><span class="comment">//                             若出现HIGH电平,为负脉冲计数器减1</span></span><br><span class="line"><span class="comment">//码盘统一成前进方向</span></span><br><span class="line"><span class="comment">// ==========================================================</span></span><br><span class="line"><span class="built_in">void</span> Code_left()</span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">if</span>(digitalRead(PinB_left) == <span class="number">0</span>)</span><br><span class="line">    count_left += <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">else</span></span><br><span class="line">    count_left -= <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">void</span> Code_right()</span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">if</span>(digitalRead(PinB_right) == <span class="number">0</span>)</span><br><span class="line">    count_right -= <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">else</span></span><br><span class="line">    count_right += <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-      
-        
-          <span itemprop="articleBody">
-            
-            平衡车控制代码-Arduino
-一直说要把全部代码贴到极客工坊论坛上，由于各种琐碎的事情耽搁，直到今天抽出时间将其拿出来全部分享。
+<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// =========================================================</span></span><br><span class="line"><span class="comment">// ====                  串口MPU6050                    ====</span></span><br><span class="line"><span class="comment">// =========================================================</span></span><br><span class="line"><span class="built_in">void</span> serialEvent() &#123;</span><br><span class="line">  <span class="keyword">while</span> (Serial3.available()) &#123;</span><br><span class="line">    Re_buf[counter]=(unsigned char)Serial3.read();</span><br><span class="line">    <span class="keyword">if</span>(counter==<span class="number">0</span>&amp;&amp;Re_buf[<span class="number">0</span>]!=<span class="number">0x55</span>) <span class="keyword">return</span>;      <span class="comment">//第0号数据不是帧头</span></span><br><span class="line">    counter++;</span><br><span class="line">    <span class="keyword">if</span>(counter==<span class="number">11</span>)             <span class="comment">//接收到11个数据</span></span><br><span class="line">    &#123;</span><br><span class="line">       counter=<span class="number">0</span>;               <span class="comment">//重新赋值，准备下一帧数据的接收</span></span><br><span class="line">       <span class="keyword">switch</span>(Re_buf [<span class="number">1</span>])</span><br><span class="line">	&#123;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">0x51</span>:</span><br><span class="line">		a[<span class="number">0</span>] = <span class="built_in">float</span>(short(Re_buf [<span class="number">3</span>]&lt;&lt;<span class="number">8</span>| Re_buf [<span class="number">2</span>]))/<span class="number">32768</span>*<span class="number">16</span>;</span><br><span class="line">		a[<span class="number">1</span>] =  <span class="built_in">float</span>(short(Re_buf [<span class="number">5</span>]&lt;&lt;<span class="number">8</span>| Re_buf [<span class="number">4</span>]))/<span class="number">32768</span>*<span class="number">16</span>;</span><br><span class="line">		a[<span class="number">2</span>] =  <span class="built_in">float</span>(short(Re_buf [<span class="number">7</span>]&lt;&lt;<span class="number">8</span>| Re_buf [<span class="number">6</span>]))/<span class="number">32768</span>*<span class="number">16</span>;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">0x52</span>:</span><br><span class="line">		w[<span class="number">0</span>] =  <span class="built_in">float</span>(short(Re_buf [<span class="number">3</span>]&lt;&lt;<span class="number">8</span>| Re_buf [<span class="number">2</span>]))/<span class="number">32768</span>*<span class="number">250</span>;</span><br><span class="line">		w[<span class="number">1</span>] =  <span class="built_in">float</span>(short(Re_buf [<span class="number">5</span>]&lt;&lt;<span class="number">8</span>| Re_buf [<span class="number">4</span>]))/<span class="number">32768</span>*<span class="number">250</span>;</span><br><span class="line">		w[<span class="number">2</span>] =  <span class="built_in">float</span>(short(Re_buf [<span class="number">7</span>]&lt;&lt;<span class="number">8</span>| Re_buf [<span class="number">6</span>]))/<span class="number">32768</span>*<span class="number">250</span>;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">0x53</span>:</span><br><span class="line">        	Angle[<span class="number">0</span>] =  <span class="built_in">float</span>(short(Re_buf [<span class="number">3</span>]&lt;&lt;<span class="number">8</span>| Re_buf [<span class="number">2</span>]))/<span class="number">32768</span>*<span class="number">180</span>;</span><br><span class="line">		Angle[<span class="number">1</span>] =  <span class="built_in">float</span>(short(Re_buf [<span class="number">5</span>]&lt;&lt;<span class="number">8</span>| Re_buf [<span class="number">4</span>]))/<span class="number">32768</span>*<span class="number">180</span>;</span><br><span class="line">		Angle[<span class="number">2</span>] =  <span class="built_in">float</span>(short(Re_buf [<span class="number">7</span>]&lt;&lt;<span class="number">8</span>| Re_buf [<span class="number">6</span>]))/<span class="number">32768</span>*<span class="number">180</span>;</span><br><span class="line">		<span class="comment">//T =  float(short(Re_buf [9]&lt;&lt;8| Re_buf [8]));///340.0+36.25</span></span><br><span class="line">                <span class="comment">//sign=1;</span></span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">	&#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-12345678910111213141516171819202122232425262728293031323334353637383940414243444546
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/11/21/belanceCar6/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//======================================================</span></span><br><span class="line"><span class="comment">//==                  Motor programer                ===</span></span><br><span class="line"><span class="comment">//======================================================</span></span><br><span class="line"><span class="comment">//MOTOR(int (+/-)Left_PWM,int (+/-)Right_PWM)</span></span><br><span class="line"><span class="comment">//‘+’电机正转；‘—’电机反转</span></span><br><span class="line"><span class="comment">//PWM:范围0~255</span></span><br><span class="line"><span class="comment">//======================================================</span></span><br><span class="line"> <span class="function"><span class="keyword">void</span> <span class="title">Motor</span><span class="params">(<span class="keyword">int</span> Left_PWM,<span class="keyword">int</span> Right_PWM)</span></span></span><br><span class="line"><span class="function"> </span>&#123;</span><br><span class="line">   Left_PWM = <span class="built_in">constrain</span>(Left_PWM, <span class="number">-255</span>, <span class="number">255</span>);</span><br><span class="line">   Right_PWM = <span class="built_in">constrain</span>(Right_PWM, <span class="number">-255</span>, <span class="number">255</span>);</span><br><span class="line">   <span class="keyword">if</span>(Left_PWM != <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="keyword">if</span>(Left_PWM&gt;<span class="number">0</span>)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="built_in">analogWrite</span>(M_left1,Left_PWM);</span><br><span class="line">        <span class="built_in">digitalWrite</span>(M_left2,<span class="literal">LOW</span>);</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">else</span></span><br><span class="line">      &#123;</span><br><span class="line">        <span class="built_in">digitalWrite</span>(M_left1,<span class="literal">LOW</span>);</span><br><span class="line">        <span class="built_in">analogWrite</span>(M_left2,-Left_PWM);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">digitalWrite</span>(M_left1,<span class="literal">LOW</span>);</span><br><span class="line">        <span class="built_in">digitalWrite</span>(M_left2,<span class="literal">LOW</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(Right_PWM != <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="keyword">if</span>(Right_PWM&gt;<span class="number">0</span>)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="built_in">analogWrite</span>(M_right1,Right_PWM);</span><br><span class="line">        <span class="built_in">digitalWrite</span>(M_right2, <span class="literal">LOW</span>);</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">else</span></span><br><span class="line">      &#123;</span><br><span class="line">        <span class="built_in">digitalWrite</span>(M_right1, <span class="literal">LOW</span>);</span><br><span class="line">        <span class="built_in">analogWrite</span>(M_right2, -Right_PWM);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">      &#123;</span><br><span class="line">        <span class="built_in">digitalWrite</span>(M_right1, <span class="literal">LOW</span>);</span><br><span class="line">        <span class="built_in">digitalWrite</span>(M_right2, <span class="literal">LOW</span>);</span><br><span class="line">      &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//================================================</span></span><br><span class="line"><span class="comment">//===               Power_sample               ===</span></span><br><span class="line"><span class="comment">//================================================</span></span><br><span class="line"><span class="comment">// note : Analog Port is A7.</span></span><br><span class="line"><span class="comment">// using one order low_pass filter</span></span><br><span class="line"><span class="comment">// filter_coefficient is 0.1</span></span><br><span class="line"><span class="comment">//================================================</span></span><br><span class="line">#define FILTER_A <span class="number">0.1</span></span><br><span class="line"><span class="built_in">void</span> Power_sample()</span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">if</span>(OK==<span class="number">1</span>)</span><br><span class="line">  &#123;</span><br><span class="line">    Value_filter = analogRead(A7)/<span class="number">1024.0</span>*<span class="number">25</span>;</span><br><span class="line">    OK =<span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  Voltage = analogRead(A7)/<span class="number">1024.0</span>*<span class="number">25</span>;</span><br><span class="line">  Value_filter = (<span class="built_in">float</span>)((<span class="built_in">float</span>)Voltage * FILTER_A + (<span class="number">1.0</span> - FILTER_A) * (<span class="built_in">float</span>)Value_filter);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+          
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -843,83 +1391,162 @@ Never reject an idea,dream or goal because it will be hard work.Success rarely c
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/11/20/belanceCar5/" itemprop="url">
-                WiFi双轮平衡车的设计(五)
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-11-20T13:16:01+08:00" content="2015-11-20">
-            2015-11-20
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2015/11/20/belanceCar5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Steven">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Me.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Steven`s Blog">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/11/20/belanceCar5/" itemprop="url">WiFi双轮平衡车的设计(五)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/%E7%A7%91%E6%8A%80%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index">
-                  <span itemprop="name">科技项目</span>
-                </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
               </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-11-20T13:16:01+08:00">
+                2015-11-20
+              </time>
+            
 
-              
-              
+            
 
             
           </span>
-        
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E6%8A%80%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index">
+                    <span itemprop="name">科技项目</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
           
-        
-      </div>
-    </header>
+            <h2 id="Matlab仿真分析"><a href="#Matlab仿真分析" class="headerlink" title="Matlab仿真分析"></a>Matlab仿真分析</h2><blockquote>
+<p>本章对双轮自平衡机器人利用拉格朗日动力学方法建立了动力学模型，可以看出此模型为多输入多输出的系统，相较于倒立摆系统更为复杂。本项目通过采用LQR极点配置的方法设计出控制器，通过MATLAB/Simulink工具箱，分别改变不同控制信号进行仿真分析，得出双轮自平衡机器人各个状态向量的变化曲线。</p>
+</blockquote>
+<p>为了能够用数学方法描述出小车在运动中的模型，在建立动力学模型之前，将双轮自平衡机器人作如下假设：</p>
+<ul>
+<li>(1)整车车体部分视为刚体；</li>
+<li>(2)不考虑车轮的打滑情况；</li>
+<li>(3)车体稳定平衡时质心位于两轮中心正上方。</li>
+</ul>
+<p>通过上述假设,双轮自平衡机器人可近似为双轮倒立摆模型</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MiCQe.png" alt="双轮倒立摆模型"></p>
+<p>建立自平衡小车的侧视图和平面视图，并将其放入坐标系</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/Miczs.png" alt="自平衡车的侧视图和俯视图"></p>
+<blockquote>
+<p>经过分析，双轮自平衡机器人系统完全能控其完全能观，因此可以进一步设计控制器。我们已经熟知双轮自平衡小车在本质上是一种倒立摆系统，基于前几章双轮自平衡小车原理的分析，本项目用线性二次调节LQR极点配置设计得出控制器并仿真。</p>
+</blockquote>
+<p>由上可知，其类似于质量-弹簧-阻尼组成的力学系统。因此将双轮自平衡小车描述为质量-弹簧-阻尼系统</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MiGxT.png" alt="质量-弹簧-阻尼等效图"></p>
+<p>可以通过调节图中所示的弹簧常数和阻尼摩擦常数来使双轮自平衡小车达到稳定状态</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MiWQ0.png" alt="Matlab控制方框图"></p>
+<p>最后附上MATLAB仿真程序</p>
+<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br></pre></td><td class="code"><pre><span class="line">close all</span><br><span class="line">clear all</span><br><span class="line">clc</span><br><span class="line">% NXTway-GS Parameters <span class="keyword">and</span> State-Space Matrix Calculation</span><br><span class="line">% Physical Constant</span><br><span class="line">g = <span class="number">9.81</span>;						% gravity acceleration [m/sec^<span class="number">2</span>]</span><br><span class="line">% NXTway-GS Parameters</span><br><span class="line">m = <span class="number">0.075</span>;						% wheel weight [kg]</span><br><span class="line">R = <span class="number">0.033</span>;						% wheel radius [m]</span><br><span class="line">Jw = m * R^<span class="number">2</span> / <span class="number">2</span>;				% wheel inertia moment [kgm^<span class="number">2</span>]</span><br><span class="line">M = <span class="number">0.7</span>;						% body weight [kg]</span><br><span class="line">W = <span class="number">0.152</span>;						% body width [m]</span><br><span class="line">D = <span class="number">0.0675</span>;						% body depth [m]</span><br><span class="line">H = <span class="number">0.115</span>;						% body height [m]</span><br><span class="line">L = <span class="number">0.05</span>;						% distance of the center of mass <span class="keyword">from</span> the wheel axle [m]</span><br><span class="line">Jpsi = M * L^<span class="number">2</span> / <span class="number">3</span>;				% body pitch inertia moment [kgm^<span class="number">2</span>]</span><br><span class="line">Jphi = M * (W^<span class="number">2</span> + D^<span class="number">2</span>) / <span class="number">12</span>;	% body yaw inertia moment [kgm^<span class="number">2</span>]</span><br><span class="line">fm = <span class="number">0.0022</span>;					% friction coefficient between body &amp; DC motor</span><br><span class="line">fw = <span class="number">0</span>;							% friction coefficient between wheel &amp; floor</span><br><span class="line"></span><br><span class="line">% DC Motor Parameters			</span><br><span class="line">Jm = <span class="number">1e-5</span>;						% DC motor inertia moment [kgm^<span class="number">2</span>]</span><br><span class="line">Rm = <span class="number">6.69</span>;						% DC motor resistance [兌]</span><br><span class="line">Kb = <span class="number">0.468</span>;						% DC motor back EMF constant [Vsec/rad]</span><br><span class="line">Kt = <span class="number">0.256</span>;						% DC motor torque constant [Nm/A]</span><br><span class="line">n = <span class="number">334</span>;						% gear ratio</span><br><span class="line"></span><br><span class="line">% NXTway-GS State-Space Matrix Calculation</span><br><span class="line">alpha = n * Kt / Rm;</span><br><span class="line">beta = n * Kt * Kb / Rm + fm;</span><br><span class="line">tmp = beta + fw;</span><br><span class="line"></span><br><span class="line">E_11 = (<span class="number">2</span> * m + M) * R^<span class="number">2</span> + <span class="number">2</span> * Jw + <span class="number">2</span> * n^<span class="number">2</span> * Jm;</span><br><span class="line">E_12 = M * L * R - <span class="number">2</span> * n^<span class="number">2</span> * Jm;</span><br><span class="line">E_22 = M * L^<span class="number">2</span> + Jpsi + <span class="number">2</span> * n^<span class="number">2</span> * Jm;</span><br><span class="line">detE = E_11 * E_22 - E_12^<span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">A1_32 = -g * M * L * E_12 / detE;</span><br><span class="line">A1_42 = g * M * L * E_11 / detE;</span><br><span class="line">A1_33 = <span class="number">-2</span> * (tmp * E_22 + beta * E_12) / detE;</span><br><span class="line">A1_43 = <span class="number">2</span> * (tmp * E_12 + beta * E_11) / detE;</span><br><span class="line">A1_34 = <span class="number">2</span> * beta * (E_22 + E_12) / detE;</span><br><span class="line">A1_44 = <span class="number">-2</span> * beta * (E_11 + E_12) / detE;</span><br><span class="line">B1_3 = alpha * (E_22 + E_12) / detE;</span><br><span class="line">B1_4 = -alpha * (E_11 + E_12) / detE;</span><br><span class="line">A1 = [</span><br><span class="line">	<span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">0</span></span><br><span class="line">	<span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span></span><br><span class="line">	<span class="number">0</span> A1_32 A1_33 A1_34</span><br><span class="line">	<span class="number">0</span> A1_42 A1_43 A1_44</span><br><span class="line">	];</span><br><span class="line">B1 = [</span><br><span class="line">	<span class="number">0</span> <span class="number">0</span></span><br><span class="line">	<span class="number">0</span> <span class="number">0</span></span><br><span class="line">	B1_3 B1_3</span><br><span class="line">	B1_4 B1_4</span><br><span class="line">	];</span><br><span class="line">C1 = eye(<span class="number">4</span>);</span><br><span class="line">D1 = zeros(<span class="number">4</span>, <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">I = m * W^<span class="number">2</span> / <span class="number">2</span> + Jphi + (Jw + n^<span class="number">2</span> * Jm) * W^<span class="number">2</span> / (<span class="number">2</span> * R^<span class="number">2</span>);</span><br><span class="line">J = tmp * W^<span class="number">2</span> / (<span class="number">2</span> * R^<span class="number">2</span>);</span><br><span class="line">K = alpha * W / (<span class="number">2</span> * R);</span><br><span class="line">A2 = [</span><br><span class="line">	<span class="number">0</span> <span class="number">1</span></span><br><span class="line">	<span class="number">0</span> -J / I</span><br><span class="line">	];</span><br><span class="line">B2 = [</span><br><span class="line">	<span class="number">0</span>      <span class="number">0</span></span><br><span class="line">	-K / I K / I</span><br><span class="line">	];</span><br><span class="line">C2 = eye(<span class="number">2</span>);</span><br><span class="line">D2 = zeros(<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">clear alpha beta tmp</span><br><span class="line">clear E_11 E_12 E_22 detE</span><br><span class="line">clear A1_32 A1_33 A1_34 A1_42 A1_43 A1_44 B1_3 B1_4 I J K</span><br><span class="line"></span><br><span class="line">% Controller Parameters </span><br><span class="line"></span><br><span class="line">% Servo Gain Calculation using Optimal Regulator</span><br><span class="line">A_BAR = [A1, zeros(<span class="number">4</span>, <span class="number">1</span>); C1(<span class="number">1</span>, :), <span class="number">0</span>];</span><br><span class="line">B_BAR = [B1; <span class="number">0</span>, <span class="number">0</span>];</span><br><span class="line">QQ = [</span><br><span class="line">	<span class="number">1</span>, <span class="number">0</span>,   <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span></span><br><span class="line">	<span class="number">0</span>, <span class="number">6e5</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span></span><br><span class="line">	<span class="number">0</span>, <span class="number">0</span>,   <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span></span><br><span class="line">	<span class="number">0</span>, <span class="number">0</span>,   <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span></span><br><span class="line">	<span class="number">0</span>, <span class="number">0</span>,   <span class="number">0</span>, <span class="number">0</span>, <span class="number">4e2</span></span><br><span class="line">	];</span><br><span class="line">RR = <span class="number">1e4</span> * eye(<span class="number">2</span>);</span><br><span class="line">KK = lqr(A_BAR, B_BAR, QQ, RR);</span><br><span class="line">k_f = KK(<span class="number">1</span>, <span class="number">1</span>:<span class="number">4</span>);					% feedback gain</span><br><span class="line">k_i = KK(<span class="number">1</span>, <span class="number">5</span>)						% <span class="built_in">int</span>egral gain</span><br><span class="line">% suppress velocity gain because it fluctuates NXTway-GS</span><br><span class="line">k_f(<span class="number">3</span>) = k_f(<span class="number">3</span>) * <span class="number">0.85</span></span><br></pre></td></tr></table></figure>
 
-    <div class="post-body">
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">figure</span>(<span class="number">1</span>);</span><br><span class="line"><span class="selector-tag">subplot</span>(<span class="number">2</span>,<span class="number">1</span>,<span class="number">1</span>);<span class="selector-tag">plot</span>(simout.Body_pitch_angle_Phi,<span class="string">'-k'</span>)</span><br><span class="line"><span class="selector-tag">xlabel</span>(<span class="string">'Time'</span>)</span><br><span class="line"><span class="selector-tag">ylabel</span>(<span class="string">'Phi'</span>)</span><br><span class="line"><span class="selector-tag">title</span>(<span class="string">'Pitch'</span>)</span><br><span class="line"><span class="selector-tag">grid</span> <span class="selector-tag">on</span>;</span><br><span class="line"><span class="selector-tag">subplot</span>(<span class="number">2</span>,<span class="number">1</span>,<span class="number">2</span>);<span class="selector-tag">plot</span>(simout.Body_pitch_angle_Phi_dot,<span class="string">'-k'</span>)</span><br><span class="line"><span class="selector-tag">xlabel</span>(<span class="string">'Time'</span>)</span><br><span class="line"><span class="selector-tag">ylabel</span>(<span class="string">'Phi-dot'</span>)</span><br><span class="line"><span class="selector-tag">title</span>(<span class="string">''</span>)</span><br><span class="line"><span class="selector-tag">grid</span> <span class="selector-tag">on</span>;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">figure</span>(<span class="number">2</span>);</span><br><span class="line"><span class="selector-tag">subplot</span>(<span class="number">2</span>,<span class="number">1</span>,<span class="number">1</span>);<span class="selector-tag">plot</span>(simout.Theta_Wheel_mm_Position_,<span class="string">'-k'</span>)</span><br><span class="line"><span class="selector-tag">xlabel</span>(<span class="string">'Time'</span>)</span><br><span class="line"><span class="selector-tag">ylabel</span>(<span class="string">'Theta'</span>)</span><br><span class="line"><span class="selector-tag">title</span>(<span class="string">'Position'</span>)</span><br><span class="line"><span class="selector-tag">grid</span> <span class="selector-tag">on</span>;</span><br><span class="line"><span class="selector-tag">subplot</span>(<span class="number">2</span>,<span class="number">1</span>,<span class="number">2</span>);<span class="selector-tag">plot</span>(simout.Theta_dot_Wheel_mm_s_Speed_,<span class="string">'-k'</span>)</span><br><span class="line"><span class="selector-tag">xlabel</span>(<span class="string">'Time'</span>)</span><br><span class="line"><span class="selector-tag">ylabel</span>(<span class="string">'Theta-dot'</span>)</span><br><span class="line"><span class="selector-tag">title</span>(<span class="string">''</span>)</span><br><span class="line"><span class="selector-tag">grid</span> <span class="selector-tag">on</span>;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">figure</span>(<span class="number">3</span>);</span><br><span class="line"><span class="selector-tag">subplot</span>(<span class="number">2</span>,<span class="number">1</span>,<span class="number">1</span>);<span class="selector-tag">plot</span>(simout.Psi_Body_deg_Alpha_,<span class="string">'-k'</span>)</span><br><span class="line"><span class="selector-tag">xlabel</span>(<span class="string">'Time'</span>)</span><br><span class="line"><span class="selector-tag">ylabel</span>(<span class="string">'Alpha'</span>)</span><br><span class="line"><span class="selector-tag">title</span>(<span class="string">'Angle'</span>)</span><br><span class="line"><span class="selector-tag">grid</span> <span class="selector-tag">on</span>;</span><br><span class="line"><span class="selector-tag">subplot</span>(<span class="number">2</span>,<span class="number">1</span>,<span class="number">2</span>);<span class="selector-tag">plot</span>(simout.Psi_dot_deg_s_Omiga_,<span class="string">'-k'</span>)</span><br><span class="line"><span class="selector-tag">xlabel</span>(<span class="string">'Time'</span>)</span><br><span class="line"><span class="selector-tag">ylabel</span>(<span class="string">'Alpha-dot'</span>)</span><br><span class="line"><span class="selector-tag">title</span>(<span class="string">''</span>)</span><br><span class="line"><span class="selector-tag">grid</span> <span class="selector-tag">on</span>;</span><br></pre></td></tr></table></figure>
 
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-            Matlab仿真分析
-本章对双轮自平衡机器人利用拉格朗日动力学方法建立了动力学模型，可以看出此模型为多输入多输出的系统，相较于倒立摆系统更为复杂。本项目通过采用LQR极点配置的方法设计出控制器，通过MATLAB/Simulink工具箱，分别改变不同控制信号进行仿真分析，得出双轮自平衡机器人各个状态向
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/11/20/belanceCar5/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -929,83 +1556,170 @@ Never reject an idea,dream or goal because it will be hard work.Success rarely c
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/11/19/belanceCar4/" itemprop="url">
-                WiFi双轮平衡车的设计(四)
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-11-19T13:16:01+08:00" content="2015-11-19">
-            2015-11-19
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2015/11/19/belanceCar4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Steven">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Me.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Steven`s Blog">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/11/19/belanceCar4/" itemprop="url">WiFi双轮平衡车的设计(四)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/%E7%A7%91%E6%8A%80%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index">
-                  <span itemprop="name">科技项目</span>
-                </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
               </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-11-19T13:16:01+08:00">
+                2015-11-19
+              </time>
+            
 
-              
-              
+            
 
             
           </span>
-        
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E6%8A%80%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index">
+                    <span itemprop="name">科技项目</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
           
-        
-      </div>
-    </header>
+            <h2 id="双轮自平衡平衡原理"><a href="#双轮自平衡平衡原理" class="headerlink" title="双轮自平衡平衡原理"></a>双轮自平衡平衡原理</h2><p>双轮自平衡机器人系统本身是一个不稳定的系统，类似于一级倒立摆系统。两轮平衡车由于他的优点特别明显，近几年研究他的人越来越多。特别是两轮自平衡车应用到餐饮、安保、工业、代步等方面。接下来用通俗易懂的语言简单介绍一下双轮自平衡车的原理。</p>
+<h3 id="1-直立行走任务分解"><a href="#1-直立行走任务分解" class="headerlink" title="1 直立行走任务分解"></a>1 直立行走任务分解</h3><p>关于直立车大家或多或少都接触过，不难想象当车体想某一个方向倾倒时，我们必须让车轮快速跟踪到他要摔倒的方向，这样才能保证它不会倒下。然而，整个车体对象仅有两个电机提供动力。电机不仅要提供保持平衡的动力，同时还要提供转弯的动力。从自动控制的角度来看，平衡车的输入应该为两电机的PWM输入。<br>在这里我们将车体的运动分解成三个部分：</p>
+<ul>
+<li>第一．    控制车体角度：始终保持车体倒立，而不是从某一方向倾倒。</li>
+<li>第二．    控制车体速度：可以保证平衡车运动速度是可调的。</li>
+<li>第三．    控制车体方向：简单的说就是给两轮电机不同的输入信号，是两轮速度形成差速，从而保证车体能改变方向。</li>
+</ul>
+<p>其中控制方向在实现车体平衡后，非常容易实现。所以下面主要叙述一下平衡控制的思路。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MieoK.png" alt="三层控制之间的相互配合"></p>
+<p>我们知道从控制的角度来说，大多用到的都是负反馈机制，当然控制直立车也不例外。可以看到两轮车只有两个轮子着地，也就是说他完成所有动作都与控制车轮有密切的关系。我们做出如下几种假设，分别说明车体在不同状态下如何保证车体平衡.</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MiucN.png" alt="通过车模运动保持车模平衡"></p>
+<p>根据上图直观理解车模保持平衡的原理，实际上两轮自平衡机器人是一个在空间状态下的一级直线倒立摆,我们首先通过分析直线一阶倒立摆模型，进而，深入理解车模平衡控制。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MiZig.png" alt="直线倒立摆模型及受力分析"></p>
+<p>由上图对其受力分析，根据牛顿第二定律可得，可得出小车回复力。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/Mikz8.png" alt="车模平衡控制图示"></p>
+<p>通过以上简单分析，通过类比倒立摆得到了车模直立的控制方案，在之后章节有关于模型仿真还会细说。</p>
+<h3 id="2-车模角度和角速度测量"><a href="#2-车模角度和角速度测量" class="headerlink" title="2 车模角度和角速度测量"></a>2 车模角度和角速度测量</h3><p>作为一控制系统。对被测量的检测至关重要，具体到本项目主要需要检测角度和角速度。值得庆幸的是我们可以用一个集成模块MPU-6050，来代替两种传感器的组合。<br>MPU- 6050是整合性6轴运动处理组件，相较于同时用陀螺仪和加速度器，免除了他们组合时出现的轴间差的问题，同时大大减少了芯片的包装空间。使用非常方便，只需要我们运用适当的滤波方法即可实现角度和角速度的测量</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MiwWX.png" alt="MPU6050模块图示"></p>
+<p>由于本文并非主要论证卡尔曼滤波原理及其滤波方法，因此关于角度的测量原理就不再赘述，如果想深入理解卡尔曼滤波原理，请自行查阅其他资料。</p>
+<p>根据前面介绍的小车角度控制，陀螺仪测出角速度，对其分别做比例控制和积分控制，而加速度计测出角度，作为角度的设定值，通过乘上比例系数与之前陀螺仪得到的角速度叠加，共同做积分运算得到后续的角度，则可得出如下图所示控制方案。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MifxG.png" alt="车模角度控制框图"></p>
+<h3 id="3-车模速度测量"><a href="#3-车模速度测量" class="headerlink" title="3 车模速度测量"></a>3 车模速度测量</h3><p>转速对于本项目来说是非常重要的一个物理量，也是一个非常重要的控制变量。目前国内外有多种测速方法，但都大同小异，无非是将可被检测的原件与电机转轴相对固定，通过可感器件将其感应并计数。当得到计数值之后，只需要通过单片机等处理器定时采集便可得到电机转速。</p>
+<p>光电编码器是一种体积小、使用简单、性能好和可靠性好的转速和位置检测装置，他在检测等领域应用十分广泛，编码器是码盘随位置的变化输出两路脉冲信号，然后我们根据这两路脉冲信号，判断出码盘旋转的方向并通过计数器对脉冲信号进行加减计数，一次达到位置检测的目的，通过采样固定时间的脉冲数，经过转换就可以得到速度如图。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MiIty.png" alt="光电码盘测速原理"></p>
+<p>测角方法是将码盘一周平均分成n个栅格，每个栅格对应的角度为360°/n ，根据AB两项脉冲信号可以判断码盘正反转。其原理如图:</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/Miirj.png" alt="增量式光电码盘工作原理"></p>
+<p>如上图所示A相B相为码盘的输出，这两个信号相位相差为90°。其中当B相为低电平时，A相判断为上升沿，此时规定为正转，A相判断为下降沿此时就为反转，正反转分别计数，得到脉冲数后就可以通过软件处理得到电机转速。</p>
+<h3 id="4-采样定理"><a href="#4-采样定理" class="headerlink" title="4 采样定理"></a>4 采样定理</h3><p>采样定理，又称香农采样定律，是信息以及检测领域中非常重要的基本结论。它主要讲述了一个关于信号正确采样的基本原理。如果采集一个连续信号，采集设备的采样频率一定要大于等于被采集信号最高频率的二倍，这样原来的连续信号才可以完整的被还原。</p>
+<p><img src="https://t1.picb.cc/uploads/2017/10/11/MinSc.png" alt="香农采样定理"></p>
+<blockquote>
+<p>本章主要介绍机器人平衡原理、角度传感器检测原理、电机转速测量原理以及香农采样定理，其中用形象化的通俗的语言尽可能的替代晦涩的专业术语，使得车模平衡原理非常容易理解。同时，简要介绍了关于平衡车的控制方法，为后续的物理建模奠定了理论基础。</p>
+</blockquote>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-            双轮自平衡平衡原理双轮自平衡机器人系统本身是一个不稳定的系统，类似于一级倒立摆系统。两轮平衡车由于他的优点特别明显，近几年研究他的人越来越多。特别是两轮自平衡车应用到餐饮、安保、工业、代步等方面。接下来用通俗易懂的语言简单介绍一下双轮自平衡车的原理。
-1 直立行走任务分解关于直立车大家或多或少都接触
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/11/19/belanceCar4/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1015,6 +1729,10 @@ Never reject an idea,dream or goal because it will be hard work.Success rarely c
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1023,17 +1741,20 @@ Never reject an idea,dream or goal because it will be hard work.Success rarely c
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/">&amp;laquo;</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">&amp;raquo;</a>
+    <a class="extend prev" rel="prev" href="/">&lt;i class&#x3D;&quot;fa fa-angle-left&quot;&gt;&lt;&#x2F;i&gt;</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">&lt;i class&#x3D;&quot;fa fa-angle-right&quot;&gt;&lt;&#x2F;i&gt;</a>
   </nav>
 
- </div>
 
+
+          </div>
+          
+
+
+          
+
+        </div>
         
-
-        
-      </div>
-
-      
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -1044,79 +1765,120 @@ Never reject an idea,dream or goal because it will be hard work.Success rarely c
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
       
 
-      <section class="site-overview">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="/images/Me.jpg" alt="Steven" itemprop="image"/>
-          <p class="site-author-name" itemprop="name">Steven</p>
-        </div>
-        <p class="site-description motion-element" itemprop="description">Stay Hungry. Stay foolish.</p>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">26</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/Me.jpg"
+                alt="Steven" />
+            
+              <p class="site-author-name" itemprop="name">Steven</p>
+              <p class="site-description motion-element" itemprop="description">Stay Hungry. Stay foolish.</p>
           </div>
 
-          <div class="site-state-item site-state-categories">
+          <nav class="site-state motion-element">
+
             
-              <span class="site-state-item-count">5</span>
-              <span class="site-state-item-name">分类</span>
+              <div class="site-state-item site-state-posts">
               
-          </div>
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">26</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">26</span>
-              <span class="site-state-item-name">标签</span>
-              </a>
-          </div>
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
-        </nav>
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">26</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
 
-        
+          </nav>
 
-        <div class="links-of-author motion-element">
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/Smile_Lele" target="_blank">github</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com" target="_blank">weibo</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://douban.com" target="_blank">douban</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://www.zhihu.com" target="_blank">zhihu</a>
-              </span>
-            
+
           
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Smile_Lele" target="_blank" title="github">
+                      
+                        <i class="fa fa-fw fa-globe"></i>github</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com" target="_blank" title="weibo">
+                      
+                        <i class="fa fa-fw fa-globe"></i>weibo</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://douban.com" target="_blank" title="douban">
+                      
+                        <i class="fa fa-fw fa-globe"></i>douban</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://www.zhihu.com" target="_blank" title="zhihu">
+                      
+                        <i class="fa fa-fw fa-globe"></i>zhihu</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.baidu.com/" title="Baidu" target="_blank">Baidu</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
         </div>
-
-        
-        
-
-        <div class="links-of-author motion-element">
-          
-            <p class="site-author-name">Links</p>
-            
-              <span class="links-of-author-item">
-              <a href="http://www.baidu.com/" target="_blank">Baidu</a>
-              </span>
-            
-          
-        </div>
-
       </section>
+
+      
 
       
 
@@ -1124,95 +1886,192 @@ Never reject an idea,dream or goal because it will be hard work.Success rarely c
   </aside>
 
 
+        
+      </div>
     </main>
 
     <footer id="footer" class="footer">
-      <div class="footer-inner"> <div class="copyright" >
-  
-  &copy; &nbsp;  2013 - 
-  <span itemprop="copyrightYear">2020</span>
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
-    <i class="icon-next-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Steven</span>
-</div>
 
-<div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io" target="_blank" rel="noopener">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">
-    NexT.Mist
-  </a>
+  
 </div>
 
 
- </div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
   </div>
 
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
-
-  
-  
-  
-    
-    
-
   
 
-
-  
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.1"></script>
-
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.1"></script>
-  
-
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-  <script type="text/javascript" src="/js/motion_global.js?v=0.4.5.1" id="motion.global"></script>
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
 
 
 
 
-  <script type="text/javascript" src="/js/nav-toggle.js?v=0.4.5.1"></script>
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+
+
+
 
   
 
-  <script type="text/javascript">
-    $(document).ready(function () {
-      if (CONFIG.sidebar === 'always') {
-        displaySidebar();
-      }
-      if (isMobile()) {
-        FastClick.attach(document.body);
-      }
-    });
-  </script>
 
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
   
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
   
-  <script type="text/javascript" src="/js/lazyload.js"></script>
-  <script type="text/javascript">
-    $(function () {
-      $("#posts").find('img').lazyload({
-        placeholder: "/images/loading.gif",
-        effect: "fadeIn"
-      });
-    });
-  </script>
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>
