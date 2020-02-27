@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="平衡车,WiFi," />
+  <meta name="keywords" content="Software Engineering,Function,Non-Function,Requirement," />
 
 
 
@@ -90,26 +90,20 @@
 
 
 
-<meta name="description" content="在开始写之前，总有一些话要说，在此写给我自己。时间过得真快，转眼间我已经毕业四个多月了，但我时常还能想起在学校、在宿舍、在实验室和伙伴们一起为了一个共同的项目通宵达旦的场景。想到这些过往并不是想说目前的工作不如意，而是有些东西，一旦经历了必然永远无法忘却，虽不能说是刻骨铭心，但毕竟为实现自己心中的梦想而奋斗过。一句话总结，有一些人，有一些事，一旦开始，就注定勇往直前，坚持到底。  以上是送给自己的">
+<meta name="description" content="Attendance ： Nan Yu, Junwen Wang, Han Xiao, Kaijie Wang, Xiaozhe Fu, Yonghao Piao, Hongqing Zeng  The Overview of FR and NFR  Functional and non-functional requirements Notice: ** Language for Writin">
 <meta property="og:type" content="article">
-<meta property="og:title" content="WiFi双轮平衡车的设计(一)">
-<meta property="og:url" content="http://www.zenghongqing.com/2015/11/16/belanceCar/index.html">
+<meta property="og:title" content="The functional and non-functional requirement">
+<meta property="og:url" content="http://www.zenghongqing.com/2020/02/27/The%20FR%20and%20NFR/index.html">
 <meta property="og:site_name" content="Steven&#96;s Blog">
-<meta property="og:description" content="在开始写之前，总有一些话要说，在此写给我自己。时间过得真快，转眼间我已经毕业四个多月了，但我时常还能想起在学校、在宿舍、在实验室和伙伴们一起为了一个共同的项目通宵达旦的场景。想到这些过往并不是想说目前的工作不如意，而是有些东西，一旦经历了必然永远无法忘却，虽不能说是刻骨铭心，但毕竟为实现自己心中的梦想而奋斗过。一句话总结，有一些人，有一些事，一旦开始，就注定勇往直前，坚持到底。  以上是送给自己的">
-<meta property="og:image" content="https://t1.picb.cc/uploads/2017/10/11/MI8uR.png">
-<meta property="og:image" content="https://t1.picb.cc/uploads/2017/10/11/MIj3s.png">
-<meta property="og:image" content="https://t1.picb.cc/uploads/2017/10/11/MIToJ.png">
-<meta property="og:image" content="https://t1.picb.cc/uploads/2017/10/11/MIRHF.png">
-<meta property="og:image" content="https://t1.picb.cc/uploads/2017/10/11/MIDIa.png">
-<meta property="og:image" content="https://t1.picb.cc/uploads/2017/10/11/MIKRD.png">
-<meta property="og:image" content="https://t1.picb.cc/uploads/2017/10/11/MIssd.png">
-<meta property="article:published_time" content="2015-11-16T13:08:12.000Z">
-<meta property="article:modified_time" content="2017-10-10T16:39:28.000Z">
+<meta property="og:description" content="Attendance ： Nan Yu, Junwen Wang, Han Xiao, Kaijie Wang, Xiaozhe Fu, Yonghao Piao, Hongqing Zeng  The Overview of FR and NFR  Functional and non-functional requirements Notice: ** Language for Writin">
+<meta property="article:published_time" content="2020-02-27T08:54:12.000Z">
+<meta property="article:modified_time" content="2020-02-27T17:33:45.992Z">
 <meta property="article:author" content="Steven">
-<meta property="article:tag" content="平衡车">
-<meta property="article:tag" content="WiFi">
+<meta property="article:tag" content="Software Engineering">
+<meta property="article:tag" content="Function">
+<meta property="article:tag" content="Non-Function">
+<meta property="article:tag" content="Requirement">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://t1.picb.cc/uploads/2017/10/11/MI8uR.png">
 
 
 
@@ -137,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://www.zenghongqing.com/2015/11/16/belanceCar/"/>
+  <link rel="canonical" href="http://www.zenghongqing.com/2020/02/27/The FR and NFR/"/>
 
 
 
 
 
-  <title> WiFi双轮平衡车的设计(一) | Steven`s Blog </title>
+  <title> The functional and non-functional requirement | Steven`s Blog </title>
 <meta name="generator" content="Hexo 4.2.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -280,7 +274,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2015/11/16/belanceCar/">
+    <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2020/02/27/The%20FR%20and%20NFR/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Steven">
@@ -301,7 +295,7 @@
             
             
               
-                WiFi双轮平衡车的设计(一)
+                The functional and non-functional requirement
               
             
           </h1>
@@ -316,8 +310,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-11-16T13:08:12+00:00">
-                2015-11-16
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-27T08:54:12+00:00">
+                2020-02-27
               </time>
             
 
@@ -339,8 +333,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%A7%91%E6%8A%80%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index">
-                    <span itemprop="name">科技项目</span>
+                  <a href="/categories/Software-Engineering/" itemprop="url" rel="index">
+                    <span itemprop="name">Software Engineering</span>
                   </a>
                 </span>
 
@@ -357,8 +351,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2015/11/16/belanceCar/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count fb-comments-count" data-href="http://www.zenghongqing.com/2015/11/16/belanceCar/" itemprop="commentCount">0</span> comments
+                <a href="/2020/02/27/The%20FR%20and%20NFR/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://www.zenghongqing.com/2020/02/27/The%20FR%20and%20NFR/" itemprop="commentCount">0</span> comments
                 </a>
               </span>
             
@@ -384,7 +378,7 @@
                     <span class="post-meta-item-text">字数统计</span>
                   
                     <span title="字数统计" }}">
-                      1.1k
+                      197
                     </span>
               
 
@@ -400,7 +394,7 @@
                     <span class="post-meta-item-text">阅读时长</span>
                   
                     <span title="阅读时长" }}">
-                      3
+                      1
                     </span>
               
             </div>
@@ -419,97 +413,35 @@
       
 
       
-        <p>在开始写之前，总有一些话要说，在此写给我自己。时间过得真快，转眼间我已经毕业四个多月了，但我时常还能想起在学校、在宿舍、在实验室和伙伴们一起为了一个共同的项目通宵达旦的场景。想到这些过往并不是想说目前的工作不如意，而是有些东西，一旦经历了必然永远无法忘却，虽不能说是刻骨铭心，但毕竟为实现自己心中的梦想而奋斗过。<br>一句话总结，有一些人，有一些事，一旦开始，就注定勇往直前，坚持到底。</p>
-<blockquote>
-<p>以上是送给自己的一些话，不说心里堵得慌，不喜勿看。</p>
+        <blockquote>
+<p><strong>Attendance ：</strong> Nan Yu, Junwen Wang, Han Xiao, Kaijie Wang, Xiaozhe Fu, Yonghao Piao, Hongqing Zeng</p>
 </blockquote>
-<h2 id="制作之前的准备工作及相关软件"><a href="#制作之前的准备工作及相关软件" class="headerlink" title="制作之前的准备工作及相关软件"></a>制作之前的准备工作及相关软件</h2><h3 id="准备软件"><a href="#准备软件" class="headerlink" title="准备软件"></a>准备软件</h3><ul>
-<li>Arduino IDE<br>我十分推荐写下位机程序的同学们能用Arduino作为主控板，他不仅秉承了开源的伟大思想更是突出简单实用的优点，对于强调互动和创新的项目开发的你们，没有必要非得用<br>MSP430、STM32或者瑞萨等一系列需要进行寄存器配置的MCU。除非你有特殊需求，否则没有必要把时间和有限的经历浪费到繁琐的寄存器配置上。</li>
-</ul>
-<p><img src="https://t1.picb.cc/uploads/2017/10/11/MI8uR.png" alt="Arduino"></p>
+<h2 id="The-Overview-of-FR-and-NFR"><a href="#The-Overview-of-FR-and-NFR" class="headerlink" title="The Overview of FR and NFR"></a>The Overview of FR and NFR</h2><blockquote class="imgur-embed-pub" lang="en" data-id="vCeteuT"><a href="//imgur.com/vCeteuT" target="_blank" rel="noopener"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
+<h2 id="Functional-and-non-functional-requirements"><a href="#Functional-and-non-functional-requirements" class="headerlink" title="Functional and non-functional requirements"></a>Functional and non-functional requirements</h2><blockquote>
+<p><strong>Notice: ** Language for Writing Requirements<br>**MoSCoW Criteria:</strong><br>*<em>M: *</em> Must have-mandatory requirements that are fundamental to the system<br>*<em>S: *</em> Should have –important requirements that could be omitted<br>*<em>C: *</em> Could have –optional requirements<br>*<em>W: *</em> Want to have –these requirements really can wait (i.e. bells and whistles)</p>
+</blockquote>
+<h3 id="2-1-Functional-requirements"><a href="#2-1-Functional-requirements" class="headerlink" title="2.1 Functional requirements"></a>2.1 Functional requirements</h3><p><small>In processing…</small><br><strong>(Hints: based on Users, including as follows:)</strong></p>
 <ul>
-<li>Eagle<br>这是一款电路板制作软件，我之前用过Protel 99se、Altium Designer两款软件<br>后者虽然功能强大，但简单设计又略显繁琐，所以后来改用Eagle制作电路板。</li>
+<li>adults users</li>
+<li>viewers </li>
+<li>bussiness and retailers</li>
 </ul>
-<p><img src="https://t1.picb.cc/uploads/2017/10/11/MIj3s.png" alt="Eagle"></p>
-<blockquote>
-<p>当你爱上Arduino的那一刻起，Eagle也随之来到你的生命中。</p>
-</blockquote>
-<ul>
-<li>Processing<br>同样是留着满身开源血液的史诗级的开发软件，可所谓一见钟情。它功能强大到只有你想不到没有你做不到的地步。概括起来就是无形胜有形。虽然我也用Virtual Studio开发过<br>上位机软件，但毕竟精力有限（主要是脑容量不足），后来我一直选择最爱的Processing</li>
-</ul>
-<p>![Processing]<img src="https://t1.picb.cc/uploads/2017/10/11/MIToJ.png" alt="MIToJ.png"></p>
-<ul>
-<li>MATLAB 2014b<br>关于它，我不想多说，工科的同志们，几乎没有不知道他的。该项目用来设计控制器以及仿真时用到。他功能之强大，我想没有人不知道吧！</li>
-</ul>
-<p><img src="https://t1.picb.cc/uploads/2017/10/11/MIRHF.png" alt="MATLAB 2014b"></p>
-<ul>
-<li>WinSCP<br>这个小软件在配置Openwrt时用到，这里先简单一提。</li>
-</ul>
-<p><img src="https://t1.picb.cc/uploads/2017/10/11/MIDIa.png" alt="WinSCP"></p>
-<ul>
-<li>Putty<br>同上，也是在配置Openwrt是用到，不做过多解释，用到时自然明白。</li>
-</ul>
-<p><img src="https://t1.picb.cc/uploads/2017/10/11/MIKRD.png" alt="Putty"></p>
-<ul>
-<li>Sublime<br>亲情推荐的一款编程软件，至于好到什么程度，请自行百度。我相信对于有无限的探索和求知欲望的人才能走的更远。</li>
-</ul>
-<p><img src="https://t1.picb.cc/uploads/2017/10/11/MIssd.png" alt="Sublime"></p>
-<h3 id="准备材料"><a href="#准备材料" class="headerlink" title="准备材料"></a>准备材料</h3><ol>
-<li>1.串口MPU6050模块。</li>
+<h3 id="2-2-Non-functional-requirements"><a href="#2-2-Non-functional-requirements" class="headerlink" title="2.2 Non-functional requirements"></a>2.2 Non-functional requirements</h3><p><small>In processing…</small><br><strong>(Hints: depends on catagories)</strong></p>
+<h3 id="2-3-The-combination-of-FR-and-NFR"><a href="#2-3-The-combination-of-FR-and-NFR" class="headerlink" title="2.3 The combination of FR and NFR"></a>2.3 The combination of FR and NFR</h3><p><small>In processing…</small></p>
+<h2 id="Unsolved-Problems"><a href="#Unsolved-Problems" class="headerlink" title="Unsolved Problems"></a>Unsolved Problems</h2><ol>
+<li>Assumption in the scope?<br>We plan to do it at the end of the teamwork</li>
+<li>Independent and dependent variables?</li>
+<li>Modify it as IEEE Standard (revised in 1998)<br>Descriptions of the content and the qualities of a good software requirements specification (SRS).</li>
 </ol>
-<blockquote>
-<p>特别注意，是串口MPU6050模块，不是普通的6050，串口6050只是不需要你自己滤波了,如果你想尝试一下，也未必不可，但我不推荐新手尝试Kalman</p>
-</blockquote>
-<ol start="2">
-<li>2.Tp-link-wr703n</li>
+<h2 id="The-Next-Task"><a href="#The-Next-Task" class="headerlink" title="The Next Task"></a>The Next Task</h2><ol>
+<li>What is UML? Please see the link at the bottom.</li>
+<li>How many diagrams should we design? Please refer to correspondingly taught slides on the Cavas.</li>
 </ol>
-<blockquote>
-<p>官方标配，刷进去Openwrt系统，同时可以无线更新程序，挂载摄像头等等</p>
-</blockquote>
-<ol start="3">
-<li>3.Arduino MEGA 2560 r3 </li>
+<h2 id="Reccomendation"><a href="#Reccomendation" class="headerlink" title="Reccomendation"></a>Reccomendation</h2><ol>
+<li>Useful App for UML <a href="https://www.visual-paradigm.com/download/" target="_blank" rel="noopener">Visual Paradigm</a></li>
+<li>What and Why UML <a href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-uml/" target="_blank" rel="noopener">What is Unified Modeling Language (UML)?</a></li>
 </ol>
-<blockquote>
-<p>这个单片机做平衡车足矣，当时怀疑他不能胜任</p>
-</blockquote>
-<ol start="4">
-<li>4.L298n</li>
-</ol>
-<blockquote>
-<p>最好是用带光耦的驱动，不带光耦也行，我的就没带光耦，害怕信号干扰就带上光耦</p>
-</blockquote>
-<ol start="5">
-<li>5.电机是直流减速电机带码盘</li>
-</ol>
-<blockquote>
-<p>扭矩最好是能大一点，我推荐德国空心杯电机，当然我用的不是空心杯。</p>
-</blockquote>
-<ol start="6">
-<li>6.OLED12864 LED屏幕</li>
-</ol>
-<blockquote>
-<p>我就不多说了，等到车很平稳了，你爱怎么扩展都行</p>
-</blockquote>
-<ol start="7">
-<li>7.小车轮子</li>
-</ol>
-<blockquote>
-<p>最好是大一点，轮子要用硬橡胶的，我现在这个轮胎是软的，摩擦力太大.</p>
-</blockquote>
-<ol start="8">
-<li>8.电池3节18650</li>
-</ol>
-<blockquote>
-<p>带上电池盒OK</p>
-</blockquote>
-<ol start="9">
-<li>9.稳压模块</li>
-</ol>
-<blockquote>
-<p>我个人认为不能把所有的需要5v供电的传感器都从单片机供电，单片机提供电流是有限的，可能会造成单片机死机的情况，因此我就外接一个稳压模块给这一群传感器供电，一定要注意稳压模块的输出的负极要和单片机共地。</p>
-</blockquote>
-<h4 id="注释："><a href="#注释：" class="headerlink" title="注释："></a>注释：</h4><p>元件就这么多了，其实也没有什么，重要的是控制思路和控制算法，如果对硬件还有疑问就提出来，准备工作就到这里。</p>
-<h3 id="准备心态"><a href="#准备心态" class="headerlink" title="准备心态"></a>准备心态</h3><p>我想说，做每一件事，都不是很容易，如果没有坚持到底的决心，几乎是半途而废。过程很枯燥，很烦恼，但只要坚持到最后，总会有不一样的收获。</p>
 
       
     </div>
@@ -533,9 +465,13 @@
       
         <div class="post-tags">
           
-            <a href="/tags/%E5%B9%B3%E8%A1%A1%E8%BD%A6/" rel="tag"># 平衡车</a>
+            <a href="/tags/Software-Engineering/" rel="tag"># Software Engineering</a>
           
-            <a href="/tags/WiFi/" rel="tag"># WiFi</a>
+            <a href="/tags/Function/" rel="tag"># Function</a>
+          
+            <a href="/tags/Non-Function/" rel="tag"># Non-Function</a>
+          
+            <a href="/tags/Requirement/" rel="tag"># Requirement</a>
           
         </div>
       
@@ -558,15 +494,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2020/02/20/The%20scope/" rel="next" title="Scope">
+                <i class="fa fa-chevron-left"></i> Scope
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/11/17/belanceCar2/" rel="prev" title="WiFi双轮平衡车的设计(二)">
-                WiFi双轮平衡车的设计(二) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -593,7 +529,7 @@
   <div class="comments" id="comments">
     
       <div class="fb-comments"
-           data-href="http://www.zenghongqing.com/2015/11/16/belanceCar/"
+           data-href="http://www.zenghongqing.com/2020/02/27/The%20FR%20and%20NFR/"
            data-numposts="10"
            data-width="100%"
            data-colorscheme="light">
@@ -750,7 +686,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#制作之前的准备工作及相关软件"><span class="nav-number">1.</span> <span class="nav-text">制作之前的准备工作及相关软件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#准备软件"><span class="nav-number">1.1.</span> <span class="nav-text">准备软件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#准备材料"><span class="nav-number">1.2.</span> <span class="nav-text">准备材料</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#注释："><span class="nav-number">1.2.1.</span> <span class="nav-text">注释：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#准备心态"><span class="nav-number">1.3.</span> <span class="nav-text">准备心态</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#The-Overview-of-FR-and-NFR"><span class="nav-number">1.</span> <span class="nav-text">The Overview of FR and NFR</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Functional-and-non-functional-requirements"><span class="nav-number">2.</span> <span class="nav-text">Functional and non-functional requirements</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-Functional-requirements"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 Functional requirements</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-Non-functional-requirements"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 Non-functional requirements</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-The-combination-of-FR-and-NFR"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 The combination of FR and NFR</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unsolved-Problems"><span class="nav-number">3.</span> <span class="nav-text">Unsolved Problems</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#The-Next-Task"><span class="nav-number">4.</span> <span class="nav-text">The Next Task</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reccomendation"><span class="nav-number">5.</span> <span class="nav-text">Reccomendation</span></a></li></ol></div>
             
 
           </div>
