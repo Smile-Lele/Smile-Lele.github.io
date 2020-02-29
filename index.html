@@ -270,6 +270,271 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2020/02/29/Quick%20Guideline%20for%20GitLab/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Steven">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Me.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Steven`s Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2020/02/29/Quick%20Guideline%20for%20GitLab/" itemprop="url">
+                  Quick Guideline for GitLab
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-29T16:54:12+08:00">
+                2020-02-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaProject/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaProject</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/02/29/Quick%20Guideline%20for%20GitLab/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://www.zenghongqing.com/2020/02/29/Quick%20Guideline%20for%20GitLab/" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                  
+                    <span class="post-meta-item-text">字数统计</span>
+                  
+                    <span title="字数统计" }}">
+                      444
+                    </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                  
+                    <span class="post-meta-item-text">阅读时长</span>
+                  
+                    <span title="阅读时长" }}">
+                      2
+                    </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p><strong>Notice :</strong> You won’t be able to pull or push project code via SSH until you add an SSH key to your profile<br><strong>Suggest :</strong> prior to use ED25519 SSH keys, since they are more secure and have better performance over the other types.<br>About adding an SSH key See <a href="https://git-teaching.cs.bham.ac.uk/help/ssh/README#types-of-ssh-keys-and-which-to-choose" target="_blank" rel="noopener">Offical Details</a></p>
+</blockquote>
+<h2 id="Config-SSH-key"><a href="#Config-SSH-key" class="headerlink" title="Config SSH key"></a>Config SSH key</h2><p>Take the following steps:</p>
+<ol>
+<li><p>Open terminal</p>
+</li>
+<li><p>Generate a new ED25519 SSH key pair:<br><code>ssh-keygen -t ed25519 -C &quot;username@cs.bham.ac.uk&quot;</code></p>
+</li>
+<li><p>go to the path <code>~/.ssh/</code> to find the file <code>id_ed25519.pub</code> and use any editor to open it.</p>
+<blockquote>
+<p>The <em>.shh</em> is a hidden filefolder, it can be opened after getting visiable.</p>
+</blockquote>
+</li>
+<li><p>Add your public SSH key to your GitLab account by:</p>
+</li>
+</ol>
+<p>Clicking your avatar in the upper right corner and selecting Settings.<br>Navigating to SSH Keys and pasting your public key from <code>id_ed25519.pub</code> into the Key field. </p>
+<ol start="5">
+<li>Click the Add key button.</li>
+</ol>
+<h2 id="Common-Git-Instruction"><a href="#Common-Git-Instruction" class="headerlink" title="Common Git Instruction"></a>Common Git Instruction</h2><blockquote>
+<p>Due to the GitLab Repository already established, we are supposed to bagin with the clone.</p>
+</blockquote>
+<ol>
+<li><p>Install Git<br>if not done yet, Please install git based on your corresponding OS</p>
+</li>
+<li><p>Open terminal and Identify yourself to Git by setting:</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git<span class="built_in"> config </span>--global user.email <span class="string">"[your email]"</span> </span><br><span class="line">git<span class="built_in"> config </span>--global user.name <span class="string">"[your name]"</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Clone your own Project by your repository address.<br><code>git clone yourProjectAddress</code></p>
+<blockquote>
+<p>Like <a href="https://git-teaching.cs.bham.ac.uk/mod-msc-sw1-2019/melbourne.git" target="_blank" rel="noopener">https://git-teaching.cs.bham.ac.uk/mod-msc-sw1-2019/melbourne.git</a></p>
+</blockquote>
+</li>
+<li><p>Create new branch<br><code>git branch yourBranchName</code></p>
+</li>
+<li><p>Switch branch<br><code>git checkout branchName</code></p>
+</li>
+<li><p>Delete branch<br><code>git branch -d branchName</code><br><code>git branch -D branchName</code></p>
+</li>
+<li><p>Stage changes<br><code>git add</code></p>
+</li>
+<li><p>Commit changes<br><code>git commit -a -m &#39;yourCommitText&#39;</code></p>
+</li>
+<li><p>Look at changes</p>
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">status</span></span><br><span class="line">git <span class="built_in">diff</span></span><br><span class="line">git <span class="built_in">log</span></span><br></pre></td></tr></table></figure></li>
+<li><p>Merge<br><code>git merge anotherBranchName</code></p>
+<blockquote>
+<p>merges changes from branch “name” into active branch</p>
+</blockquote>
+</li>
+<li><p>Downloads and merges changes from the remote repository.<br><code>git pull</code></p>
+</li>
+<li><p>Sends local changes to remote repository.<br><code>git push</code></p>
+</li>
+<li><p>Downloads changes but does not merge them. (Merge manually later.)<br><code>git fetch</code></p>
+</li>
+</ol>
+<h2 id="Using-the-School’s-VPN-service"><a href="#Using-the-School’s-VPN-service" class="headerlink" title="Using the School’s VPN service"></a>Using the School’s VPN service</h2><p><strong>Connection details :</strong></p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Server: vpn2.cs.bham.ac.uk</span><br><span class="line">Type: l2tp/ipsec</span><br><span class="line">Password Authentication: pap</span><br><span class="line">Shared Secret: woolybronzeicebox</span><br></pre></td></tr></table></figure>
+<p>Via: <a href="https://support.cs.bham.ac.uk/articles/vpn/" target="_blank" rel="noopener">Computer Science Support Pages: VPN</a></p>
+<ol>
+<li>Open <code>System Preferences</code> -&gt; <code>Network</code> -&gt; <code>Add</code> -&gt; <code>Interface: VPN</code> -&gt; <code>Type: L2TP</code> -&gt; <code>Create</code> -&gt;|</li>
+<li>Server Address: <code>vpn2.cs.bham.ac.uk</code></li>
+<li>Account Name: <code>yourStudentAccount</code></li>
+<li>Click Authetication</li>
+<li>Password: <code>yourStudentPasswd</code></li>
+<li>Machine Authetication -&gt; Shared Secret: <code>woolybronzeicebox</code> <blockquote>
+<p>This shared secret may change from time to time - the latest secret will always be available on this page. </p>
+</blockquote>
+</li>
+</ol>
+<h2 id="Access-UOB-SSH"><a href="#Access-UOB-SSH" class="headerlink" title="Access UOB SSH"></a>Access UOB SSH</h2><ol>
+<li>Open terminal</li>
+<li>Input<br><code>ssh username@tinky-winky.cs.bham.ac.uk</code><blockquote>
+<p>username is your CS account name</p>
+</blockquote>
+</li>
+<li>Input your passwd</li>
+</ol>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a>Reference:</h2><blockquote>
+<p>Notice: All References are Accessed on 29/02/2020.</p>
+</blockquote>
+<p><a href="https://blog.daraw.cn/2019/12/21/you-dont-know-git/" target="_blank" rel="noopener">你可能不知道的 Git</a><br><a href="https://git-scm.com/docs/gittutorial" target="_blank" rel="noopener">gittutorial – A tutorial introduction to Git</a><br><a href="https://git-scm.com/docs/user-manual" target="_blank" rel="noopener">Git – user-manual Documentation</a><br><a href="https://git-scm.com/docs" target="_blank" rel="noopener">Git – Reference</a><br><a href="https://git-scm.com/book/en/v2" target="_blank" rel="noopener">Pro Git</a><br><a href="https://docs.gitlab.com/ee/" target="_blank" rel="noopener">GitLab Docs</a></p>
+<h2 id="Acknowledgement"><a href="#Acknowledgement" class="headerlink" title="Acknowledgement"></a>Acknowledgement</h2><p>School of Computer Science, The University of Birmingham.</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2020/02/27/The%20FR%20and%20NFR/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2277,200 +2542,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2015/11/21/belanceCar6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Steven">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/Me.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Steven`s Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/11/21/belanceCar6/" itemprop="url">
-                  WiFi双轮平衡车的设计(六)
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-11-21T13:16:01+08:00">
-                2015-11-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%A7%91%E6%8A%80%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index">
-                    <span itemprop="name">科技项目</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2015/11/21/belanceCar6/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count fb-comments-count" data-href="http://www.zenghongqing.com/2015/11/21/belanceCar6/" itemprop="commentCount">0</span> comments
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                  
-                    <span class="post-meta-item-text">字数统计</span>
-                  
-                    <span title="字数统计" }}">
-                      1.3k
-                    </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                  
-                    <span class="post-meta-item-text">阅读时长</span>
-                  
-                    <span title="阅读时长" }}">
-                      7
-                    </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="平衡车控制代码-Arduino"><a href="#平衡车控制代码-Arduino" class="headerlink" title="平衡车控制代码-Arduino"></a>平衡车控制代码-Arduino</h2><blockquote>
-<p>一直说要把全部代码贴到<a href="http://www.geek-workshop.com/thread-8991-1-1.html" target="_blank" rel="noopener">极客工坊</a>论坛上，由于各种琐碎的事情耽搁，直到今天抽出时间将其拿出来全部分享。</p>
-</blockquote>
-<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// =====================================================</span></span><br><span class="line"><span class="comment">// ====               MPU6050                       ====</span></span><br><span class="line"><span class="comment">// =====================================================</span></span><br><span class="line"><span class="keyword">unsigned</span> <span class="keyword">char</span> Re_buf[<span class="number">11</span>],counter=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">float</span> a[<span class="number">3</span>],w[<span class="number">3</span>],Angle[<span class="number">3</span>],T;</span><br><span class="line"><span class="comment">//======================================================</span></span><br><span class="line"><span class="comment">//==                  Motor programer                ===</span></span><br><span class="line"><span class="comment">//======================================================</span></span><br><span class="line"><span class="comment">//MOTOR(int (+/-)Left_PWM,int (+/-)Right_PWM)</span></span><br><span class="line"><span class="comment">//‘+’电机正转；‘—’电机反转</span></span><br><span class="line"><span class="comment">//PWM:范围0~255</span></span><br><span class="line"><span class="comment">//======================================================</span></span><br><span class="line"><span class="keyword">int</span> M_left1 =<span class="number">7</span>;</span><br><span class="line"><span class="keyword">int</span> M_left2 =<span class="number">6</span>;</span><br><span class="line"><span class="keyword">int</span> M_right1 =<span class="number">5</span>;</span><br><span class="line"><span class="keyword">int</span> M_right2 =<span class="number">4</span>;</span><br><span class="line"> <span class="comment">// =========================================================</span></span><br><span class="line"><span class="comment">// ===                    INTERRUPT                       ===</span></span><br><span class="line"><span class="comment">// ==========================================================</span></span><br><span class="line"><span class="comment">//External Interrupts: 2 (interrupt 0), 3 (interrupt 1)</span></span><br><span class="line"><span class="comment">//                     18 (interrupt 5),19 (interrupt 4)</span></span><br><span class="line"><span class="comment">//                     20 (interrupt 3), 21 (interrupt 2)</span></span><br><span class="line"><span class="comment">// ==========================================================</span></span><br><span class="line"><span class="comment">//增量式-M法码盘测速，原理如下：</span></span><br><span class="line"><span class="comment">//PinA:下降沿触发外部中断</span></span><br><span class="line"><span class="comment">//PinB:若A相下降沿触发,判断B相:若出现LOW电平,为正脉冲计数器加1</span></span><br><span class="line"><span class="comment">//                             若出现HIGH电平,为负脉冲计数器减1</span></span><br><span class="line"><span class="comment">//码盘统一成前进方向</span></span><br><span class="line"><span class="comment">// ==========================================================</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> PinA_left 18</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> PinB_left 22</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> PinA_right 19</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> PinB_right 23</span></span><br><span class="line"><span class="keyword">int</span> count_left;</span><br><span class="line"><span class="keyword">int</span> count_right;</span><br><span class="line"><span class="comment">//================================================</span></span><br><span class="line"><span class="comment">//===               Communication              ===</span></span><br><span class="line"><span class="comment">//================================================</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span>   LINE_END              10                             <span class="comment">// \n</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span>   SPLIT                 58                             <span class="comment">// :</span></span></span><br><span class="line"><span class="keyword">int</span> STD_LOOP_TIME  = <span class="number">10</span>;             </span><br><span class="line"><span class="keyword">int</span> lastLoopTime = STD_LOOP_TIME;</span><br><span class="line"><span class="keyword">int</span> lastLoopUsefulTime = STD_LOOP_TIME;</span><br><span class="line"><span class="keyword">unsigned</span> <span class="keyword">long</span> loopStartTime = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> updateRate = <span class="number">0</span>;            <span class="comment">//Nr of loop to skip sending and receving info from PC</span></span><br><span class="line"><span class="comment">//================================================</span></span><br><span class="line"><span class="comment">//===               Power_sample               ===</span></span><br><span class="line"><span class="comment">//================================================</span></span><br><span class="line"><span class="keyword">float</span> Value_filter;</span><br><span class="line"><span class="keyword">float</span> Voltage;</span><br><span class="line"><span class="keyword">char</span> OK = <span class="number">1</span>;</span><br><span class="line"><span class="comment">//=========================================================</span></span><br><span class="line"><span class="comment">//===                  PID_CONTROLLER                   ===</span></span><br><span class="line"><span class="comment">//=========================================================</span></span><br><span class="line"><span class="keyword">int</span> Pwm_out = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> Turn_Need = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> Speed_Need = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">float</span> PWM_revise = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> motorOffsetR , motorOffsetL;</span><br><span class="line"><span class="keyword">int</span> Item_limited = <span class="number">1200</span>;</span><br><span class="line"><span class="keyword">float</span> speeds , speeds_filter, positions;</span><br><span class="line"><span class="comment">//=========================================================</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> filter_p 0.3</span></span><br><span class="line"><span class="keyword">float</span> Kap = <span class="number">23.2</span>;</span><br><span class="line"><span class="keyword">float</span> Kad = <span class="number">9.58</span>;</span><br><span class="line"><span class="keyword">float</span> Ksp = <span class="number">2.25</span>;</span><br><span class="line"><span class="keyword">float</span> Ksi = <span class="number">0.102</span>;</span><br><span class="line"><span class="comment">//=================================================</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">PID_PWM</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="comment">//PWM_revise = 11.0 / Value_filter;</span></span><br><span class="line"></span><br><span class="line">  speeds=(count_left + count_right) * <span class="number">0.5</span>;</span><br><span class="line">  </span><br><span class="line">  count_left = <span class="number">0</span>;</span><br><span class="line">  count_right = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  speeds_filter *=(<span class="number">1</span> - filter_p);  <span class="comment">//速度互补滤波防止抖动</span></span><br><span class="line">  speeds_filter +=speeds*filter_p;</span><br><span class="line"></span><br><span class="line">  positions += speeds_filter;</span><br><span class="line">  positions += Speed_Need;</span><br><span class="line">  positions = <span class="built_in">constrain</span>(positions, -Item_limited, Item_limited);<span class="comment">//抗积分饱和</span></span><br><span class="line"></span><br><span class="line">  Pwm_out = Kap*Angle[<span class="number">0</span>] + Kad*w[<span class="number">0</span>] ;</span><br><span class="line">  Pwm_out += Ksp*speeds_filter + Ksi*positions ;  <span class="comment">//PID控制器</span></span><br><span class="line">  <span class="comment">//Pwm_out *= PWM_revise;  //Power revise</span></span><br><span class="line"></span><br><span class="line">  motorOffsetR = <span class="keyword">int</span>(Pwm_out + Turn_Need);</span><br><span class="line">  motorOffsetL = <span class="keyword">int</span>(Pwm_out - Turn_Need);</span><br><span class="line"></span><br><span class="line">  Motor(motorOffsetL , motorOffsetR);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//================================================</span></span><br><span class="line"><span class="comment">//===                  Setup                   ===</span></span><br><span class="line"><span class="comment">//================================================</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="built_in">analogReference</span>(<span class="literal">EXTERNAL</span>);   <span class="comment">//使用外部电压基准</span></span><br><span class="line">  <span class="built_in">Serial</span>.<span class="built_in">begin</span>(<span class="number">115200</span>);</span><br><span class="line">  Serial3.<span class="built_in">begin</span>(<span class="number">115200</span>);</span><br><span class="line">  <span class="built_in">pinMode</span>(M_left1, <span class="literal">OUTPUT</span>); <span class="comment">//L298P直流电机驱动板的控制端口设置为输出模式</span></span><br><span class="line">  <span class="built_in">pinMode</span>(M_left2, <span class="literal">OUTPUT</span>);</span><br><span class="line">  <span class="built_in">pinMode</span>(M_right1, <span class="literal">OUTPUT</span>);</span><br><span class="line">  <span class="built_in">pinMode</span>(M_right2, <span class="literal">OUTPUT</span>);</span><br><span class="line">  <span class="built_in">attachInterrupt</span>(<span class="number">5</span>, Code_left, FALLING);<span class="comment">//小车左车轮编码器下降沿触发(外中断)</span></span><br><span class="line">  <span class="built_in">attachInterrupt</span>(<span class="number">4</span>, Code_right, FALLING);</span><br><span class="line">  <span class="built_in">delay</span>(<span class="number">500</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//================================================</span></span><br><span class="line"><span class="comment">//===                  Loop                    ===</span></span><br><span class="line"><span class="comment">//================================================</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">// ********************* Sensor aquisition &amp; filtering *******************</span></span><br><span class="line">  <span class="built_in">serialEvent</span>();</span><br><span class="line">  Power_sample();</span><br><span class="line"><span class="comment">// *********************** PID and motor drive *****************</span></span><br><span class="line">  PID_PWM();</span><br><span class="line"><span class="comment">// ********************* print Debug info *************************************</span></span><br><span class="line">  serialIn_GUI();       <span class="comment">//Processing information from a pc</span></span><br><span class="line">  serialOut_GUI();	<span class="comment">//Sending information to pc for debug</span></span><br><span class="line"><span class="comment">// *********************** loop timing control **************************</span></span><br><span class="line">  lastLoopUsefulTime = <span class="built_in">millis</span>()-loopStartTime;</span><br><span class="line">  <span class="keyword">if</span>(lastLoopUsefulTime&lt;STD_LOOP_TIME)</span><br><span class="line">    <span class="built_in">delay</span>(STD_LOOP_TIME-lastLoopUsefulTime);</span><br><span class="line">  lastLoopTime = <span class="built_in">millis</span>() - loopStartTime;</span><br><span class="line">  loopStartTime = <span class="built_in">millis</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//================================================</span></span><br><span class="line"><span class="comment">//===        UART_communication                ===</span></span><br><span class="line"><span class="comment">//================================================</span></span><br><span class="line"><span class="comment">/*                  下行数据协议						</span></span><br><span class="line"><span class="comment">*/</span><span class="comment">//==============================================</span></span><br><span class="line"><span class="keyword">int</span> skipOut=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">serialOut_GUI</span><span class="params">()</span> </span>&#123;  </span><br><span class="line">  </span><br><span class="line">  <span class="keyword">if</span>(skipOut++&gt;=updateRate) &#123;                                                        </span><br><span class="line">    skipOut = <span class="number">0</span>;</span><br><span class="line">    <span class="comment">//Filtered and unfiltered speed</span></span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(speeds, DEC);  <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(speeds_filter, DEC);   <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//Raw sensor data</span></span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(Angle[<span class="number">0</span>], DEC);   <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(w[<span class="number">0</span>], DEC);   <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(a[<span class="number">0</span>], DEC);   <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">   </span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(positions, DEC);      <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(Item_limited, DEC);      <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(-Item_limited, DEC);      <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(Pwm_out, DEC);      <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(Value_filter, DEC);      <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(Item_limited, DEC);   <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//PID Parameters</span></span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(Kap, DEC);   <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(Kad, DEC);   <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(Ksp, DEC);   <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(Ksi, DEC);   <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//loop</span></span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(STD_LOOP_TIME, DEC);        <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(lastLoopUsefulTime, DEC);   <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(lastLoopTime, DEC);         <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(updateRate, DEC);           <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(motorOffsetL, DEC);         <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">","</span>);</span><br><span class="line">    <span class="built_in">Serial</span>.<span class="built_in">print</span>(motorOffsetR, DEC);         <span class="built_in">Serial</span>.<span class="built_in">print</span>(<span class="string">"\n"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">union</span> u_tag &#123;</span><br><span class="line">  <span class="keyword">byte</span> b[<span class="number">4</span>];</span><br><span class="line">  <span class="keyword">float</span> fval;</span><br><span class="line">&#125; u;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> skipIn=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">serialIn_GUI</span><span class="params">()</span></span>&#123;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">if</span>(skipIn++&gt;=updateRate) &#123;                                                        </span><br><span class="line">    skipIn = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">byte</span> id;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">Serial</span>.<span class="built_in">available</span>() &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;               </span><br><span class="line">      <span class="keyword">char</span> param = <span class="built_in">Serial</span>.<span class="built_in">read</span>(); </span><br><span class="line">      <span class="built_in">delay</span>(<span class="number">10</span>);</span><br><span class="line">      <span class="keyword">byte</span> inByte[<span class="built_in">Serial</span>.<span class="built_in">available</span>()];</span><br><span class="line">      <span class="keyword">if</span>(<span class="built_in">Serial</span>.<span class="built_in">read</span>() == SPLIT)&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">Serial</span>.<span class="built_in">available</span>() &gt;= <span class="number">4</span>)&#123;</span><br><span class="line">          u.b[<span class="number">3</span>] = <span class="built_in">Serial</span>.<span class="built_in">read</span>(); </span><br><span class="line">          u.b[<span class="number">2</span>] = <span class="built_in">Serial</span>.<span class="built_in">read</span>(); </span><br><span class="line">          u.b[<span class="number">1</span>] = <span class="built_in">Serial</span>.<span class="built_in">read</span>(); </span><br><span class="line">          u.b[<span class="number">0</span>] = <span class="built_in">Serial</span>.<span class="built_in">read</span>(); </span><br><span class="line">          <span class="built_in">Serial</span>.<span class="built_in">flush</span>();</span><br><span class="line">          </span><br><span class="line">          <span class="keyword">switch</span> (param) &#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">'p'</span>:</span><br><span class="line">              Kap = <span class="keyword">int</span>(u.fval);</span><br><span class="line">              <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">'d'</span>:</span><br><span class="line">              Kad = <span class="keyword">int</span>(u.fval);</span><br><span class="line">              <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">'P'</span>:</span><br><span class="line">              Ksp = <span class="keyword">int</span>(u.fval);</span><br><span class="line">              <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">'I'</span>:</span><br><span class="line">              Ksi = u.fval;</span><br><span class="line">              <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">'s'</span>:</span><br><span class="line">              Item_limited = <span class="keyword">int</span>(u.fval);</span><br><span class="line">              <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">'u'</span>:</span><br><span class="line">              updateRate = <span class="keyword">int</span>(u.fval);</span><br><span class="line">              <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">'l'</span>:</span><br><span class="line">              motorOffsetL = u.fval;</span><br><span class="line">              <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">'r'</span>:</span><br><span class="line">              motorOffsetR = u.fval;</span><br><span class="line">              <span class="keyword">break</span>;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">// =========================================================</span></span><br><span class="line"><span class="comment">// ===                    INTERRUPT                       ===</span></span><br><span class="line"><span class="comment">// ==========================================================</span></span><br><span class="line"><span class="comment">//External Interrupts: 2 (interrupt 0), 3 (interrupt 1)</span></span><br><span class="line"><span class="comment">//                     18 (interrupt 5),19 (interrupt 4)</span></span><br><span class="line"><span class="comment">//                     20 (interrupt 3), 21 (interrupt 2)</span></span><br><span class="line"><span class="comment">// ==========================================================</span></span><br><span class="line"><span class="comment">//增量式-M法码盘测速，原理如下：</span></span><br><span class="line"><span class="comment">//PinA:下降沿触发外部中断</span></span><br><span class="line"><span class="comment">//PinB:若A相下降沿触发,判断B相:若出现LOW电平,为正脉冲计数器加1</span></span><br><span class="line"><span class="comment">//                             若出现HIGH电平,为负脉冲计数器减1</span></span><br><span class="line"><span class="comment">//码盘统一成前进方向</span></span><br><span class="line"><span class="comment">// ==========================================================</span></span><br><span class="line"><span class="built_in">void</span> Code_left()</span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">if</span>(digitalRead(PinB_left) == <span class="number">0</span>)</span><br><span class="line">    count_left += <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">else</span></span><br><span class="line">    count_left -= <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">void</span> Code_right()</span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">if</span>(digitalRead(PinB_right) == <span class="number">0</span>)</span><br><span class="line">    count_right -= <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">else</span></span><br><span class="line">    count_right += <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// =========================================================</span></span><br><span class="line"><span class="comment">// ====                  串口MPU6050                    ====</span></span><br><span class="line"><span class="comment">// =========================================================</span></span><br><span class="line"><span class="built_in">void</span> serialEvent() &#123;</span><br><span class="line">  <span class="keyword">while</span> (Serial3.available()) &#123;</span><br><span class="line">    Re_buf[counter]=(unsigned char)Serial3.read();</span><br><span class="line">    <span class="keyword">if</span>(counter==<span class="number">0</span>&amp;&amp;Re_buf[<span class="number">0</span>]!=<span class="number">0x55</span>) <span class="keyword">return</span>;      <span class="comment">//第0号数据不是帧头</span></span><br><span class="line">    counter++;</span><br><span class="line">    <span class="keyword">if</span>(counter==<span class="number">11</span>)             <span class="comment">//接收到11个数据</span></span><br><span class="line">    &#123;</span><br><span class="line">       counter=<span class="number">0</span>;               <span class="comment">//重新赋值，准备下一帧数据的接收</span></span><br><span class="line">       <span class="keyword">switch</span>(Re_buf [<span class="number">1</span>])</span><br><span class="line">	&#123;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">0x51</span>:</span><br><span class="line">		a[<span class="number">0</span>] = <span class="built_in">float</span>(short(Re_buf [<span class="number">3</span>]&lt;&lt;<span class="number">8</span>| Re_buf [<span class="number">2</span>]))/<span class="number">32768</span>*<span class="number">16</span>;</span><br><span class="line">		a[<span class="number">1</span>] =  <span class="built_in">float</span>(short(Re_buf [<span class="number">5</span>]&lt;&lt;<span class="number">8</span>| Re_buf [<span class="number">4</span>]))/<span class="number">32768</span>*<span class="number">16</span>;</span><br><span class="line">		a[<span class="number">2</span>] =  <span class="built_in">float</span>(short(Re_buf [<span class="number">7</span>]&lt;&lt;<span class="number">8</span>| Re_buf [<span class="number">6</span>]))/<span class="number">32768</span>*<span class="number">16</span>;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">0x52</span>:</span><br><span class="line">		w[<span class="number">0</span>] =  <span class="built_in">float</span>(short(Re_buf [<span class="number">3</span>]&lt;&lt;<span class="number">8</span>| Re_buf [<span class="number">2</span>]))/<span class="number">32768</span>*<span class="number">250</span>;</span><br><span class="line">		w[<span class="number">1</span>] =  <span class="built_in">float</span>(short(Re_buf [<span class="number">5</span>]&lt;&lt;<span class="number">8</span>| Re_buf [<span class="number">4</span>]))/<span class="number">32768</span>*<span class="number">250</span>;</span><br><span class="line">		w[<span class="number">2</span>] =  <span class="built_in">float</span>(short(Re_buf [<span class="number">7</span>]&lt;&lt;<span class="number">8</span>| Re_buf [<span class="number">6</span>]))/<span class="number">32768</span>*<span class="number">250</span>;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">0x53</span>:</span><br><span class="line">        	Angle[<span class="number">0</span>] =  <span class="built_in">float</span>(short(Re_buf [<span class="number">3</span>]&lt;&lt;<span class="number">8</span>| Re_buf [<span class="number">2</span>]))/<span class="number">32768</span>*<span class="number">180</span>;</span><br><span class="line">		Angle[<span class="number">1</span>] =  <span class="built_in">float</span>(short(Re_buf [<span class="number">5</span>]&lt;&lt;<span class="number">8</span>| Re_buf [<span class="number">4</span>]))/<span class="number">32768</span>*<span class="number">180</span>;</span><br><span class="line">		Angle[<span class="number">2</span>] =  <span class="built_in">float</span>(short(Re_buf [<span class="number">7</span>]&lt;&lt;<span class="number">8</span>| Re_buf [<span class="number">6</span>]))/<span class="number">32768</span>*<span class="number">180</span>;</span><br><span class="line">		<span class="comment">//T =  float(short(Re_buf [9]&lt;&lt;8| Re_buf [8]));///340.0+36.25</span></span><br><span class="line">                <span class="comment">//sign=1;</span></span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">	&#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//======================================================</span></span><br><span class="line"><span class="comment">//==                  Motor programer                ===</span></span><br><span class="line"><span class="comment">//======================================================</span></span><br><span class="line"><span class="comment">//MOTOR(int (+/-)Left_PWM,int (+/-)Right_PWM)</span></span><br><span class="line"><span class="comment">//‘+’电机正转；‘—’电机反转</span></span><br><span class="line"><span class="comment">//PWM:范围0~255</span></span><br><span class="line"><span class="comment">//======================================================</span></span><br><span class="line"> <span class="function"><span class="keyword">void</span> <span class="title">Motor</span><span class="params">(<span class="keyword">int</span> Left_PWM,<span class="keyword">int</span> Right_PWM)</span></span></span><br><span class="line"><span class="function"> </span>&#123;</span><br><span class="line">   Left_PWM = <span class="built_in">constrain</span>(Left_PWM, <span class="number">-255</span>, <span class="number">255</span>);</span><br><span class="line">   Right_PWM = <span class="built_in">constrain</span>(Right_PWM, <span class="number">-255</span>, <span class="number">255</span>);</span><br><span class="line">   <span class="keyword">if</span>(Left_PWM != <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="keyword">if</span>(Left_PWM&gt;<span class="number">0</span>)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="built_in">analogWrite</span>(M_left1,Left_PWM);</span><br><span class="line">        <span class="built_in">digitalWrite</span>(M_left2,<span class="literal">LOW</span>);</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">else</span></span><br><span class="line">      &#123;</span><br><span class="line">        <span class="built_in">digitalWrite</span>(M_left1,<span class="literal">LOW</span>);</span><br><span class="line">        <span class="built_in">analogWrite</span>(M_left2,-Left_PWM);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">digitalWrite</span>(M_left1,<span class="literal">LOW</span>);</span><br><span class="line">        <span class="built_in">digitalWrite</span>(M_left2,<span class="literal">LOW</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(Right_PWM != <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="keyword">if</span>(Right_PWM&gt;<span class="number">0</span>)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="built_in">analogWrite</span>(M_right1,Right_PWM);</span><br><span class="line">        <span class="built_in">digitalWrite</span>(M_right2, <span class="literal">LOW</span>);</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">else</span></span><br><span class="line">      &#123;</span><br><span class="line">        <span class="built_in">digitalWrite</span>(M_right1, <span class="literal">LOW</span>);</span><br><span class="line">        <span class="built_in">analogWrite</span>(M_right2, -Right_PWM);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">      &#123;</span><br><span class="line">        <span class="built_in">digitalWrite</span>(M_right1, <span class="literal">LOW</span>);</span><br><span class="line">        <span class="built_in">digitalWrite</span>(M_right2, <span class="literal">LOW</span>);</span><br><span class="line">      &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//================================================</span></span><br><span class="line"><span class="comment">//===               Power_sample               ===</span></span><br><span class="line"><span class="comment">//================================================</span></span><br><span class="line"><span class="comment">// note : Analog Port is A7.</span></span><br><span class="line"><span class="comment">// using one order low_pass filter</span></span><br><span class="line"><span class="comment">// filter_coefficient is 0.1</span></span><br><span class="line"><span class="comment">//================================================</span></span><br><span class="line">#define FILTER_A <span class="number">0.1</span></span><br><span class="line"><span class="built_in">void</span> Power_sample()</span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">if</span>(OK==<span class="number">1</span>)</span><br><span class="line">  &#123;</span><br><span class="line">    Value_filter = analogRead(A7)/<span class="number">1024.0</span>*<span class="number">25</span>;</span><br><span class="line">    OK =<span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  Voltage = analogRead(A7)/<span class="number">1024.0</span>*<span class="number">25</span>;</span><br><span class="line">  Value_filter = (<span class="built_in">float</span>)((<span class="built_in">float</span>)Voltage * FILTER_A + (<span class="number">1.0</span> - FILTER_A) * (<span class="built_in">float</span>)Value_filter);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -2518,7 +2589,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -2527,7 +2598,7 @@
           
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">分类</span>
               
             </div>
@@ -2536,7 +2607,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">27</span>
+                <span class="site-state-item-count">30</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
