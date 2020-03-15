@@ -270,6 +270,212 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2020/03/15/The%20difference%20between%20TCP%20and%20UDP/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Steven">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Me.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Steven`s Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2020/03/15/The%20difference%20between%20TCP%20and%20UDP/" itemprop="url">
+                  TCP and UDP
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-15T03:38:08+00:00">
+                2020-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Netwrok/" itemprop="url" rel="index">
+                    <span itemprop="name">Netwrok</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/03/15/The%20difference%20between%20TCP%20and%20UDP/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://www.zenghongqing.com/2020/03/15/The%20difference%20between%20TCP%20and%20UDP/" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                  
+                    <span class="post-meta-item-text">字数统计</span>
+                  
+                    <span title="字数统计" }}">
+                      700
+                    </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                  
+                    <span class="post-meta-item-text">阅读时长</span>
+                  
+                    <span title="阅读时长" }}">
+                      4
+                    </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Distinguish-between-TCP-and-UDP"><a href="#Distinguish-between-TCP-and-UDP" class="headerlink" title="Distinguish between TCP and UDP"></a>Distinguish between TCP and UDP</h1><blockquote>
+<p>The Internet’s transport layer transports application-layer messages between application endpoints. In the Internet there are two transport protocols, TCP and UDP, either of which can transport application- layer messages.</p>
+</blockquote>
+<h2 id="What-is-TCP-Transmission-Control-Protocol"><a href="#What-is-TCP-Transmission-Control-Protocol" class="headerlink" title="What is TCP (Transmission Control Protocol)?"></a>What is TCP (Transmission Control Protocol)?</h2><p>TCP provides a ­connection-oriented service to its applications. This service includes guaranteed delivery of application-layer messages to the destination and flow control (that is, sender/receiver speed matching). TCP also breaks long messages into shorter ­segments and provides a congestion-control mechanism, so that a source throttles its transmission rate when the network is congested.</p>
+<p>Transmission Control Protocol (TCP) is a connection-oriented protocol that computers use to communicate over the internet. It is one of the main protocols in TCP/IP networks. TCP provides error-checking and guarantees delivery of data and that packets will be delivered in the order they were sent.</p>
+<h2 id="What-is-UDP-User-Datagram-Protocol"><a href="#What-is-UDP-User-Datagram-Protocol" class="headerlink" title="What is UDP (User Datagram Protocol)?"></a>What is UDP (User Datagram Protocol)?</h2><p>The UDP protocol provides a connectionless service to its applications. This is a no-frills service that provides no reliability, no flow control, and no congestion control. In this book, we’ll refer to a transport-layer packet as a segment.</p>
+<p>User Datagram Protocol (UDP) is a connectionless protocol that works just like TCP but assumes that error-checking and recovery services are not required. Instead, UDP continuously sends datagrams to the recipient whether they receive them or not.</p>
+<h2 id="The-difference-between-TCP-and-UDP"><a href="#The-difference-between-TCP-and-UDP" class="headerlink" title="The difference between TCP and UDP"></a>The difference between TCP and UDP</h2><p><strong>TCP</strong> and <strong>UDP</strong> have many differences and similarities. They are the most commonly used protocols for sending packets over the internet. They both work on the transport layer of the TCP/IP protocol stack and both use the IP protocol.</p>
+<p>Let’s take a look at some of the key differences.</p>
+<h3 id="Connection-and-connectionless"><a href="#Connection-and-connectionless" class="headerlink" title="Connection and connectionless"></a>Connection and connectionless</h3><p><strong>TCP</strong> is a connection-oriented protocol and <strong>UDP</strong> is a connection-less protocol. <strong>TCP</strong> establishes a connection between a sender and receiver before data can be sent. <strong>UDP</strong> does not establish a connection before sending data.</p>
+<h3 id="Reliability"><a href="#Reliability" class="headerlink" title="Reliability"></a>Reliability</h3><p><strong>TCP</strong> is reliable. Data sent using a TCP protocol is guaranteed to be delivered to the receiver. If data is lost in transit it will recover the data and resend it. TCP will also check packets for errors and track packets so that data is not lost or corrupted.</p>
+<p><strong>UDP</strong> is unreliable, it does not provide guaranteed delivery and a datagram packet may become corrupt or lost in transit.</p>
+<h3 id="Flow-control"><a href="#Flow-control" class="headerlink" title="Flow control"></a>Flow control</h3><p><strong>TCP</strong> uses a flow control mechanism that ensures a sender is not overwhelming a receiver by sending too many packets at once. TCP stores data in a send buffer and receives data in a receive buffer. When an application is ready, it will read the data from the receive buffer. If the receive buffer is full, the receiver would not be able to handle more data and would drop it. To maintain the amount of data that can be sent to a receiver, the receiver tells the sender how much spare room in the receive buffer there is (receive window). Every time a packet is received, a message is sent to the sender with the value of the current receive window.</p>
+<p><strong>UDP</strong> does not provide flow control. With UDP, packets arrive in a continuous stream or they are dropped.</p>
+<h3 id="Ordering"><a href="#Ordering" class="headerlink" title="Ordering"></a>Ordering</h3><p>TCP does ordering and sequencing to guarantee that packets sent from a server will be delivered to the client in the same order they were sent. On the other hand, UDP sends packets in any order.</p>
+<h3 id="Speed"><a href="#Speed" class="headerlink" title="Speed"></a>Speed</h3><p>TCP is slower than UDP because it has a lot more to do. TCP has to establish a connection, error-check, and guarantee that files are received in the order they were sent.</p>
+<h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><p>TCP is best suited to be used for applications that require high reliability where timing is less of a concern.</p>
+<p>World Wide Web (HTTP, HTTPS)<br>Secure Shell (SSH)<br>File Transfer Protocol (FTP)<br>Email (SMTP, IMAP/POP)<br>UDP is best suited for applications that require speed and efficiency.</p>
+<p>VPN tunneling<br>Streaming videos<br>Online games<br>Live broadcasts<br>Domain Name System (DNS)<br>Voice over Internet Protocol (VoIP)<br>Trivial File Transfer Protocol (TFTP)</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><blockquote>
+<p>Notice: All References are Accessed on 15/03/2020.</p>
+</blockquote>
+<ol>
+<li><a href="https://www.cnblogs.com/williamjie/p/9390164.html" target="_blank" rel="noopener">TCP和UDP的最完整的区别</a></li>
+<li><a href="http://www.xiuchuang.com/question/4019.html" target="_blank" rel="noopener">TCP和UDP的区别</a></li>
+<li><a href="https://www.privateinternetaccess.com/blog/tcp-vs-udp-understanding-the-difference/" target="_blank" rel="noopener">TCP vs. UDP: Understanding the Difference</a></li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2020/02/29/Quick%20Guideline%20for%20GitLab/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2348,200 +2554,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://www.zenghongqing.com/2015/11/22/belanceCar7/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Steven">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/Me.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Steven`s Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/11/22/belanceCar7/" itemprop="url">
-                  WiFi双轮平衡车的设计(七)
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-11-22T13:16:01+08:00">
-                2015-11-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%A7%91%E6%8A%80%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index">
-                    <span itemprop="name">科技项目</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2015/11/22/belanceCar7/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count fb-comments-count" data-href="http://www.zenghongqing.com/2015/11/22/belanceCar7/" itemprop="commentCount">0</span> comments
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                  
-                    <span class="post-meta-item-text">字数统计</span>
-                  
-                    <span title="字数统计" }}">
-                      1.5k
-                    </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                  
-                    <span class="post-meta-item-text">阅读时长</span>
-                  
-                    <span title="阅读时长" }}">
-                      9
-                    </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="平衡车控制界面-Processing"><a href="#平衡车控制界面-Processing" class="headerlink" title="平衡车控制界面-Processing"></a>平衡车控制界面-Processing</h2><blockquote>
-<p>之前一直用Csharp编上位机软件，当我第一次发现Processing这个神奇的软件的时候，我就深深的迷恋上她，其强大有趣之处还希望大家深入挖掘。</p>
-</blockquote>
-<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br><span class="line">337</span><br><span class="line">338</span><br><span class="line">339</span><br><span class="line">340</span><br><span class="line">341</span><br><span class="line">342</span><br><span class="line">343</span><br><span class="line">344</span><br><span class="line">345</span><br><span class="line">346</span><br><span class="line">347</span><br><span class="line">348</span><br><span class="line">349</span><br><span class="line">350</span><br><span class="line">351</span><br><span class="line">352</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">//This is main program</span></span><br><span class="line"></span><br><span class="line">import controlP5.*;</span><br><span class="line"></span><br><span class="line">ControlP5 cp5;</span><br><span class="line">Chart Chart1, Chart2;</span><br><span class="line"></span><br><span class="line">PFont font = createFont(<span class="string">"Consolas"</span>, <span class="number">14</span>);</span><br><span class="line">PFont largeFont = createFont(<span class="string">"MicrosoftYaHei"</span>, <span class="number">30</span>);</span><br><span class="line"></span><br><span class="line">boolean Buttonpress = false;</span><br><span class="line"></span><br><span class="line">void setup() &#123;</span><br><span class="line"></span><br><span class="line">  <span class="comment">//setupScreen(0);</span></span><br><span class="line">  size(<span class="number">800</span>, <span class="number">540</span>);</span><br><span class="line">  textFont(font);</span><br><span class="line">  fill(color(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>));</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  cp5 = new ControlP5(this);</span><br><span class="line"></span><br><span class="line">  myClient = new Client(this, <span class="string">"192.168.1.1"</span>, <span class="number">1234</span>);</span><br><span class="line"></span><br><span class="line">  cp5.addBang(<span class="string">"Start"</span>)</span><br><span class="line">    .setPosition(<span class="number">30</span>, <span class="number">60</span>)</span><br><span class="line">      .setSize(<span class="number">80</span>, <span class="number">20</span>)</span><br><span class="line">        .setColorForeground(color(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>))</span><br><span class="line">          .setLabel(<span class="string">"Start"</span>)</span><br><span class="line">            .getCaptionLabel().align(ControlP5.CENTER, ControlP5.CENTER);</span><br><span class="line"></span><br><span class="line">  cp5.addBang(<span class="string">"Close"</span>)</span><br><span class="line">    .setPosition(<span class="number">130</span>, <span class="number">60</span>)</span><br><span class="line">      .setSize(<span class="number">80</span>, <span class="number">20</span>)</span><br><span class="line">        .setColorForeground(color(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>))</span><br><span class="line">          .setLabel(<span class="string">"Close"</span>)</span><br><span class="line">            .getCaptionLabel().align(ControlP5.CENTER, ControlP5.CENTER);</span><br><span class="line"></span><br><span class="line">  cp5.addSlider(<span class="string">"sliderToSetSV"</span>)</span><br><span class="line">    .setPosition(<span class="number">230</span>, <span class="number">60</span>)</span><br><span class="line">      .setSize(<span class="number">360</span>, <span class="number">20</span>)</span><br><span class="line">        .setRange(sliderMin, sliderMax)</span><br><span class="line">          .setColorBackground(color(<span class="number">80</span>))</span><br><span class="line">            .setColorForeground(color(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>))</span><br><span class="line">              .setColorActive(color(<span class="number">150</span>, <span class="number">250</span>, <span class="number">0</span>))</span><br><span class="line">                .setValue(<span class="number">0</span>)<span class="comment">//(sliderMin+sliderMax)/2</span></span><br><span class="line">                  .setLabelVisible(false);</span><br><span class="line"></span><br><span class="line">  cp5.addTextfield(<span class="string">"SV"</span>)</span><br><span class="line">    .setPosition(<span class="number">610</span>, <span class="number">60</span>)</span><br><span class="line">      .setSize(<span class="number">80</span>, <span class="number">20</span>)</span><br><span class="line">        .setLabel(<span class="string">" "</span>)</span><br><span class="line">          .setFont(largeFont)</span><br><span class="line">            .setColorBackground(color(<span class="number">30</span>))</span><br><span class="line">              .setColorForeground(color(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>))</span><br><span class="line">                .setColor(color(<span class="number">255</span>))</span><br><span class="line">                  .setFont(font)</span><br><span class="line">                    .setValue(<span class="number">0</span>);<span class="comment">//nfc((sliderMin+sliderMax)/2)</span></span><br><span class="line"></span><br><span class="line">  cp5.addBang(<span class="string">"setSV"</span>)</span><br><span class="line">    .setPosition(<span class="number">710</span>, <span class="number">60</span>)</span><br><span class="line">      .setSize(<span class="number">60</span>, <span class="number">20</span>)</span><br><span class="line">        .setLabel(<span class="string">"Set SV"</span>)</span><br><span class="line">          .setColorForeground(color(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>))</span><br><span class="line">            .getCaptionLabel()</span><br><span class="line">              .align(ControlP5.CENTER, ControlP5.CENTER);</span><br><span class="line"></span><br><span class="line">  cp5.addBang(<span class="string">"setPID"</span>)</span><br><span class="line">    .setPosition(<span class="number">130</span>, <span class="number">120</span>)</span><br><span class="line">      .setSize(<span class="number">80</span>, <span class="number">20</span>)</span><br><span class="line">        .setLabel(<span class="string">"Set PID"</span>)</span><br><span class="line">          .setColorForeground(color(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>))</span><br><span class="line">            .getCaptionLabel()</span><br><span class="line">              .align(ControlP5.CENTER, ControlP5.CENTER);</span><br><span class="line"></span><br><span class="line">  cp5.addBang(<span class="string">"Revise"</span>)</span><br><span class="line">    .setPosition(<span class="number">30</span>, <span class="number">120</span>)</span><br><span class="line">      .setLabel(<span class="string">"Revise"</span>)</span><br><span class="line">        .setSize(<span class="number">80</span>, <span class="number">20</span>)</span><br><span class="line">          .setColorForeground(color(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>))</span><br><span class="line">            .getCaptionLabel()</span><br><span class="line">              .align(ControlP5.CENTER, ControlP5.CENTER);</span><br><span class="line"></span><br><span class="line">  <span class="comment">//  cp5.addToggle("chooseMode")</span></span><br><span class="line">  <span class="comment">//    .setPosition(30, 120)</span></span><br><span class="line">  <span class="comment">//      .setLabel(" Man  &lt;------&gt;  Auto")</span></span><br><span class="line">  <span class="comment">//        .setSize(80, 20)</span></span><br><span class="line">  <span class="comment">//          .setColorBackground(color(80))</span></span><br><span class="line">  <span class="comment">//            .setValue(true)</span></span><br><span class="line">  <span class="comment">//              .setMode(ControlP5.SWITCH);                        </span></span><br><span class="line"></span><br><span class="line">  cp5.addTextfield(<span class="string">"KpTextfield"</span>)</span><br><span class="line">    .setPosition(<span class="number">130</span>, <span class="number">165</span>)</span><br><span class="line">      .setLabel(<span class="string">"Kp"</span>)</span><br><span class="line">        .setSize(<span class="number">80</span>, <span class="number">20</span>)</span><br><span class="line">          .setFont(largeFont)</span><br><span class="line">            .setColorBackground(color(<span class="number">30</span>))</span><br><span class="line">              .setColorForeground(color(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>))</span><br><span class="line">                .setColor(color(<span class="number">255</span>))</span><br><span class="line">                  .setFont(font)</span><br><span class="line">                    .setValue(<span class="string">"0"</span>);</span><br><span class="line"></span><br><span class="line">  cp5.addTextfield(<span class="string">"KiTextfield"</span>)</span><br><span class="line">    .setPosition(<span class="number">130</span>, <span class="number">225</span>)</span><br><span class="line">      .setLabel(<span class="string">"Ki"</span>)</span><br><span class="line">        .setSize(<span class="number">80</span>, <span class="number">20</span>)</span><br><span class="line">          .setFont(largeFont)</span><br><span class="line">            .setColorBackground(color(<span class="number">30</span>))</span><br><span class="line">              .setColorForeground(color(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>))</span><br><span class="line">                .setColor(color(<span class="number">255</span>))</span><br><span class="line">                  .setFont(font)</span><br><span class="line">                    .setValue(<span class="string">"0"</span>);</span><br><span class="line"></span><br><span class="line">  cp5.addTextfield(<span class="string">"KdTextfield"</span>)</span><br><span class="line">    .setPosition(<span class="number">130</span>, <span class="number">285</span>)</span><br><span class="line">      .setLabel(<span class="string">"Kd"</span>)</span><br><span class="line">        .setSize(<span class="number">80</span>, <span class="number">20</span>)</span><br><span class="line">          .setFont(largeFont)</span><br><span class="line">            .setColorBackground(color(<span class="number">30</span>))</span><br><span class="line">              .setColorForeground(color(<span class="number">150</span>, <span class="number">250</span>, <span class="number">0</span>))</span><br><span class="line">                .setColor(color(<span class="number">255</span>))</span><br><span class="line">                  .setFont(font)</span><br><span class="line">                    .setValue(<span class="string">"0"</span>);</span><br><span class="line"></span><br><span class="line">  cp5.addTextfield(<span class="string">"FilterTextfield"</span>)</span><br><span class="line">    .setPosition(<span class="number">130</span>, <span class="number">345</span>)</span><br><span class="line">      .setLabel(<span class="string">"Filter"</span>)</span><br><span class="line">        .setSize(<span class="number">80</span>, <span class="number">20</span>)</span><br><span class="line">          .setFont(largeFont)</span><br><span class="line">            .setColorBackground(color(<span class="number">30</span>))</span><br><span class="line">              .setColorForeground(color(<span class="number">150</span>, <span class="number">250</span>, <span class="number">0</span>))</span><br><span class="line">                .setColor(color(<span class="number">255</span>))</span><br><span class="line">                  .setFont(font)</span><br><span class="line">                    .setValue(<span class="string">"0"</span>);</span><br><span class="line"></span><br><span class="line">  cp5.addTextfield(<span class="string">"ITermMaxTextfield"</span>)</span><br><span class="line">    .setPosition(<span class="number">130</span>, <span class="number">405</span>)</span><br><span class="line">      .setLabel(<span class="string">"ITemMax"</span>)</span><br><span class="line">        .setSize(<span class="number">80</span>, <span class="number">20</span>)</span><br><span class="line">          .setFont(largeFont)</span><br><span class="line">            .setColorBackground(color(<span class="number">30</span>))</span><br><span class="line">              .setColorForeground(color(<span class="number">150</span>, <span class="number">250</span>, <span class="number">0</span>))</span><br><span class="line">                .setColor(color(<span class="number">255</span>))</span><br><span class="line">                  .setFont(font)</span><br><span class="line">                    .setValue(<span class="string">"0"</span>);</span><br><span class="line"></span><br><span class="line">  cp5.addTextfield(<span class="string">"ITermMinTextfield"</span>)</span><br><span class="line">    .setPosition(<span class="number">130</span>, <span class="number">465</span>)</span><br><span class="line">      .setLabel(<span class="string">"ITemMin"</span>)</span><br><span class="line">        .setSize(<span class="number">80</span>, <span class="number">20</span>)</span><br><span class="line">          .setFont(largeFont)</span><br><span class="line">            .setColorBackground(color(<span class="number">30</span>))</span><br><span class="line">              .setColorForeground(color(<span class="number">150</span>, <span class="number">250</span>, <span class="number">0</span>))</span><br><span class="line">                .setColor(color(<span class="number">255</span>))</span><br><span class="line">                  .setFont(font)</span><br><span class="line">                    .setValue(<span class="string">"0"</span>);</span><br><span class="line"></span><br><span class="line">  cp5.get(Textfield.class, <span class="string">"KpTextfield"</span>).getCaptionLabel().setVisible(false);</span><br><span class="line">  cp5.get(Textfield.class, <span class="string">"KiTextfield"</span>).getCaptionLabel().setVisible(false);</span><br><span class="line">  cp5.get(Textfield.class, <span class="string">"KdTextfield"</span>).getCaptionLabel().setVisible(false);</span><br><span class="line">  cp5.get(Textfield.class, <span class="string">"FilterTextfield"</span>).getCaptionLabel().setVisible(false);</span><br><span class="line">  cp5.get(Textfield.class, <span class="string">"ITermMaxTextfield"</span>).getCaptionLabel().setVisible(false);</span><br><span class="line">  cp5.get(Textfield.class, <span class="string">"ITermMinTextfield"</span>).getCaptionLabel().setVisible(false);  </span><br><span class="line"></span><br><span class="line">  Chart1  = cp5.addChart(<span class="string">"Chart1"</span>)</span><br><span class="line">    .setPosition(<span class="number">230</span>, <span class="number">120</span>)</span><br><span class="line">      .setSize(<span class="number">540</span>, <span class="number">180</span>)</span><br><span class="line">        .setRange(<span class="number">0</span>, <span class="number">300</span>)</span><br><span class="line">          .setView(Chart.LINE);</span><br><span class="line"></span><br><span class="line">  Chart1.getColor().setBackground(color(<span class="number">0</span>, <span class="number">10</span>));</span><br><span class="line">  Chart1.addDataSet(<span class="string">"PV1"</span>);</span><br><span class="line">  Chart1.setColors(<span class="string">"PV1"</span>, color(<span class="number">255</span>, <span class="number">100</span>, <span class="number">0</span>), color(<span class="number">255</span>, <span class="number">100</span>, <span class="number">0</span>));</span><br><span class="line">  Chart1.setData(<span class="string">"PV1"</span>, new <span class="type">float</span>[<span class="number">100</span>]);</span><br><span class="line">  Chart1.setStrokeWeight(<span class="number">1.5</span>);</span><br><span class="line"></span><br><span class="line">  Chart1.getColor().setBackground(color(<span class="number">0</span>, <span class="number">10</span>));</span><br><span class="line">  Chart1.addDataSet(<span class="string">"PV2"</span>);</span><br><span class="line">  Chart1.setColors(<span class="string">"PV2"</span>, color(<span class="number">240</span>, <span class="number">230</span>, <span class="number">140</span>), color(<span class="number">240</span>, <span class="number">230</span>, <span class="number">140</span>));</span><br><span class="line">  Chart1.setData(<span class="string">"PV2"</span>, new <span class="type">float</span>[<span class="number">100</span>]);</span><br><span class="line">  Chart1.setStrokeWeight(<span class="number">1.5</span>);</span><br><span class="line"></span><br><span class="line">  Chart2  = cp5.addChart(<span class="string">"Chart2"</span>)</span><br><span class="line">    .setPosition(<span class="number">230</span>, <span class="number">320</span>)</span><br><span class="line">      .setSize(<span class="number">540</span>, <span class="number">180</span>)</span><br><span class="line">        .setRange(<span class="number">-100</span>, <span class="number">100</span>)</span><br><span class="line">          .setView(Chart.LINE);</span><br><span class="line"></span><br><span class="line">  Chart2.getColor().setBackground(color(<span class="number">0</span>, <span class="number">10</span>));</span><br><span class="line">  Chart2.addDataSet(<span class="string">"PV3"</span>);</span><br><span class="line">  Chart2.setColors(<span class="string">"PV3"</span>, color(<span class="number">100</span>, <span class="number">250</span>, <span class="number">0</span>), color(<span class="number">100</span>, <span class="number">250</span>, <span class="number">0</span>));</span><br><span class="line">  Chart2.setData(<span class="string">"PV3"</span>, new <span class="type">float</span>[<span class="number">100</span>]);</span><br><span class="line">  Chart2.setStrokeWeight(<span class="number">1.5</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">final static int sliderMin = <span class="number">0</span>;</span><br><span class="line">final static int sliderMax = <span class="number">250</span>;</span><br><span class="line"></span><br><span class="line">long Timer1 = <span class="number">0</span>;</span><br><span class="line">int SV = <span class="number">0</span>;</span><br><span class="line"><span class="type">float</span> Kp = <span class="number">0</span>;</span><br><span class="line"><span class="type">float</span> Ki = <span class="number">0</span>;</span><br><span class="line"><span class="type">float</span> Kd = <span class="number">0</span>;</span><br><span class="line"><span class="type">float</span> Filter = <span class="number">0</span>;</span><br><span class="line"><span class="type">float</span> ITermMax = <span class="number">0</span>;</span><br><span class="line"><span class="type">float</span> ITermMin = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">boolean sliderChangedFlag = false;</span><br><span class="line">boolean setPIDFlag = false;</span><br><span class="line">boolean ReviseFlag = false;</span><br><span class="line"></span><br><span class="line">void draw() &#123;</span><br><span class="line"></span><br><span class="line">  background(<span class="number">30</span>, <span class="number">30</span>, <span class="number">30</span>);</span><br><span class="line"></span><br><span class="line">  fill(#FFFFFF);</span><br><span class="line">  textFont(largeFont);</span><br><span class="line">  textAlign(CENTER, CENTER);</span><br><span class="line">  text(<span class="string">"控制系统调试界面"</span>, width/<span class="number">2</span>, <span class="number">25</span>);</span><br><span class="line"></span><br><span class="line">  fill(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>);</span><br><span class="line">  textFont(font);</span><br><span class="line">  textAlign(BASELINE);</span><br><span class="line">  text(<span class="string">"Monitor1"</span>, <span class="number">670</span>, <span class="number">115</span>);</span><br><span class="line">  text(<span class="string">"Monitor2"</span>, <span class="number">670</span>, <span class="number">315</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  fill(<span class="number">100</span>, <span class="number">200</span>, <span class="number">0</span>);</span><br><span class="line">  text(<span class="string">"     Kp:"</span>, <span class="number">30</span>, <span class="number">180</span>);</span><br><span class="line">  text(<span class="string">"     Ki:"</span>, <span class="number">30</span>, <span class="number">240</span>);</span><br><span class="line">  text(<span class="string">"     Kd:"</span>, <span class="number">30</span>, <span class="number">300</span>);</span><br><span class="line">  text(<span class="string">" Filter:"</span>, <span class="number">30</span>, <span class="number">360</span>);</span><br><span class="line">  text(<span class="string">"ItemMax:"</span>, <span class="number">30</span>, <span class="number">420</span>);</span><br><span class="line">  text(<span class="string">"ItemMin:"</span>, <span class="number">30</span>, <span class="number">480</span>);</span><br><span class="line">  text(nfc(sliderMin), <span class="number">230</span>, <span class="number">96</span>);</span><br><span class="line">  text(nfc(sliderMax), <span class="number">570</span>, <span class="number">96</span>);</span><br><span class="line">  text(<span class="string">"PV1:"</span> + Value_A[<span class="number">0</span>], <span class="number">240</span>, <span class="number">115</span>);</span><br><span class="line">  text(<span class="string">"PV2:"</span> + Value_A[<span class="number">1</span>], <span class="number">400</span>, <span class="number">115</span>);</span><br><span class="line">  text(<span class="string">"PV3:"</span> + Value_A[<span class="number">2</span>], <span class="number">240</span>, <span class="number">315</span>); </span><br><span class="line">  text(<span class="string">"Copyright(c)-2015-UPC-Automation-Zeng Hongqing"</span>, <span class="number">205</span>, <span class="number">530</span>);</span><br><span class="line"></span><br><span class="line">  fill(<span class="number">255</span>);</span><br><span class="line">  <span class="comment">// draw the grid</span></span><br><span class="line">  stroke(<span class="number">100</span>);</span><br><span class="line">  strokeWeight(<span class="number">1</span>);</span><br><span class="line">  noFill();</span><br><span class="line">  rect(<span class="number">230</span>, <span class="number">120</span>, <span class="number">540</span>, <span class="number">180</span>);</span><br><span class="line">  line(<span class="number">230</span>, <span class="number">210</span>, <span class="number">770</span>, <span class="number">210</span>);</span><br><span class="line">  strokeWeight(<span class="number">0.2</span>);</span><br><span class="line">  for (int i=<span class="number">130</span>; i&lt;<span class="number">300</span>; i+=<span class="number">10</span>) &#123;</span><br><span class="line">    line(<span class="number">230</span>, i, <span class="number">770</span>, i);</span><br><span class="line">  &#125;</span><br><span class="line">  for (int i=<span class="number">250</span>; i&lt;<span class="number">770</span>; i+=<span class="number">20</span>) &#123;</span><br><span class="line">    line(i, <span class="number">120</span>, i, <span class="number">300</span>);</span><br><span class="line">  &#125;    </span><br><span class="line"></span><br><span class="line">  strokeWeight(<span class="number">1</span>);</span><br><span class="line">  rect(<span class="number">230</span>, <span class="number">320</span>, <span class="number">540</span>, <span class="number">180</span>);    </span><br><span class="line">  line(<span class="number">230</span>, <span class="number">410</span>, <span class="number">770</span>, <span class="number">410</span>);</span><br><span class="line">  strokeWeight(<span class="number">0.2</span>);</span><br><span class="line">  for (int i=<span class="number">330</span>; i&lt;<span class="number">500</span>; i+=<span class="number">10</span>) &#123;</span><br><span class="line">    line(<span class="number">230</span>, i, <span class="number">770</span>, i);</span><br><span class="line">  &#125;</span><br><span class="line">  for (int i=<span class="number">250</span>; i&lt;<span class="number">770</span>; i+=<span class="number">20</span>) &#123;</span><br><span class="line">    line(i, <span class="number">320</span>, i, <span class="number">500</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  if (setPIDFlag) &#123;</span><br><span class="line">    Kp = <span class="type">float</span>(cp5.get(Textfield.class, <span class="string">"KpTextfield"</span>).getText());</span><br><span class="line">    Ki = <span class="type">float</span>(cp5.get(Textfield.class, <span class="string">"KiTextfield"</span>).getText());</span><br><span class="line">    Kd = <span class="type">float</span>(cp5.get(Textfield.class, <span class="string">"KdTextfield"</span>).getText());</span><br><span class="line">    Filter = <span class="type">float</span>(cp5.get(Textfield.class, <span class="string">"FilterTextfield"</span>).getText());</span><br><span class="line">    ITermMax = <span class="type">float</span>(cp5.get(Textfield.class, <span class="string">"ITermMaxTextfield"</span>).getText());</span><br><span class="line">    ITermMin = <span class="type">float</span>(cp5.get(Textfield.class, <span class="string">"ITermMinTextfield"</span>).getText());</span><br><span class="line"></span><br><span class="line">    Send(<span class="string">"b"</span>, Kp);</span><br><span class="line">    Send(<span class="string">"c"</span>, Ki);</span><br><span class="line">    Send(<span class="string">"d"</span>, Kd);</span><br><span class="line">    Send(<span class="string">"e"</span>, Filter);</span><br><span class="line">    Send(<span class="string">"f"</span>, ITermMax);</span><br><span class="line">    Send(<span class="string">"g"</span>, ITermMin);</span><br><span class="line"></span><br><span class="line">    setPIDFlag = false;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  Kp = Value_B[<span class="number">0</span>];</span><br><span class="line">  Ki = Value_B[<span class="number">1</span>];</span><br><span class="line">  Kd = Value_B[<span class="number">2</span>];</span><br><span class="line">  Filter = Value_B[<span class="number">3</span>];</span><br><span class="line">  ITermMax = Value_B[<span class="number">4</span>];</span><br><span class="line">  ITermMin = Value_B[<span class="number">5</span>];</span><br><span class="line"></span><br><span class="line">  if (ReviseFlag == false) &#123;</span><br><span class="line">    cp5.get(Textfield.class, <span class="string">"KpTextfield"</span>).setText(nfc(Kp, <span class="number">3</span>));</span><br><span class="line">    cp5.get(Textfield.class, <span class="string">"KiTextfield"</span>).setText(nfc(Ki, <span class="number">3</span>));</span><br><span class="line">    cp5.get(Textfield.class, <span class="string">"KdTextfield"</span>).setText(nfc(Kd, <span class="number">3</span>));</span><br><span class="line">    cp5.get(Textfield.class, <span class="string">"FilterTextfield"</span>).setText(nfc(Filter, <span class="number">2</span>));</span><br><span class="line">    cp5.get(Textfield.class, <span class="string">"ITermMaxTextfield"</span>).setText(nfc(ITermMax, <span class="number">2</span>));</span><br><span class="line">    cp5.get(Textfield.class, <span class="string">"ITermMinTextfield"</span>).setText(nfc(ITermMin, <span class="number">2</span>));</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  if (sliderChangedFlag) &#123;</span><br><span class="line"></span><br><span class="line">    sliderChangedFlag = false;</span><br><span class="line">    SV = int(cp5.getController(<span class="string">"sliderToSetSV"</span>).getValue());</span><br><span class="line">    cp5.get(Textfield.class, <span class="string">"SV"</span>).setText(nfc(SV));</span><br><span class="line">    Send(<span class="string">"a"</span>, SV);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">//Chart</span></span><br><span class="line">  if (millis() - Timer1 &gt;= <span class="number">100</span> &amp; Buttonpress == true)</span><br><span class="line">  &#123;</span><br><span class="line">    Chart1.push(<span class="string">"PV1"</span>, Value_A[<span class="number">0</span>]);</span><br><span class="line">    Chart1.push(<span class="string">"PV2"</span>, Value_A[<span class="number">1</span>]);</span><br><span class="line">    Chart2.push(<span class="string">"PV3"</span>, Value_A[<span class="number">2</span>]);</span><br><span class="line">    Timer1 = millis();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public void sliderToSetSV(<span class="type">float</span> sv) &#123;</span><br><span class="line"></span><br><span class="line">  SV = int(sv);</span><br><span class="line">  sliderChangedFlag = true;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public void setSV() &#123;</span><br><span class="line"></span><br><span class="line">  SV = int(cp5.get(Textfield.class, <span class="string">"SV"</span>).getText());</span><br><span class="line">  cp5.getController(<span class="string">"sliderToSetSV"</span>).setValue(SV);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public void setPID() &#123;</span><br><span class="line"></span><br><span class="line">  setPIDFlag = true;</span><br><span class="line">  ReviseFlag = false;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public void Revise() &#123;</span><br><span class="line"></span><br><span class="line">  ReviseFlag = true;</span><br><span class="line">&#125;</span><br><span class="line">public void Start() &#123;</span><br><span class="line"></span><br><span class="line">  Buttonpress = true;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public void Close() &#123;</span><br><span class="line"></span><br><span class="line">  exit();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">// communication</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> processing.net.*; </span><br><span class="line"><span class="built_in">Client</span> myClient; </span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> DataLength = <span class="number">9</span>;</span><br><span class="line"><span class="keyword">String</span> message = null;</span><br><span class="line"><span class="keyword">float</span>[] Value_A = <span class="keyword">new</span> <span class="keyword">float</span>[<span class="number">3</span>];<span class="comment">//Create temp variabels</span></span><br><span class="line"><span class="keyword">float</span>[] Value_B = <span class="keyword">new</span> <span class="keyword">float</span>[<span class="number">6</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">clientEvent</span> <span class="params">(<span class="built_in">Client</span> myClient)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">String</span> message = myClient.<span class="built_in">readStringUntil</span>(<span class="string">'\n'</span>);</span><br><span class="line">  <span class="keyword">if</span> (message != null) &#123;</span><br><span class="line">    message = trim(message);</span><br><span class="line">    <span class="keyword">if</span> (split(message, <span class="string">","</span>).length &gt;= DataLength) &#123;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">float</span>[] temp = <span class="keyword">float</span>(split(message, <span class="string">","</span>));</span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> (temp.length &gt;= <span class="number">3</span>) &#123;</span><br><span class="line">        arrayCopy(temp, <span class="number">0</span>, Value_A, <span class="number">0</span>, <span class="number">3</span>);<span class="comment">//Getting the values from temp</span></span><br><span class="line">        <span class="comment">//println("Value_A:" + Value_A[0] + "," + Value_A[1] + "," + Value_A[2]);</span></span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> (temp.length &gt;= <span class="number">4</span>) &#123;</span><br><span class="line">        arrayCopy(temp, <span class="number">3</span>, Value_B, <span class="number">0</span>, <span class="number">6</span>);</span><br><span class="line">        <span class="comment">//println("Value_B:" + Value_B[5]);</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Send</span><span class="params">(<span class="keyword">String</span> ParamName, <span class="keyword">float</span> Value)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (myClient != null) &#123;</span><br><span class="line">    myClient.<span class="built_in">write</span>(ParamName);</span><br><span class="line">    myClient.<span class="built_in">write</span>(<span class="string">':'</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//Converts the float value to raw bytes</span></span><br><span class="line">    <span class="keyword">int</span> raw=Float.floatToRawIntBits(Value);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//Sends the float value as four bytes</span></span><br><span class="line">    myClient.<span class="built_in">write</span>((<span class="keyword">byte</span>)(raw&gt;&gt;&gt;<span class="number">24</span>));</span><br><span class="line">    myClient.<span class="built_in">write</span>((<span class="keyword">byte</span>)(raw&gt;&gt;<span class="number">16</span> &amp; <span class="number">0xff</span>));</span><br><span class="line">    myClient.<span class="built_in">write</span>((<span class="keyword">byte</span>)(raw&gt;&gt;<span class="number">8</span> &amp; <span class="number">0xff</span>));</span><br><span class="line">    myClient.<span class="built_in">write</span>((<span class="keyword">byte</span>)(raw &amp; <span class="number">0xff</span>));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//import processing.opengl.*;</span></span><br><span class="line"><span class="comment">///*</span></span><br><span class="line"><span class="comment">//  Sets the scrren size</span></span><br><span class="line"><span class="comment">//*/</span></span><br><span class="line"><span class="comment">//void setupScreen(int type)&#123;</span></span><br><span class="line"><span class="comment">//  switch(type)&#123;</span></span><br><span class="line"><span class="comment">//    case 0:</span></span><br><span class="line"><span class="comment">//      size(800, 540);</span></span><br><span class="line"><span class="comment">//      break;</span></span><br><span class="line"><span class="comment">//    case 1:</span></span><br><span class="line"><span class="comment">//      size(1024,580, OPENGL);</span></span><br><span class="line"><span class="comment">//      break;</span></span><br><span class="line"><span class="comment">//    default:</span></span><br><span class="line"><span class="comment">//      size(1024,580);</span></span><br><span class="line"><span class="comment">//  &#125;</span></span><br><span class="line"><span class="comment">//  // set inital background:</span></span><br><span class="line"><span class="comment">//  background(0);</span></span><br><span class="line"><span class="comment">//  // turn on antialiasing:</span></span><br><span class="line"><span class="comment">//  smooth();</span></span><br><span class="line"><span class="comment">//&#125;</span></span><br></pre></td></tr></table></figure>
-
-<p>界面如下图：<br><img src="https://t1.picb.cc/uploads/2017/10/11/MiOmJ.jpg" alt="Processing控制界面"></p>
-<h4 id="Processing视频采集"><a href="#Processing视频采集" class="headerlink" title="Processing视频采集"></a>Processing视频采集</h4><blockquote>
-<p>附加一个Processing采集视频的程序，正好和前面Openwrt所写的视频通讯呼应。</p>
-</blockquote>
-<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> ipcapture.*;</span><br><span class="line"></span><br><span class="line">IPCapture cam;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="built_in">size</span>(<span class="number">640</span>,<span class="number">480</span>);</span><br><span class="line">  <span class="comment">//cam = new IPCapture(this, "http://192.168.1.90:8080/?action=stream", "", "");</span></span><br><span class="line">  <span class="comment">//cam.start();</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment">// this works as well:</span></span><br><span class="line">  </span><br><span class="line">   cam = <span class="keyword">new</span> IPCapture(<span class="keyword">this</span>,<span class="string">"http://192.168.1.1:8080/?action=stream"</span>, <span class="string">"openwrt"</span>, <span class="string">"openwrt"</span>);</span><br><span class="line">   cam.start();</span><br><span class="line">  </span><br><span class="line">  <span class="comment">// this works as well:</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment">// cam = new IPCapture(this);</span></span><br><span class="line">  <span class="comment">// cam.start("url", "username", "password");</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment">// It is possible to change the MJPEG stream by calling stop()</span></span><br><span class="line">  <span class="comment">// on a running camera, and then start() it with the new</span></span><br><span class="line">  <span class="comment">// url, username and password.</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">draw</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (cam.isAvailable()) &#123;</span><br><span class="line">    cam.<span class="built_in">read</span>();</span><br><span class="line">    <span class="built_in">image</span>(cam,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">    <span class="comment">//saveFrame("output/frames####.png");</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">keyPressed</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (key == <span class="string">' '</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (cam.isAlive()) cam.<span class="built_in">stop</span>();</span><br><span class="line">    <span class="keyword">else</span> cam.start();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>效果如图：</p>
-<p><img src="https://t1.picb.cc/uploads/2017/10/11/Mi8SF.jpg" alt="视频采集"></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -2589,7 +2601,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-count">17</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -2598,7 +2610,7 @@
           
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">分类</span>
               
             </div>
@@ -2607,7 +2619,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">30</span>
+                <span class="site-state-item-count">32</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
