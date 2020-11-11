@@ -8,7 +8,9 @@
  设计原则 则是设计模式所遵循的规则，设计模式就是实现了这些原则，从而达到了代码复用、增加可维护性的目的。设计模式 是基于设计原则的
 
 设计原则（6大原则，SOLID）
-Source：http://www.uml.org.cn/sjms/201211023.asp
+Source：
+http://www.uml.org.cn/sjms/201211023.asp
+https://www.jianshu.com/p/15edb371c0b5
 
 单一设计原则 S ingle Responsibility Principle - SRP
 There should never be more than one reason for a class to change. 
@@ -44,9 +46,10 @@ Functions that use pointers or references to base classes must be able to use ob
 接口隔离原则 I nterface Segregation Principle - ISP
 The dependency of one class to another one should depend on the smallest possible interface.
 客户端不应该依赖它不需要的接口；一个类对另一个类的依赖应该建立在最小的接口上。
+解决方案：将臃肿的接口拆分为独立的几个接口，类分别与他们需要的接口建立依赖关系，也就是采用接口隔离原则。这样就不用实现，在接口中，对于该类，没有用的方法。
 
 依赖倒置原则 D ependence Inversion Principle - DIP
-
+High level modules should not depends upon low level modules.Both should depend upon abstractions.Abstractions should not depend upon details.Details should depend upon abstractions.
 
 
 
